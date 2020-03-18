@@ -1,5 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
+import { Row, FullWidth } from "./layoutComponent"
 import COLLEGES from "../static/collegesList";
 
 
@@ -38,14 +39,27 @@ class Form extends React.Component {
      render() {
           return (
                <>
-                    <input id="formName" type="text" />
-                    <select id="formCollege">
-                         {this.state.allColleges.map(college => {
-                              return <option name={college.tidyName} key={college.id}>{college.name}</option>
-                         })}
-                    </select>
-                    <input onClick={this.handleClick} className="continueBtn" type="button" value="Continue" />
-
+                    <center>
+                         <Row>
+                              <FullWidth>
+                                   <input id="formName" type="text" />
+                              </FullWidth>
+                         </Row>
+                         <Row>
+                              <FullWidth>
+                                   <select id="formCollege">
+                                        {this.state.allColleges.map(college => {
+                                             return <option name={college.tidyName} key={college.id}>{college.name}</option>
+                                        })}
+                                   </select>
+                              </FullWidth>
+                         </Row>
+                         <Row>
+                              <FullWidth>
+                                   <input onClick={this.handleClick} className="continueBtn" type="button" value="Continue" />
+                              </FullWidth>
+                         </Row>
+                    </center>
                </>
           );
      }
