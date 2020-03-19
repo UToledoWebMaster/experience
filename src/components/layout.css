@@ -1,5 +1,87 @@
-h1 {
-  color: red;
+@import url("https://use.typekit.net/yup2zpr.css");
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mainIcon {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+}
+
+.anim {
+  position: relative;
+}
+
+.welcomeTo {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 6em;
+  font-weight: 900;
+  color: #003E7E;
+  text-transform: uppercase;
+  display: block;
+  line-height: 59px;
+  position: relative;
+}
+
+.welcome {
+  display: inline;
+}
+
+.to {
+  display: inline;
+}
+
+.experienceDay {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 6em;
+  font-weight: 900;
+  color: #003E7E;
+  text-transform: uppercase;
+  display: block;
+  line-height: 60px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.experience {
+  display: inline;
+}
+
+.day {
+  display: inline;
+}
+
+.loader {
+  margin: auto;
+  display: block !important;
+  top: 32vh;
+
+}
+
+#formName,
+#formCollege {
+  width: 380px;
+  border-radius: 0;
+}
+
+input[type=button].continueBtn {
+  font-family: jubilat, serif;
+  color: white;
+  background-color: #003E7E;
+  border-radius: 0;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 0px;
+  font-size: 1.2em;
+  height: 40px;
+  padding: 0 40px;
 }
 
 @media only screen and (max-width: 480px) {
