@@ -6,51 +6,6 @@ import Form from "../components/form"
 import SEO from "../components/seo"
 import { gsap } from "gsap";
 
-
-
-// export const Loading = () => {
-//   const data = useStaticQuery(graphql`
-//     query imagesAndImages {
-//     #get all images from particular directory
-//     #  images: allFile(filter: {relativeDirectory: {eq: "nameOfDirectory"}}){
-//     #    id
-//     #    childImageSharp{
-//     #      fixed(width:200){
-//     #        ...GatsbyImageSharpFixed
-//     #      }
-//     #      fluid{
-//     #        ...GatsbyImageSharpFluid
-//     #      }
-//     #    }
-//     #  }
-//       image: file(relativePath: {eq: "shield.png"})
-//       {
-//         id
-//         childImageSharp{
-//           fixed(width:200){
-//             ...GatsbyImageSharpFixed
-//           }
-//           fluid{
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//     `)
-//   const loadAnim = () => {
-//     const loader = document.querySelector('.loader');
-//     gsap.to(loader, 1, { "rotateY": "180deg", "repeat": 3 });
-//   }
-
-//   return (
-//     <>
-//       <Img className="loader" fadeIn={true} onLoad={loadAnim} fixed={data.image.childImageSharp.fixed} />
-//       test
-//     </>
-//   )
-// }
-
-
 export const Loading = () => {
   const data = useStaticQuery(graphql`
   query imagesAndImages {

@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import Welcomer from "../components/welcomer"
+import Welcomer from "../../components/welcomer"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 class Welcome extends React.Component {
@@ -17,9 +17,23 @@ class Welcome extends React.Component {
      }
      componentDidMount() {
           if (this.props.location.state.diverseClick) {
-               console.log('running diverseclick true');
                this.setState({
                     diverseClick: true
+               })
+          }
+          if (this.props.location.state.studentLifeClick) {
+               this.setState({
+                    studentLifeClick: true
+               })
+          }
+          if (this.props.location.state.livingDiningClick) {
+               this.setState({
+                    livingDiningClick: true
+               })
+          }
+          if (this.props.location.state.healthSafetyClick) {
+               this.setState({
+                    healthSafetyClick: true
                })
           }
      }
@@ -47,6 +61,7 @@ class Welcome extends React.Component {
                               studentLifeClick={this.state.studentLifeClick}
                               livingDiningClick={this.state.livingDiningClick}
                               healthSafetyClick={this.state.healthSafetyClick}
+                              state={this.props.location.state}
                          />
 
 

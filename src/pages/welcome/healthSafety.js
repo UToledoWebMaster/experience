@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import Colleger from "../components/colleger"
+import HealthSafetyContent from "../../components/healthSafety"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
-const College = ({ location }) => (
+const HealthSafety = ({ location }) => (
      <Layout>
-          <SEO title="Welcome" />
+          <SEO title="Health and Safety" />
           <PageTransition
                defaultStyle={{
                     transition: '.5s',
@@ -22,7 +22,7 @@ const College = ({ location }) => (
                }}
                transitionTime={300}
           >
-               <Colleger college={location.state.collegeOfInterest} />
+               <HealthSafetyContent state={location.state} />
 
 
                <Link to="/">Click here</Link>
@@ -30,4 +30,4 @@ const College = ({ location }) => (
      </Layout >
 )
 
-export default College
+export default HealthSafety

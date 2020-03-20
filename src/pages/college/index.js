@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import DiverseCommunityContent from "../components/diverseCommunity"
+import Colleger from "../../components/colleger"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
-const DiverseCommunity = ({ location }) => (
+const College = ({ location }) => (
      <Layout>
-          <SEO title="Our Diverse Community" />
+          <SEO title="Welcome" />
           <PageTransition
                defaultStyle={{
                     transition: '.5s',
@@ -22,8 +22,7 @@ const DiverseCommunity = ({ location }) => (
                }}
                transitionTime={300}
           >
-               test diverse community
-               <DiverseCommunityContent />
+               <Colleger college={location.state.collegeOfInterest} />
 
 
                <Link to="/">Click here</Link>
@@ -31,4 +30,4 @@ const DiverseCommunity = ({ location }) => (
      </Layout >
 )
 
-export default DiverseCommunity
+export default College
