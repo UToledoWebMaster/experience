@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import DiverseCommunityContent from "../../components/diverseCommunity"
+import DiverseCommunityContent from "../../components/welcome/diverseCommunity"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const DiverseCommunity = ({ location }) => (
@@ -23,7 +23,7 @@ const DiverseCommunity = ({ location }) => (
                transitionTime={300}
           >
                <DiverseCommunityContent state={location.state} />
-
+               <br />
 
                <Link to="/">Click here</Link>
           </PageTransition>

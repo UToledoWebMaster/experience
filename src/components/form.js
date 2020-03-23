@@ -1,6 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { Row, FullWidth } from "./layoutComponent"
+import { Row, FullWidth } from "./layout/layoutComponent"
 import COLLEGES from "../static/collegesList";
 import { gsap } from "gsap";
 

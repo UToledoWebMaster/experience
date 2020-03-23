@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import LivingDiningContent from "../../components/livingDining"
+import LivingDiningContent from "../../components/welcome/livingDining"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const LivingDining = ({ location }) => (
@@ -23,7 +23,7 @@ const LivingDining = ({ location }) => (
                transitionTime={300}
           >
                <LivingDiningContent state={location.state} />
-
+               <br />
 
                <Link to="/">Click here</Link>
           </PageTransition>

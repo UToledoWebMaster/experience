@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import HealthSafetyContent from "../../components/healthSafety"
+import HealthSafetyContent from "../../components/welcome/healthSafety"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const HealthSafety = ({ location }) => (
@@ -23,7 +23,7 @@ const HealthSafety = ({ location }) => (
                transitionTime={300}
           >
                <HealthSafetyContent state={location.state} />
-
+               <br />
 
                <Link to="/">Click here</Link>
           </PageTransition>

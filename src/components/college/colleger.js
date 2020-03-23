@@ -8,8 +8,8 @@ class Colleger extends React.Component {
      render() {
           return (
                <>
-                    <h1>welcome</h1>
-                    <div>You are interested in {this.props.college}</div>
+                    <h1>welcome to content for {this.props.college}</h1>
+                    <div>Here is some content for {this.props.college}</div>
                     <Link to="/college/honors">Click for honors</Link>
                </>
           );

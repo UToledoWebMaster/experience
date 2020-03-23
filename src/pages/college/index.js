@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import Colleger from "../../components/colleger"
+import Colleger from "../../components/college/colleger"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const College = ({ location }) => (
@@ -24,8 +24,8 @@ const College = ({ location }) => (
           >
                <Colleger college={location.state.collegeOfInterest} />
 
-
-               <Link to="/">Click here</Link>
+               <br />
+               <Link to="/paying-for-college">Go To Paying for College</Link>
           </PageTransition>
      </Layout >
 )

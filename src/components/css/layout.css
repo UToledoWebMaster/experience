@@ -4,6 +4,20 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+  color: #003E7E;
+  font-weight: 900;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #003E7E;
+  font-weight: 900;
+  font-family: jubilat, sans-serif;
+  text-transform: none;
+}
+
 .container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -82,6 +96,10 @@ input[type=button].continueBtn {
   font-size: 1.2em;
   height: 40px;
   padding: 0 40px;
+}
+
+img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 480px) {

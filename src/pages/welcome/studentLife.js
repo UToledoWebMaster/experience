@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import StudentLifeContent from "../../components/studentLife"
+import StudentLifeContent from "../../components/welcome/studentLife"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 const StudentLife = ({ location }) => (
@@ -23,7 +23,7 @@ const StudentLife = ({ location }) => (
                transitionTime={300}
           >
                <StudentLifeContent state={location.state} />
-
+               <br />
 
                <Link to="/">Click here</Link>
           </PageTransition>
