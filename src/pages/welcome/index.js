@@ -4,7 +4,6 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import Welcomer from "../../components/welcome/welcomer"
 import PageTransition from 'gatsby-plugin-page-transitions';
-import SCREENS from "../../static/trackedScreens"
 
 
 class Welcome extends React.Component {
@@ -14,8 +13,7 @@ class Welcome extends React.Component {
                diverseClick: false,
                studentLifeClick: false,
                livingDiningClick: false,
-               healthSafetyClick: false,
-               screens: SCREENS
+               healthSafetyClick: false
 
           }
      }

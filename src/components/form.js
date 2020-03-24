@@ -58,8 +58,7 @@ class Form extends React.Component {
                          <Row>
                               <FullWidth>
                                    <div className="experienceDay">
-                                        <div className="experience anim">Experience </div>
-                                        <div className="day anim">Day</div>
+                                        <div className="experience anim">UToledo</div>
                                    </div>
                               </FullWidth>
                          </Row>
