@@ -2,7 +2,7 @@ const COLLEGES = [
      {
           id: 0,
           name: "Arts and Letters",
-          tidyName: "artsAndLetters"
+          tidyName: "artsandletters"
      },
      {
           id: 1,
