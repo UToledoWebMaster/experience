@@ -9,15 +9,15 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                <h2>You Are Interested in {state.collegeOfInterest}</h2>
                <Row>
                     <ThirdColumn>
-                         {!academicSuccessClick ? <><Link state={state} to="/college/academicSuccess"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success" /></Link><br /></> : <><Link state={state} to="/college/academicSuccess"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success+Visited" /></Link><br /></>}
+                         {!academicSuccessClick ? <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success" /></Link><br /></> : <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success+Visited" /></Link><br /></>}
                          <p>Some text about Academic Success</p>
                     </ThirdColumn>
                     <ThirdColumn>
-                         {!careerServicesClick ? <><Link state={state} to="/college/careerServices"><img src="https://via.placeholder.com/728x300.png?text=Career+Services" /></Link><br /></> : <><Link state={state} to="/college/careerServices"><img src="https://via.placeholder.com/728x300.png?text=Career+Services+Visited" /></Link><br /></>}
+                         {!careerServicesClick ? <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services" /></Link><br /></> : <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services+Visited" /></Link><br /></>}
                          <p>Some text about Career Services</p>
                     </ThirdColumn>
                     <ThirdColumn>
-                         {!experientialLearningClick ? <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning" /></Link><br /></> : <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning+Visited" /></Link><br /></>}
+                         {!experientialLearningClick ? <><Link state={state} to="/college/experiential-learning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning" /></Link><br /></> : <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning+Visited" /></Link><br /></>}
                          <p>Some text about Experiential Learning</p>
                     </ThirdColumn>
                </Row>

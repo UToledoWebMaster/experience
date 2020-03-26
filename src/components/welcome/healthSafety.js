@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { navigate } from "gatsby"
 
 const HealthSafetyContent = ({ state }) => {
      if (state) {
@@ -12,6 +12,7 @@ const HealthSafetyContent = ({ state }) => {
                </>
           );
      } else {
+          navigate("/")
           return (
                <>
 

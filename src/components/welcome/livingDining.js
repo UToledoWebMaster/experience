@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { navigate } from "gatsby"
 
 const LivingDiningContent = ({ state }) => {
      if (state) {
@@ -12,6 +12,7 @@ const LivingDiningContent = ({ state }) => {
                </>
           );
      } else {
+          navigate("/")
           return (
                <>
 

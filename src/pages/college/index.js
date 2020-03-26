@@ -4,7 +4,7 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import Colleger from "../../components/college/colleger"
 import PageTransition from 'gatsby-plugin-page-transitions';
-
+import { navigate } from "gatsby"
 
 class College extends React.Component {
      constructor(props) {
@@ -19,30 +19,32 @@ class College extends React.Component {
           }
      }
      componentDidMount() {
-          if (this.props.location.state.academicSuccessClick) {
-               this.setState({
-                    academicSuccessClick: true
-               })
-          }
-          if (this.props.location.state.careerServicesClick) {
-               this.setState({
-                    careerServicesClick: true
-               })
-          }
-          if (this.props.location.state.experientialLearningClick) {
-               this.setState({
-                    experientialLearningClick: true
-               })
-          }
-          if (this.props.location.state.honorsClick) {
-               this.setState({
-                    honorsClick: true
-               })
-          }
-          if (this.props.location.state.researchClick) {
-               this.setState({
-                    researchClick: true
-               })
+          if (this.props.location.state) {
+               if (this.props.location.state.academicSuccessClick) {
+                    this.setState({
+                         academicSuccessClick: true
+                    })
+               }
+               if (this.props.location.state.careerServicesClick) {
+                    this.setState({
+                         careerServicesClick: true
+                    })
+               }
+               if (this.props.location.state.experientialLearningClick) {
+                    this.setState({
+                         experientialLearningClick: true
+                    })
+               }
+               if (this.props.location.state.honorsClick) {
+                    this.setState({
+                         honorsClick: true
+                    })
+               }
+               if (this.props.location.state.researchClick) {
+                    this.setState({
+                         researchClick: true
+                    })
+               }
           }
      }
      render() {
@@ -80,6 +82,7 @@ class College extends React.Component {
                     </Layout >
                )
           } else {
+               navigate("/")
                return (<></>)
           }
      }

@@ -3,6 +3,8 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import Welcomer from "../../components/welcome/welcomer"
+import { navigate } from "gatsby"
+
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
@@ -18,25 +20,27 @@ class Welcome extends React.Component {
           }
      }
      componentDidMount() {
-          if (this.props.location.state.diverseClick) {
-               this.setState({
-                    diverseClick: true
-               })
-          }
-          if (this.props.location.state.studentLifeClick) {
-               this.setState({
-                    studentLifeClick: true
-               })
-          }
-          if (this.props.location.state.livingDiningClick) {
-               this.setState({
-                    livingDiningClick: true
-               })
-          }
-          if (this.props.location.state.healthSafetyClick) {
-               this.setState({
-                    healthSafetyClick: true
-               })
+          if (this.props.location.state) {
+               if (this.props.location.state.diverseClick) {
+                    this.setState({
+                         diverseClick: true
+                    })
+               }
+               if (this.props.location.state.studentLifeClick) {
+                    this.setState({
+                         studentLifeClick: true
+                    })
+               }
+               if (this.props.location.state.livingDiningClick) {
+                    this.setState({
+                         livingDiningClick: true
+                    })
+               }
+               if (this.props.location.state.healthSafetyClick) {
+                    this.setState({
+                         healthSafetyClick: true
+                    })
+               }
           }
      }
      render() {
@@ -74,7 +78,10 @@ class Welcome extends React.Component {
                     </Layout >
                )
           } else {
-               return (<></>)
+               navigate("/")
+               return (
+                    <></>
+               )
           }
      }
 }
