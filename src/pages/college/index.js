@@ -46,38 +46,42 @@ class College extends React.Component {
           }
      }
      render() {
-          return (
-               <Layout>
-                    <SEO title={`College of ${this.props.location.state.collegeOfInterest}`} />
-                    <PageTransition
-                         defaultStyle={{
-                              transition: '.5s',
-                              top: '5%',
-                              opacity: 0,
-                              position: 'absolute',
-                         }}
-                         transitionStyles={{
-                              entering: { top: '5%', opacity: 0 },
-                              entered: { top: '0%', opacity: 1 },
-                              exiting: { top: '5%', opacity: 0 },
-                         }}
-                         transitionTime={300}
-                    >
-                         <Colleger name={this.props.location.state.name}
-                              college={this.props.location.state.collegeOfInterest}
-                              academicSuccessClick={this.state.academicSuccessClick}
-                              careerServicesClick={this.state.careerServicesClick}
-                              experientialLearningClick={this.state.experientialLearningClick}
-                              honorsClick={this.state.honorsClick}
-                              researchClick={this.state.researchClick}
-                              state={this.props.location.state}
-                         />
+          if (this.props.location.state) {
+               return (
+                    <Layout>
+                         <SEO title={`College of ${this.props.location.state.collegeOfInterest}`} />
+                         <PageTransition
+                              defaultStyle={{
+                                   transition: '.5s',
+                                   top: '5%',
+                                   opacity: 0,
+                                   position: 'absolute',
+                              }}
+                              transitionStyles={{
+                                   entering: { top: '5%', opacity: 0 },
+                                   entered: { top: '0%', opacity: 1 },
+                                   exiting: { top: '5%', opacity: 0 },
+                              }}
+                              transitionTime={300}
+                         >
+                              <Colleger name={this.props.location.state.name}
+                                   college={this.props.location.state.collegeOfInterest}
+                                   academicSuccessClick={this.state.academicSuccessClick}
+                                   careerServicesClick={this.state.careerServicesClick}
+                                   experientialLearningClick={this.state.experientialLearningClick}
+                                   honorsClick={this.state.honorsClick}
+                                   researchClick={this.state.researchClick}
+                                   state={this.props.location.state}
+                              />
 
 
-                         <Link to="/paying-for-college" state={this.props.location.state}>Click here for paying for college</Link>
-                    </PageTransition>
-               </Layout >
-          )
+                              <Link to="/paying-for-college" state={this.props.location.state}>Click here for paying for college</Link>
+                         </PageTransition>
+                    </Layout >
+               )
+          } else {
+               return (<></>)
+          }
      }
 }
 

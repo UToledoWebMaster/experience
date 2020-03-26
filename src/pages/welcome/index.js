@@ -40,38 +40,42 @@ class Welcome extends React.Component {
           }
      }
      render() {
-          return (
-               <Layout>
-                    <SEO title="Welcome" />
-                    <PageTransition
-                         defaultStyle={{
-                              transition: '.5s',
-                              top: '5%',
-                              opacity: 0,
-                              position: 'absolute',
-                         }}
-                         transitionStyles={{
-                              entering: { top: '5%', opacity: 0 },
-                              entered: { top: '0%', opacity: 1 },
-                              exiting: { top: '5%', opacity: 0 },
-                         }}
-                         transitionTime={300}
-                    >
-                         <Welcomer name={this.props.location.state.name}
-                              college={this.props.location.state.collegeOfInterest}
-                              diverseClick={this.state.diverseClick}
-                              studentLifeClick={this.state.studentLifeClick}
-                              livingDiningClick={this.state.livingDiningClick}
-                              healthSafetyClick={this.state.healthSafetyClick}
-                              state={this.props.location.state}
-                              screens={this.state.screens}
-                         />
+          if (this.props.location.state) {
+               return (
+                    <Layout>
+                         <SEO title="Welcome" />
+                         <PageTransition
+                              defaultStyle={{
+                                   transition: '.5s',
+                                   top: '5%',
+                                   opacity: 0,
+                                   position: 'absolute',
+                              }}
+                              transitionStyles={{
+                                   entering: { top: '5%', opacity: 0 },
+                                   entered: { top: '0%', opacity: 1 },
+                                   exiting: { top: '5%', opacity: 0 },
+                              }}
+                              transitionTime={300}
+                         >
+                              <Welcomer name={this.props.location.state.name}
+                                   college={this.props.location.state.collegeOfInterest}
+                                   diverseClick={this.state.diverseClick}
+                                   studentLifeClick={this.state.studentLifeClick}
+                                   livingDiningClick={this.state.livingDiningClick}
+                                   healthSafetyClick={this.state.healthSafetyClick}
+                                   state={this.props.location.state}
+                                   screens={this.state.screens}
+                              />
 
 
-                         <Link to="/college" state={this.props.location.state}>Click here for college page</Link>
-                    </PageTransition>
-               </Layout >
-          )
+                              <Link to="/college" state={this.props.location.state}>Click here for college page</Link>
+                         </PageTransition>
+                    </Layout >
+               )
+          } else {
+               return (<></>)
+          }
      }
 }
 
