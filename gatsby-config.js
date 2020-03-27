@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/larry-test/app-test/test`,
   siteMetadata: {
-    title: `UToledo Experience`,
+    title: `UToledo`,
     description: `Experience UToledo`,
     author: `@LarryCarter`,
   },

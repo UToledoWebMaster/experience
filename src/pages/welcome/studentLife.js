@@ -4,6 +4,7 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import StudentLifeContent from "../../components/welcome/studentLife"
 import PageTransition from 'gatsby-plugin-page-transitions';
+import { Row, HalfColumn } from "../../components/layout/layoutComponent"
 
 const StudentLife = ({ location }) => (
      <Layout>
@@ -22,10 +23,17 @@ const StudentLife = ({ location }) => (
                }}
                transitionTime={300}
           >
+               <Link className="button button-primary smaller float-right" to="/welcome" state={{ ...location.state, studentLifeClick: true }}>&larr; Back to Welcome</Link>
                <StudentLifeContent state={location.state} />
                <br />
-
-               <Link to="/">Click here</Link>
+               <Row>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/welcome" state={{ ...location.state, studentLifeClick: true }}>&larr; Back to Welcome</Link>
+                    </HalfColumn>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/welcome/diverseCommunity" state={{ ...location.state, studentLifeClick: true }}>Will I Fit In? &rarr;</Link>
+                    </HalfColumn>
+               </Row>
           </PageTransition>
      </Layout >
 )

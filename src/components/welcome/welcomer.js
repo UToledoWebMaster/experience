@@ -1,36 +1,45 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Row, ThirdColumn } from "../layout/layoutComponent"
+import { Row, FullWidth, HalfColumn } from "../layout/layoutComponent"
 
 const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningClick, healthSafetyClick, state }) => {
      return (
           <>
-               <h1>welcome {name}</h1>
-               <h2>You Are Interested in {college}</h2>
                <Row>
-                    <ThirdColumn>
-                         {!diverseClick ? <><Link state={state} to="/welcome/diverseCommunity"><img src="https://via.placeholder.com/728x300.png?text=Diverse+Community" /></Link><br /></> : <><Link state={state} to="/welcome/diverseCommunity"><img src="https://via.placeholder.com/728x300.png?text=Diverse+Community+Visited" /></Link><br /></>}
-                         <p>Some text about Diverse Community</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
+                    <FullWidth>
+                         <h1>Welcome {name}!</h1>
+                         <h2>Goals:</h2>
+                         <ul>
+                              <li>A college that's right for me</li>
+                              <li>4 yrs - FUN - make lifelong friends</li>
+                              <li>A degree w/o breaking the bank</li>
+                              <li>A job - one that pays $$ and makes me :)</li>
+                         </ul>
+                         <p>UToledo can help you check off all those boxes!</p>
+                         <p>Let's begin with a few of your most common questions.</p>
+                    </FullWidth>
+               </Row>
+               <Row>
+                    <HalfColumn>
                          {!studentLifeClick ? <><Link state={state} to="/welcome/studentLife"><img src="https://via.placeholder.com/728x300.png?text=Student+Life" /></Link><br /></> : <><Link state={state} to="/welcome/studentLife"><img src="https://via.placeholder.com/728x300.png?text=Student+Life+Visited" /></Link><br /></>}
-                         <p>Some text about Student Life</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!livingDiningClick ? <><Link state={state} to="/welcome/livingDining"><img src="https://via.placeholder.com/728x300.png?text=Living+and+Dining" /></Link><br /></> : <><Link state={state} to="/welcome/livingDining"><img src="https://via.placeholder.com/728x300.png?text=Living+and+Dining+Visited" /></Link><br /></>}
-                         <p>Some text about Living and Dining</p>
-                    </ThirdColumn>
+                         <h2><Link state={state} to="/welcome/studentLife">What's there to do after class?</Link></h2>
+                    </HalfColumn>
+                    <HalfColumn>
+                         {!diverseClick ? <><Link state={state} to="/welcome/diverseCommunity"><img src="https://via.placeholder.com/728x300.png?text=Diverse+Community" /></Link><br /></> : <><Link state={state} to="/welcome/diverseCommunity"><img src="https://via.placeholder.com/728x300.png?text=Diverse+Community+Visited" /></Link><br /></>}
+                         <h2><Link state={state} to="/welcome/diverseCommunity">Will I fit in?</Link></h2>
+                    </HalfColumn>
                </Row>
+               <br />
                <Row>
-                    <ThirdColumn>
+                    <HalfColumn>
+                         {!livingDiningClick ? <><Link state={state} to="/welcome/livingDining"><img src="https://via.placeholder.com/728x300.png?text=Living+and+Dining" /></Link><br /></> : <><Link state={state} to="/welcome/livingDining"><img src="https://via.placeholder.com/728x300.png?text=Living+and+Dining+Visited" /></Link><br /></>}
+                         <h2><Link state={state} to="/welcome/livingDining">Where wil I live and what will I eat?</Link></h2>
+                    </HalfColumn>
+                    <HalfColumn>
                          {!healthSafetyClick ? <><Link state={state} to="/welcome/healthSafety"><img src="https://via.placeholder.com/728x300.png?text=Health+and+Safety" /></Link><br /></> : <><Link state={state} to="/welcome/healthSafety"><img src="https://via.placeholder.com/728x300.png?text=Health+and+Safety+Visited" /></Link><br /></>}
-                         <p>Some text about Health and Safety</p>
-                    </ThirdColumn>
+                         <h2><Link state={state} to="/welcome/healthSafety">How do I stay healthy and safe?</Link></h2>
+                    </HalfColumn>
                </Row>
-               {/* {!diverseClick ? <><Link state={state} to="/welcome/diverseCommunity">Click to go to diverse community.</Link><br /></> : <><Link state={state} to="/welcome/diverseCommunity">Click to go to diverse community AGAIN.</Link><br /></>}
-               {!studentLifeClick ? <><Link state={state} to="/welcome/studentLife">Click to go to student life.</Link><br /></> : <><Link state={state} to="/welcome/studentLife">Click to go to student life AGAIN.</Link><br /></>}
-               {!livingDiningClick ? <><Link state={state} to="/welcome/livingDining">Click to go to living and dining.</Link><br /></> : <><Link state={state} to="/welcome/livingDining">Click to go to living and dining AGAIN.</Link><br /></>}
-               {!healthSafetyClick ? <><Link state={state} to="/welcome/healthSafety">Click to go to health and safety.</Link><br /></> : <><Link state={state} to="/welcome/healthSafety">Click to go to health and safety AGAIN.</Link><br /></>} */}
           </>
      );
 }

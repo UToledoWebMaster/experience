@@ -4,6 +4,7 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import DiverseCommunityContent from "../../components/welcome/diverseCommunity"
 import PageTransition from 'gatsby-plugin-page-transitions';
+import { Row, HalfColumn } from "../../components/layout/layoutComponent"
 
 const DiverseCommunity = ({ location }) => (
      <Layout>
@@ -22,10 +23,18 @@ const DiverseCommunity = ({ location }) => (
                }}
                transitionTime={300}
           >
+               <Link className="button button-primary smaller float-right" to="/welcome" state={{ ...location.state, diverseClick: true }}>&larr; Back to Welcome</Link>
                <DiverseCommunityContent state={location.state} />
                <br />
+               <Row>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/welcome/studentLife" state={{ ...location.state, diverseClick: true }}>&larr; What's There to Do After Class?</Link>
+                    </HalfColumn>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/welcome/livingDining" state={{ ...location.state, diverseClick: true }}>Where Will I Live? &rarr;</Link>
+                    </HalfColumn>
+               </Row>
 
-               <Link to="/">Click here</Link>
           </PageTransition>
      </Layout >
 )

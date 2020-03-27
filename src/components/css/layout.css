@@ -18,6 +18,15 @@ h2 {
   text-transform: none;
 }
 
+ul li,
+ol li {
+  font-size: 1.875rem;
+}
+
+ul li {
+  list-style-type: square;
+}
+
 .container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -52,6 +61,10 @@ h2 {
   display: inline;
 }
 
+.narrow {
+  max-width: 680px;
+}
+
 .experienceDay {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 6em;
@@ -61,7 +74,7 @@ h2 {
   display: block;
   line-height: 60px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .experience {
@@ -101,6 +114,166 @@ input[type=button].continueBtn {
 img {
   width: 100%;
 }
+
+p {
+  font-size: 1.875rem;
+  text-align: left;
+}
+
+p a,
+ul li a {
+  color: #134FC9;
+}
+
+p a:hover,
+ul li a:hover {
+  text-decoration: underline;
+}
+
+h2 a {
+  color: #003E7E;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #003E7E;
+}
+
+.float-right {
+  float: right;
+}
+
+a.forBtn {
+  text-decoration: none;
+}
+
+.block {
+  display: block;
+}
+
+.skyBack {
+  background-color: #AFD5E9;
+}
+
+/* Flip Card Styles */
+.flipCard {
+  width: 100%;
+  height: 250px !important;
+  /* !important to override inline height: auto script */
+  margin-bottom: 3.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .flipCard {
+    height: 200px !important;
+  }
+}
+
+.flipCard:focus {
+  outline: none;
+}
+
+/* Show outline on cards when in focus, but only when we know they're using keyboard controls */
+body.accessible .flipCard:focus .flipCard__front {
+  outline: #FFD200 solid 2px;
+  outline-offset: -4px;
+}
+
+body.accessible .flipCard:focus .flipCard__back {
+  outline: #003e7e solid 2px;
+  outline-offset: -4px;
+}
+
+.flipCard__front,
+.flipCard__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  /* !important to override inline height: auto script */
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+
+  .flipCard__front,
+  .flipCard__back {
+    padding: 6%;
+  }
+}
+
+.flipCard p {
+  margin-bottom: 0;
+}
+
+.flipCard__front p {
+  color: white;
+  font-size: 22.5px;
+  font-weight: 600;
+  font-family: jubilat;
+  line-height: normal;
+}
+
+.flipCard__front {
+  background-color: #003e7e;
+  transition: background-color .3s;
+}
+
+.flipCard__front:hover {
+  background-color: #102B5F;
+}
+
+.flipCard__back {
+  background-color: #ececec;
+  transition: background-color .3s;
+}
+
+.flipCard__back:hover {
+  background-color: #dcdcdc;
+}
+
+.flipCardSection {
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .flipCardSection .three.columns {
+    width: 48%;
+  }
+
+  .flipCardSection .three.columns:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .flipCardSection .three.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* END Flip Card Styles */
+
 
 @media only screen and (max-width: 480px) {
   html {

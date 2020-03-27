@@ -4,7 +4,7 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import Welcomer from "../../components/welcome/welcomer"
 import { navigate } from "gatsby"
-
+import { Row, HalfColumn } from "../../components/layout/layoutComponent"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
@@ -71,9 +71,15 @@ class Welcome extends React.Component {
                                    state={this.props.location.state}
                                    screens={this.state.screens}
                               />
-
-
-                              <Link to="/college" state={this.props.location.state}>Click here for college page</Link>
+                              <br />
+                              <Row>
+                                   <HalfColumn>
+                                        <Link className="block button button-primary" to="/">&larr; To Start</Link>
+                                   </HalfColumn>
+                                   <HalfColumn>
+                                        <Link className="block button button-primary" to="/college" state={this.props.location.state}>My College &rarr;</Link>
+                                   </HalfColumn>
+                              </Row>
                          </PageTransition>
                     </Layout >
                )
