@@ -4,6 +4,7 @@ import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import AcademicSuccessContent from "../../components/college/academicSuccess"
 import PageTransition from 'gatsby-plugin-page-transitions';
+import { Row, HalfColumn } from '../../components/layout/layoutComponent'
 
 const AcademicSuccess = ({ location }) => (
      <Layout>
@@ -24,8 +25,14 @@ const AcademicSuccess = ({ location }) => (
           >
                <AcademicSuccessContent state={location.state} />
                <br />
-
-               <Link to="/">Click here</Link>
+               <Row>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/college" state={{ ...location.state, academicSuccessClick: true }}>&larr; Back to My College</Link>
+                    </HalfColumn>
+                    <HalfColumn>
+                         <Link className="block button button-primary" to="/college/career-services" state={{ ...location.state, academicSuccessClick: true }}>Career Services &rarr;</Link>
+                    </HalfColumn>
+               </Row>
           </PageTransition>
      </Layout >
 )
