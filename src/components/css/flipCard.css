@@ -1,0 +1,107 @@
+
+.flipCard {
+    width: 100%;
+    height: 250px !important;
+    /* !important to override inline height: auto script */
+    margin-bottom: 3.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .flipCard {
+        height: 200px !important;
+    }
+}
+
+.flipCard:focus {
+    outline: none;
+}
+
+/* Show outline on cards when in focus, but only when we know they're using keyboard controls */
+/*
+body.accessible .flipCard:focus .flipCard__front {
+    outline: #FFD200 solid 2px;
+    outline-offset: -4px;
+}
+
+body.accessible .flipCard:focus .flipCard__back {
+    outline: #003e7e solid 2px;
+    outline-offset: -4px;
+}
+*/
+.flipCard:focus .flipCard__front {
+    outline: #FFD200 solid 2px;
+    outline-offset: -4px;
+}
+
+.flipCard:focus .flipCard__back {
+    outline: #003e7e solid 2px;
+    outline-offset: -4px;
+}
+
+.flipCard__front,
+.flipCard__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    /* !important to override inline height: auto script */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+
+.flipCard__front,
+.flipCard__back {
+    padding: 6%;
+}
+}
+
+.flipCard p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.flipCard__front p {
+    color: white;
+    font-size: 22.5px;
+    font-weight: 600;
+    font-family: jubilat;
+    line-height: normal;
+}
+
+.flipCard__front {
+    background-color: #003e7e;
+    transition: background-color .3s;
+}
+
+.flipCard__front:hover {
+    background-color: #102B5F;
+}
+
+.flipCard__back {
+    background-color: #ececec;
+    transition: background-color .3s;
+}
+
+.flipCard__back:hover {
+    background-color: #dcdcdc;
+}

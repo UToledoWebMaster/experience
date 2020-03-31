@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import { Row, FullWidth, ThreeQuarterColumn, HalfColumn, QuarterColumn, ThirdColumn } from "../layout/layoutComponent"
+import FlipCard from "../flipCard.js"
 
 const StudentLifeContent = ({ state }) => {
      if (state) {
@@ -25,18 +26,30 @@ const StudentLifeContent = ({ state }) => {
                          </QuarterColumn>
                     </Row>
                     <br /><br />
-                    <Row>
+                    <Row className="halfStack">
                          <QuarterColumn>
-                              <img src="https://via.placeholder.com/300x300.png?text=Be+a+leader." />
+                              <FlipCard
+                                   frontContent="Be a leader."
+                                   backContent="Back text."
+                              />
                          </QuarterColumn>
                          <QuarterColumn>
-                              <img src="https://via.placeholder.com/300x300.png?text=Give+back." />
+                              <FlipCard
+                                   frontContent="Give back."
+                                   backContent="Back text."
+                              />
                          </QuarterColumn>
                          <QuarterColumn>
-                              <img src="https://via.placeholder.com/300x300.png?text=Make+lifelong+friends." />
+                              <FlipCard
+                                   frontContent="Make lifelong friends."
+                                   backContent="Back text."
+                              />
                          </QuarterColumn>
                          <QuarterColumn>
-                              <img src="https://via.placeholder.com/300x300.png?text=Explore." />
+                              <FlipCard
+                                   frontContent="Explore."
+                                   backContent="Back text."
+                              />
                          </QuarterColumn>
                     </Row>
                </>
