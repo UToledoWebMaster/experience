@@ -1,5 +1,6 @@
 import React from "react"
 import { gsap } from "gsap"
+import "./css/flipCard.css"
 
 
 class FlipCard extends React.Component {
