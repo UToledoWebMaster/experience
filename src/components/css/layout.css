@@ -155,6 +155,10 @@ a.forBtn {
   background-color: #AFD5E9;
 }
 
+.yellowBack {
+  background-color: #FFD200;
+}
+
 /* Flip Card Styles */
 .flipCard {
   width: 100%;
