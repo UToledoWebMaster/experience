@@ -13,6 +13,8 @@ import "typeface-source-sans-pro"
 import "../css/normalize.css"
 import "../css/skeleton.css"
 import "../css/layout.css"
+import PageTransition from 'gatsby-plugin-page-transitions';
+import "../../static/accessible"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,11 +30,26 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container">
-        {children}
-        <footer>
-        </footer>
-      </div>
+      <PageTransition
+        defaultStyle={{
+          position: 'relative',
+          transition: '.5s',
+          top: '5%',
+          opacity: 0
+        }}
+        transitionStyles={{
+          entering: { top: '5%', opacity: 0 },
+          entered: { top: '0%', opacity: 1 },
+          exiting: { top: '5%', opacity: 0 },
+        }}
+        transitionTime={300}
+      >
+        <div className="container">
+          {children}
+          <footer>
+          </footer>
+        </div>
+      </PageTransition>
     </>
   )
 }

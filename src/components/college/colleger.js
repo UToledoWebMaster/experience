@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Row, ThirdColumn } from "../layout/layoutComponent"
+// import { Link } from "gatsby"
+// import { Row, ThirdColumn } from "../layout/layoutComponent"
 import Business from "./colleges/business"
 import Arts from "./colleges/arts"
 import Education from "./colleges/education"
