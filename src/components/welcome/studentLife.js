@@ -26,7 +26,7 @@ const StudentLifeContent = ({ state }) => {
                          </QuarterColumn>
                     </Row>
                     <br /><br />
-                    <Row>
+                    <Row className="halfBreak">
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Be a leader."

@@ -267,24 +267,24 @@ body.accessible .flipCard:focus .flipCard__back {
   padding-bottom: 2.5rem;
 }
 
-@media (max-width: 1000px) {
-  .flipCardSection .three.columns {
+/* END Flip Card Styles */
+
+@media (max-width: 1200px) {
+  .row.halfBreak .three.columns {
     width: 48%;
   }
 
-  .flipCardSection .three.columns:nth-child(odd) {
+  .row.halfBreak .three.columns:nth-child(odd) {
     margin-left: 0;
   }
 }
 
 @media (max-width: 550px) {
-  .flipCardSection .three.columns {
+  .row.halfBreak .three.columns {
     width: 100%;
     margin-left: 0;
   }
 }
-
-/* END Flip Card Styles */
 
 
 @media only screen and (max-width: 480px) {

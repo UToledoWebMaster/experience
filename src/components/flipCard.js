@@ -4,7 +4,7 @@ import { gsap } from "gsap"
 
 class FlipCard extends React.Component {
 
-    render = () => {
+    render() {
         return (
         <div className="flipCard" id="flipCard0" tabIndex="0">
             <div className="flipCard__front">
@@ -17,7 +17,7 @@ class FlipCard extends React.Component {
         );
     }
 
-    componentDidMount = () => {
+    componentDidMount() {
         // Get the card element (it really just gets the first one it finds that hasn't been given a unique ID yet)
         const element = document.querySelector("#flipCard0");
 
