@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import Welcomer from "../../components/welcome/welcomer"
 import { navigate } from "gatsby"
 import { Row, HalfColumn } from "../../components/layout/layoutComponent"
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 
 class Welcome extends React.Component {
@@ -48,39 +47,24 @@ class Welcome extends React.Component {
                return (
                     <Layout>
                          <SEO title="Welcome" />
-                         <PageTransition
-                              defaultStyle={{
-                                   transition: '.5s',
-                                   top: '5%',
-                                   opacity: 0,
-                                   position: 'absolute',
-                              }}
-                              transitionStyles={{
-                                   entering: { top: '5%', opacity: 0 },
-                                   entered: { top: '0%', opacity: 1 },
-                                   exiting: { top: '5%', opacity: 0 },
-                              }}
-                              transitionTime={300}
-                         >
-                              <Welcomer name={this.props.location.state.name}
-                                   college={this.props.location.state.collegeOfInterest}
-                                   diverseClick={this.state.diverseClick}
-                                   studentLifeClick={this.state.studentLifeClick}
-                                   livingDiningClick={this.state.livingDiningClick}
-                                   healthSafetyClick={this.state.healthSafetyClick}
-                                   state={this.props.location.state}
-                                   screens={this.state.screens}
-                              />
-                              <br />
-                              <Row>
-                                   <HalfColumn>
-                                        <Link className="block button button-primary" to="/">&larr; To Start</Link>
-                                   </HalfColumn>
-                                   <HalfColumn>
-                                        <Link className="block button button-primary" to="/college" state={this.props.location.state}>My College &rarr;</Link>
-                                   </HalfColumn>
-                              </Row>
-                         </PageTransition>
+                         <Welcomer name={this.props.location.state.name}
+                              college={this.props.location.state.collegeOfInterest}
+                              diverseClick={this.state.diverseClick}
+                              studentLifeClick={this.state.studentLifeClick}
+                              livingDiningClick={this.state.livingDiningClick}
+                              healthSafetyClick={this.state.healthSafetyClick}
+                              state={this.props.location.state}
+                              screens={this.state.screens}
+                         />
+                         <br />
+                         <Row>
+                              <HalfColumn>
+                                   <Link className="block button button-primary" to="/">&larr; To Start</Link>
+                              </HalfColumn>
+                              <HalfColumn>
+                                   <Link className="block button button-primary" to="/college" state={this.props.location.state}>My College &rarr;</Link>
+                              </HalfColumn>
+                         </Row>
                     </Layout >
                )
           } else {
