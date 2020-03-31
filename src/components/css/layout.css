@@ -157,17 +157,17 @@ a.forBtn {
 
 
 @media (max-width: 1200px) {
-  .row.halfBreak .three.columns {
+  .row.halfStack .three.columns {
     width: 48%;
   }
 
-  .row.halfBreak .three.columns:nth-child(odd) {
+  .row.halfStack .three.columns:nth-child(odd) {
     margin-left: 0;
   }
 }
 
 @media (max-width: 550px) {
-  .row.halfBreak .three.columns {
+  .row.halfStack .three.columns {
     width: 100%;
     margin-left: 0;
   }
