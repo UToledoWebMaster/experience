@@ -29,28 +29,24 @@ const StudentLifeContent = ({ state }) => {
                     <Row>
                          <QuarterColumn>
                               <FlipCard
-                                   id="id1"
                                    frontContent="Be a leader."
                                    backContent="Back text."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
                               <FlipCard
-                                   id="id2"
                                    frontContent="Give back."
                                    backContent="Back text."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
                               <FlipCard
-                                   id="id3"
                                    frontContent="Make lifelong friends."
                                    backContent="Back text."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
                               <FlipCard
-                                   id="id4"
                                    frontContent="Explore."
                                    backContent="Back text."
                               />
