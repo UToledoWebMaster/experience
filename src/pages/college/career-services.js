@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import CareerServicesContent from "../../components/college/careerServices"
+import CareerServicesContent from "../../components/college/careerServices/index"
 import { Row, HalfColumn } from '../../components/layout/layoutComponent'
 
 const CareerServices = ({ location }) => (
