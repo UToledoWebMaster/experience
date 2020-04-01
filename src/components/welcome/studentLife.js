@@ -55,7 +55,9 @@ const StudentLifeContent = ({ state }) => {
                </>
           );
      } else {
-          navigate("/")
+          if (typeof window !== 'undefined') {
+               navigate("/")
+          }
           return (
                <>
 

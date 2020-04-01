@@ -61,7 +61,9 @@ const DiverseCommunityContent = ({ state }) => {
                </>
           );
      } else {
-          navigate("/")
+          if (typeof window !== 'undefined') {
+               navigate("/")
+          }
           return (
                <>
 
