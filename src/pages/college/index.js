@@ -73,7 +73,9 @@ class College extends React.Component {
                     </Layout >
                )
           } else {
-               navigate("/")
+               if (typeof window !== 'undefined') {
+                    navigate("/")
+               }
                return (<></>)
           }
      }

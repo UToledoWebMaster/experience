@@ -12,7 +12,9 @@ const ExperienitalLearningContent = ({ state }) => {
                </>
           );
      } else {
-          navigate("/")
+          if (typeof window !== 'undefined') {
+               navigate("/")
+          }
           return (
                <>
 
