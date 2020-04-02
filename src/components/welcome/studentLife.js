@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import { Row, FullWidth, ThreeQuarterColumn, HalfColumn, QuarterColumn, ThirdColumn } from "../layout/layoutComponent"
 import FlipCard from "../flipCard.js"
+import Slider from "../slider.js"
 
 const StudentLifeContent = ({ state }) => {
      if (state) {
@@ -24,6 +25,11 @@ const StudentLifeContent = ({ state }) => {
                          <QuarterColumn>
                               <img src="https://via.placeholder.com/300x300.png?text=Photo+of+Sally" />
                          </QuarterColumn>
+                    </Row>
+                    <Row>
+                         <Slider>
+                              
+                         </Slider>
                     </Row>
                     <br /><br />
                     <Row className="halfStack">
