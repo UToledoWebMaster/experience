@@ -13,7 +13,7 @@ const HealthSafety = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/livingDining" state={{ ...location.state, healthSafetyClick: true }}>&larr; Where Will I Live?</Link>
+                    <Link className="block button button-primary" to="/welcome/living-dining" state={{ ...location.state, healthSafetyClick: true }}>&larr; Where Will I Live?</Link>
                </HalfColumn>
                <HalfColumn>
                     <Link className="block button button-primary" to="/college" state={{ ...location.state, healthSafetyClick: true }}>My College &rarr;</Link>
