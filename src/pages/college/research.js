@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
-import ResearchContent from "../../components/college/research"
+import ResearchContent from "../../components/college/research/index"
 import { Row, HalfColumn } from '../../components/layout/layoutComponent'
 
 const Research = ({ location }) => (
