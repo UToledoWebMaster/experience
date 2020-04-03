@@ -13,10 +13,10 @@ const DiverseCommunity = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/studentLife" state={{ ...location.state, diverseClick: true }}>&larr; What's There to Do After Class?</Link>
+                    <Link className="block button button-primary" to="/welcome/student-life" state={{ ...location.state, diverseClick: true }}>&larr; What's There to Do After Class?</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/livingDining" state={{ ...location.state, diverseClick: true }}>Where Will I Live? &rarr;</Link>
+                    <Link className="block button button-primary" to="/welcome/living-dining" state={{ ...location.state, diverseClick: true }}>Where Will I Live? &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

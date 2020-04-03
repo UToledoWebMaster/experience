@@ -13,10 +13,10 @@ const LivingDining = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/diverseCommunity" state={{ ...location.state, livingDiningClick: true }}>&larr; Will I Fit In?</Link>
+                    <Link className="block button button-primary" to="/welcome/diverse-community" state={{ ...location.state, livingDiningClick: true }}>&larr; Will I Fit In?</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/healthSafety" state={{ ...location.state, livingDiningClick: true }}>How Will I Stay Healthy and Safe? &rarr;</Link>
+                    <Link className="block button button-primary" to="/welcome/health-safety" state={{ ...location.state, livingDiningClick: true }}>How Will I Stay Healthy and Safe? &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

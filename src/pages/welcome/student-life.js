@@ -16,7 +16,7 @@ const StudentLife = ({ location }) => (
                     <Link className="block button button-primary" to="/welcome" state={{ ...location.state, studentLifeClick: true }}>&larr; Back to Welcome</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/welcome/diverseCommunity" state={{ ...location.state, studentLifeClick: true }}>Will I Fit In? &rarr;</Link>
+                    <Link className="block button button-primary" to="/welcome/diverse-community" state={{ ...location.state, studentLifeClick: true }}>Will I Fit In? &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import { Row, FullWidth, ThreeQuarterColumn, HalfColumn, QuarterColumn } from "../layout/layoutComponent"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { fasGlobeAmericas } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGlobeAmericas, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 const DiverseCommunityContent = ({ state }) => {
      if (state) {
@@ -28,10 +28,11 @@ const DiverseCommunityContent = ({ state }) => {
                     </Row>
                     <Row>
                          <HalfColumn>
-                              {/* <FontAwesomeIcon icon={fasGlobeAmericas} /> */}
+                              <FontAwesomeIcon icon={faGlobeAmericas} />
                               <h2 style={{ textAlign: 'center' }}>84 countries</h2>
                          </HalfColumn>
                          <HalfColumn>
+                              <FontAwesomeIcon icon={faMapMarkerAlt} />
                               <h2 style={{ textAlign: 'center' }}>42 states</h2>
                          </HalfColumn>
                     </Row>
