@@ -3,10 +3,10 @@ import $ from "jquery"
 import "./css/slider.css"
 import "./css/slider-theme.css"
 import "./css/headshotQuote.css"
-
+// Font Awesome
 import { dom, library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-
+//
 
 class Slider extends React.Component {
     render() {
@@ -24,8 +24,8 @@ class Slider extends React.Component {
             // This function will get called after the slick-carousel.js code
             function activateSlider() {
                 $('.sliderComponent').slick({}); // Make the slider
-
-                library.add(fas) // IDK what this does but it's necessary for the icons
+                // Font Awesome
+                library.add(fas) // IDK what this does but it's necessary for the next line to work
                 dom.i2svg(); // This replaces font-awesome-format i tags with svg tags
             }
             // This line is necessary for the below plugin
