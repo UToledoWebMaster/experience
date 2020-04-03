@@ -28,7 +28,7 @@
 	z-index: 1;
 }
 
-.slick-prev i, .slick-next i {
+.slick-prev svg, .slick-next svg {
 	color: white;
 }
 

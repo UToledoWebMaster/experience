@@ -4,6 +4,10 @@ import "./css/slider.css"
 import "./css/slider-theme.css"
 import "./css/headshotQuote.css"
 
+import { dom, library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+
 class Slider extends React.Component {
     render() {
         return (
@@ -14,15 +18,19 @@ class Slider extends React.Component {
     }
 
     componentDidMount() {
+        
         if (typeof window !== 'undefined') {
 
             // This function will get called after the slick-carousel.js code
             function activateSlider() {
-                $('.sliderComponent').slick({});
+                $('.sliderComponent').slick({}); // Make the slider
+
+                library.add(fas) // IDK what this does but it's necessary for the icons
+                dom.i2svg(); // This replaces font-awesome-format i tags with svg tags
             }
             // This line is necessary for the below plugin
-            window.$ = window.jQuery = require('jquery')
-            console.log("heeyy")
+            window.$ = window.jQuery = require('jquery');
+
             // slick-carousel.js START
 
             /*
