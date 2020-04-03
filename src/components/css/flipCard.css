@@ -19,7 +19,6 @@
 }
 
 /* Show outline on cards when in focus, but only when we know they're using keyboard controls */
-/*
 body.accessible .flipCard:focus .flipCard__front {
     outline: #FFD200 solid 2px;
     outline-offset: -4px;
@@ -29,16 +28,7 @@ body.accessible .flipCard:focus .flipCard__back {
     outline: #003e7e solid 2px;
     outline-offset: -4px;
 }
-*/
-.flipCard:focus .flipCard__front {
-    outline: #FFD200 solid 2px;
-    outline-offset: -4px;
-}
 
-.flipCard:focus .flipCard__back {
-    outline: #003e7e solid 2px;
-    outline-offset: -4px;
-}
 
 .flipCard__front,
 .flipCard__back {
