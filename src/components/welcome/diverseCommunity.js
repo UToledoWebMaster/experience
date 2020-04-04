@@ -4,49 +4,95 @@ import { navigate } from "gatsby"
 import { Row, FullWidth, ThreeQuarterColumn, HalfColumn, QuarterColumn } from "../layout/layoutComponent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobeAmericas, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import SingleTestimony from "../singleTestimony.js"
+import { graphql, useStaticQuery } from "gatsby"
+import Slider from "../slider.js"
 
 const DiverseCommunityContent = ({ state }) => {
+     const data = useStaticQuery(graphql`
+     query diverseCommunity {
+     #get all images from particular directory
+       images: allFile(filter: {relativeDirectory: {eq: "diverseCommunity"}}){
+         nodes{
+         id
+         name
+         childImageSharp{
+           fluid{
+             ...GatsbyImageSharpFluid
+           }
+         }
+     }
+       }
+
+     }
+     `)
+     const jannetFrias = data.images.nodes.filter(node => node.name === 'jannetFrias')[0];
+     const jannetFriasSrc = jannetFrias.childImageSharp.fluid.src;
+     const welcoming = data.images.nodes.filter(node => node.name === 'welcoming')[0];
+     const welcomingSrc = welcoming.childImageSharp.fluid.src;
+     const multicultural = data.images.nodes.filter(node => node.name === 'multicultural')[0];
+     const multiculturalSrc = multicultural.childImageSharp.fluid.src;
+     const midwesternFriendly = data.images.nodes.filter(node => node.name === 'midwesternFriendly')[0];
+     const midwesternFriendlySrc = midwesternFriendly.childImageSharp.fluid.src;
      if (state) {
           return (
                <>
                     <Row>
                          <FullWidth>
                               <h1>Will I Fit In?</h1>
-                              <p>Plenty - and the more you get involved, the more likely you'll graduate on time and be a successful student.</p>
+                              <p>Nearly 20,000 students from all over the world find a home here. You will, too.</p>
                          </FullWidth>
                     </Row>
-                    <Row>
+                    <SingleTestimony>
                          <QuarterColumn>
-                              <img src="https://via.placeholder.com/300x300.png?text=Photo+of+Sally" />
+                              <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jannetFriasSrc + ")" }}></div>
                          </QuarterColumn>
                          <ThreeQuarterColumn>
-                              <div className="skyBack" style={{ padding: '20px' }}>
-                                   <h2>Just ask Sally</h2>
-                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias blanditiis deserunt quaerat facilis recusandae maiores expedita tempora ducimus adipisci praesentium ad vitae voluptatem voluptate, dolores in harum iure temporibus.</p>
+                              <div className="headshotQuote__text">
+                                   <h2>Meet Jannet</h2>
+                                   <p>"I was nervous when I came to Toledo. But now I feel completely at home. A summer program for multicultural students helped me make new friends. And there's so much to do, so many organizations and diversity, it's easy to meet people and connect."</p>
+                                   <p><strong>Jannet Frias</strong><br />Class of 2022, special education | Immokalee, Fla.</p>
+
                               </div>
                          </ThreeQuarterColumn>
-                    </Row>
+                    </SingleTestimony>
+                    <br /><br />
                     <Row>
                          <HalfColumn>
-                              <FontAwesomeIcon icon={faGlobeAmericas} />
-                              <h2 style={{ textAlign: 'center' }}>84 countries</h2>
+                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faGlobeAmericas} /><br />84 countries</h2>
                          </HalfColumn>
                          <HalfColumn>
-                              <FontAwesomeIcon icon={faMapMarkerAlt} />
-                              <h2 style={{ textAlign: 'center' }}>42 states</h2>
+                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faMapMarkerAlt} /><br />42 states</h2>
                          </HalfColumn>
                     </Row>
                     <Row>
                          <FullWidth>
                               <p>UToledo is just the right size. Students tell us that all the time. Big enough to have tons of opportunities. Small enough to forge meaningful relationships.</p>
-                              <p>Chances are you will run into people at UToledo who don’t look or think like you. Who have different passions and opinions. We value all of you. And let’s face it. We’re all global citizens now – you know that better than we do. Broadening your horizons will give you an edge after graduation.</p>
+                              <p>Chances are you will run into people at UToledo who don’t look or think like you. Who have different passions and opinions. We value all of you. And let's face it. We’re all global citizens now – you know that better than we do. Broadening your horizons will give you an edge after graduation.</p>
                          </FullWidth>
                     </Row>
                     <Row>
-                         <FullWidth>
-                              <h1>SLIDESHOW SECTION</h1>
-                         </FullWidth>
+                         <Slider>
+                              {/* Each div child of Slider is one slide in the slider */}
+                              {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
+                              <div className="row">
+                                   <div className="twelve columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + welcomingSrc + ")", backgroundSize: "auto" }}></div>
+                                   </div>
+                              </div>
+                              <div className="row">
+                                   <div className="twelve columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + multiculturalSrc + ")", backgroundSize: "auto" }}></div>
+                                   </div>
+                              </div>
+                              <div className="row">
+                                   <div className="twelve columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + midwesternFriendlySrc + ")", backgroundSize: "auto" }}></div>
+                                   </div>
+                              </div>
+                         </Slider>
                     </Row>
+                    <br /><br />
                     <Row>
                          <FullWidth>
                               <p>These are just a sample of the services we offer our students:</p>
