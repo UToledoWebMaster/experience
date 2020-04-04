@@ -1,0 +1,48 @@
+.headshotQuote {
+	background-color: #CAD9E1;
+}
+
+.headshotQuote__container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.headshotQuote__image {
+	height: 306px !important;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.headshotQuote__text {
+	margin-top: 2.5rem;
+	padding-right: 70px;
+}
+
+.singleTestimony .headshotQuote__text {
+	padding-right: 0;
+	padding-left: 5%;
+}
+
+@media only screen and (max-width: 550px) {
+	.headshotQuote__text {
+		padding: 0 4%;
+	}
+}
+
+.headshotQuote__text h4 {
+	/* Imitate p */
+	font-size: 18.75px;
+	font-family: Source Sans Pro, sans-serif;
+	font-weight: 300;
+	color: #2E2E2D;
+}
