@@ -66,7 +66,7 @@ class College extends React.Component {
                          <CollegeNav
                               state={this.props.location.state}
                               academicSuccessClick={this.state.academicSuccessClick}
-                              careerServicesClic={this.state.careerServicesClick}
+                              careerServicesClick={this.state.careerServicesClick}
                               experientialLearningClick={this.state.experientialLearningClick}
                               honorsClick={this.state.honorsClick}
                               researchClick={this.state.researchClick}

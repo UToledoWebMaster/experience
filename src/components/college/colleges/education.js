@@ -31,7 +31,7 @@ const Education = ({ state, academicSuccessClick, careerServicesClick, experient
                <SingleTestimony>
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
-                              <h2>Jannet frias</h2>
+                              <h2>Jannet Frias</h2>
                               <p>Class of 2022, special education | Immokalee, Fla.</p>
                               <p>"The majority of my classes are small. So it's easier to interact with peers and have a closer relationship to professors. I go to professors' office hours, and it's helped a lot. I also established a relationship with my success coach. UToledo has a lot of resources — the Carver Center in the College of Education and the writing and tutoring centers on campus."</p>
                          </div>
