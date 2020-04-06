@@ -26,8 +26,12 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
 
      return (
           <>
-               <h1>College of {state.collegeOfInterest}</h1>
-               <p>High-tech education. Engaged faculty experts. Impressive job-placement rates. We'll prepare you for a rewarding career in business no matter what your passion.</p>
+               <Row>
+                    <FullWidth>
+                         <h1>College of {state.collegeOfInterest}</h1>
+                         <p>High-tech education. Engaged faculty experts. Impressive job-placement rates. We'll prepare you for a rewarding career in business no matter what your passion.</p>
+                    </FullWidth>
+               </Row>
                <Row className="text-center">
                     <HalfColumn>
                          <h2>13 majors & 17 minors</h2>
