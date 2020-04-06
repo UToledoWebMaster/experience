@@ -20,19 +20,9 @@ const COLLEGES = [
           tidyName: "engineering"
      },
      {
-          id: 4,
-          name: "Graduate Studies",
-          tidyName: "graduatestudies"
-     },
-     {
           id: 5,
           name: "Health and Human Services",
           tidyName: "healthandhumanservices"
-     },
-     {
-          id: 6,
-          name: "Honors",
-          tidyName: "honors"
      },
      {
           id: 7,

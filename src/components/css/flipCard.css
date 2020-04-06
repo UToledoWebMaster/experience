@@ -88,6 +88,19 @@ body.accessible .flipCard:focus .flipCard__back {
     transition: background-color .3s;
 }
 
+.flipCard.visited {
+    opacity: .6;
+}
+
+/* .flipCard.visited .flipCard__front {
+    background-color: #CAD9E1;
+}
+
+.flipCard.visited .flipCard__front p {
+    color: #003E7E;
+    opacity: .6;
+} */
+
 .flipCard__front:hover {
     background-color: #102B5F;
 }

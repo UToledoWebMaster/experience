@@ -16,11 +16,11 @@ import AcademicSuccessContentUniversity from "./university"
 const AcademicSuccessContent = ({ state }) => {
      if (state) {
           switch (state.collegeOfInterestClean) {
-               case "businessandinnovation":
-                    return <AcademicSuccessContentBusiness state={state} />
-                    break;
                case "artsandletters":
                     return <AcademicSuccessContentArts state={state} />
+                    break;
+               case "businessandinnovation":
+                    return <AcademicSuccessContentBusiness state={state} />
                     break;
                case "education":
                     return <AcademicSuccessContentEducation state={state} />

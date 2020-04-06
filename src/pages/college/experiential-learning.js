@@ -13,10 +13,10 @@ const ExperientialLearning = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college/career-services" state={{ ...location.state, experientialLearningClick: true }}>&larr; Career Services</Link>
+                    <Link className="block button button-primary" to="/college/research" state={{ ...location.state, experientialLearningClick: true }}>&larr; Research with Faculty</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college/honors" state={{ ...location.state, experientialLearningClick: true }}>Honors &rarr;</Link>
+                    <Link className="block button button-primary" to="/college/career-services" state={{ ...location.state, experientialLearningClick: true }}>Graduate Career-Ready &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

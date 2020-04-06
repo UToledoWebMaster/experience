@@ -19,7 +19,18 @@ const ThreeQuarterColumn = ({ children }) => <div className="nine columns">{chil
 
 const HalfColumn = ({ children }) => <div className="six columns">{children}</div>
 
-const ThirdColumn = ({ children }) => <div className="four columns">{children}</div>
+const ThirdColumn = ({ children, className }) => {
+     if (className) {
+          return (
+               <div className={`${className} four columns`}>{children}</div>
+          )
+     } else {
+          return (
+               <div className="four columns">{children}</div>
+          )
+     }
+
+}
 
 const QuarterColumn = ({ children }) => <div className="three columns">{children}</div>
 

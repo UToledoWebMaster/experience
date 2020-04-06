@@ -7,14 +7,14 @@ class FlipCard extends React.Component {
 
     render() {
         return (
-        <div className="flipCard" id="flipCard0" tabIndex="0">
-            <div className="flipCard__front">
-                <p>{this.props.frontContent}</p>
+            <div className="flipCard" id="flipCard0" tabIndex="0">
+                <div className="flipCard__front">
+                    <p>{this.props.frontContent}</p>
+                </div>
+                <div className="flipCard__back">
+                    <p>{this.props.backContent}</p>
+                </div>
             </div>
-            <div className="flipCard__back">
-                <p>{this.props.backContent}</p>
-            </div>
-        </div>
         );
     }
 
@@ -37,19 +37,19 @@ class FlipCard extends React.Component {
         const frontCard = element.querySelector(".flipCard__front"),
             backCard = element.querySelector(".flipCard__back");
 
-            // Give the flip some three-dimnesionality
-        gsap.set(frontCard, {transformPerspective: 1000});
-        gsap.set(backCard, {transformPerspective: 1000});
+        // Give the flip some three-dimnesionality
+        gsap.set(frontCard, { transformPerspective: 1000 });
+        gsap.set(backCard, { transformPerspective: 1000 });
 
-            // Hide the back of the card until the card is flipped 
-        gsap.set(backCard, {rotationY: -180});
+        // Hide the back of the card until the card is flipped
+        gsap.set(backCard, { rotationY: -180 });
 
         // Create the animations (start them paused so nothing goes until the user clicks)
-        const frontAni = gsap.to(frontCard,  {duration: 0.4, rotationY: -180, ease: "power1.inOut", paused: true}),
-            backAni = gsap.to(backCard, {duration: 0.4, rotationY: -360, ease: "power1.inOut", paused: true});
+        const frontAni = gsap.to(frontCard, { duration: 0.4, rotationY: -180, ease: "power1.inOut", paused: true }),
+            backAni = gsap.to(backCard, { duration: 0.4, rotationY: -360, ease: "power1.inOut", paused: true });
 
         // Function to call on click of a card
-        const onClick = function() {
+        const onClick = function () {
             // First play of the animation
             if (frontAni.paused()) {
                 frontAni.resume();
@@ -69,7 +69,7 @@ class FlipCard extends React.Component {
         element.addEventListener("click", onClick);
 
         // Also trigger card flip when enter key is pressed
-        element.addEventListener("keydown", function(event) {
+        element.addEventListener("keydown", function (event) {
             // Number 13 is the "Enter" key on the keyboard
             if (event.keyCode === 13) {
                 // Cancel the default action, if needed
