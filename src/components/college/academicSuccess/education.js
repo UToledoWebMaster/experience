@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SingleTestimony from "../../singleTestimony"
 
-const AcademicSuccessContentBusiness = ({ state }) => {
+const AcademicSuccessContentEducation = ({ state }) => {
      const data = useStaticQuery(graphql`
      query educationAcademicSuccess {
      #get all images from particular directory
@@ -73,4 +73,4 @@ const AcademicSuccessContentBusiness = ({ state }) => {
 }
 
 
-export default AcademicSuccessContentBusiness;
+export default AcademicSuccessContentEducation;
