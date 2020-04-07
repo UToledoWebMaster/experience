@@ -1,35 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Row, ThirdColumn } from "../../layout/layoutComponent"
+import { Row, QuarterColumn, ThreeQuarterColumn, FullWidth, HalfColumn } from "../../layout/layoutComponent"
+import SingleTestimony from "../../singleTestimony"
+import { graphql, useStaticQuery } from "gatsby"
 
 const University = ({ state, academicSuccessClick, careerServicesClick, experientialLearningClick, honorsClick, researchClick }) => {
      return (
           <>
-               <h1>welcome</h1>
-               <h2>You Are Interested in {state.collegeOfInterest}</h2>
                <Row>
-                    <ThirdColumn>
-                         {!academicSuccessClick ? <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success" /></Link><br /></> : <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success+Visited" /></Link><br /></>}
-                         <p>Some text about Academic Success</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!careerServicesClick ? <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services" /></Link><br /></> : <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services+Visited" /></Link><br /></>}
-                         <p>Some text about Career Services</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!experientialLearningClick ? <><Link state={state} to="/college/experiential-learning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning" /></Link><br /></> : <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning+Visited" /></Link><br /></>}
-                         <p>Some text about Experiential Learning</p>
-                    </ThirdColumn>
+                    <FullWidth>
+                         <h1>University College</h1>
+                         <p>Nationally accredited. Nationally ranked.</p>
+                         <p>We offer two pathways: one for aspiring pharmacists and one for students interested in pharmacy science or other careers in pharmacy (this is a great pre-med track). Course work for each is identical in the first two years.</p>
+                    </FullWidth>
+               </Row>
+               <Row className="text-center">
+                    <HalfColumn>
+                         <h2>1 in 5</h2>
+                         <p>college student start undecided</p>
+                    </HalfColumn>
+                    <HalfColumn>
+                         <h2>50%</h2>
+                         <p>of students who are "decided" change their major</p>
+                    </HalfColumn>
                </Row>
                <Row>
-                    <ThirdColumn>
-                         {!honorsClick ? <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors" /></Link><br /></> : <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors+Visited" /></Link><br /></>}
-                         <p>Some text about Honors</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!researchClick ? <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research" /></Link><br /></> : <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research+Visited" /></Link><br /></>}
-                         <p>Some text about Research</p>
-                    </ThirdColumn>
+                    <FullWidth>
+                         <p>Undecided students are admitted to our Department of Exploratory Studies in University College. We will be your temporary home for 3 semesters while you explore.</p>
+                         <p>You can start out in University College and still graduate in 4 years!</p>
+                         <h2>Get ready to...</h2>
+                         <p><strong>Work on fulfilling general education requirements.</strong></p>
+                         <p><strong>Develop transferable skills:</strong> critical thinking, decision making and adaptability.</p>
+                         <p><strong>Receive support</strong> from advisors.</p>
+                         <p><strong>Declare a major at any time</strong> once you meet the requirements.</p>
+                         <h2>New for Fall 2020!</h2>
+                         <p><strong>Learning Communities</strong><br />All undecided students will join a learning community around the major they're most interested in.</p>
+                         <ul>
+                              <li>Build a community of support with other undecided students. </li>
+                              <li>Complete courses to build academic success skills and explore majors and careers.</li>
+                              <li>Receive personalized support from instructors and staff. </li>
+                         </ul>
+                    </FullWidth>
                </Row>
           </>
      );

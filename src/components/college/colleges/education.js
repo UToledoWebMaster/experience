@@ -1,35 +1,54 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Row, ThirdColumn } from "../../layout/layoutComponent"
+import { Row, QuarterColumn, ThreeQuarterColumn, FullWidth, HalfColumn } from "../../layout/layoutComponent"
+import SingleTestimony from "../../singleTestimony"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Education = ({ state, academicSuccessClick, careerServicesClick, experientialLearningClick, honorsClick, researchClick }) => {
+     const data = useStaticQuery(graphql`
+     query educationHome {
+     #get all images from particular directory
+       images: allFile(filter: {relativeDirectory: {eq: "education"}}){
+         nodes{
+         id
+         name
+         childImageSharp{
+           fluid{
+             ...GatsbyImageSharpFluid
+           }
+         }
+     }
+       }
+
+     }
+     `)
+     const jannetFrias = data.images.nodes.filter(node => node.name === 'jannetFrias')[0];
+     const jannetFriasSrc = jannetFrias.childImageSharp.fluid.src;
+
      return (
           <>
-               <h1>welcome</h1>
-               <h2>You Are Interested in {state.collegeOfInterest}</h2>
+               <h1>Judith Herb College of {state.collegeOfInterest}</h1>
+               <p>We love that our students want to make an impact. That’s why we get you in classrooms as early as possible, learning from experienced educators.</p>
+               <SingleTestimony>
+                    <ThreeQuarterColumn>
+                         <div className="headshotQuote__text">
+                              <h2>Jannet Frias</h2>
+                              <p>Class of 2022, special education | Immokalee, Fla.</p>
+                              <p>"The majority of my classes are small. So it's easier to interact with peers and have a closer relationship to professors. I go to professors' office hours, and it's helped a lot. I also established a relationship with my success coach. UToledo has a lot of resources — the Carver Center in the College of Education and the writing and tutoring centers on campus."</p>
+                         </div>
+                    </ThreeQuarterColumn>
+                    <QuarterColumn>
+                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jannetFriasSrc + ")" }}></div>
+                    </QuarterColumn>
+               </SingleTestimony>
+               <br /><br />
                <Row>
-                    <ThirdColumn>
-                         {!academicSuccessClick ? <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success" /></Link><br /></> : <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success+Visited" /></Link><br /></>}
-                         <p>Some text about Academic Success</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!careerServicesClick ? <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services" /></Link><br /></> : <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services+Visited" /></Link><br /></>}
-                         <p>Some text about Career Services</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!experientialLearningClick ? <><Link state={state} to="/college/experiential-learning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning" /></Link><br /></> : <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning+Visited" /></Link><br /></>}
-                         <p>Some text about Experiential Learning</p>
-                    </ThirdColumn>
-               </Row>
-               <Row>
-                    <ThirdColumn>
-                         {!honorsClick ? <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors" /></Link><br /></> : <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors+Visited" /></Link><br /></>}
-                         <p>Some text about Honors</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!researchClick ? <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research" /></Link><br /></> : <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research+Visited" /></Link><br /></>}
-                         <p>Some text about Research</p>
-                    </ThirdColumn>
+                    <FullWidth>
+                         <h2>Get ready to...</h2>
+                         <p><strong>Learn in a nationally ranked college of education.</strong></p>
+                         <p><strong>Spend more time time in the field</strong> than students in other education programs.</p>
+                         <p><strong>Use the latest educational technology</strong> at the Carver Center. We also can lend you supplies for your student teaching experiences.</p>
+                         <p><strong>Travel.</strong> Apply for Camp Adventure and work with children of military families on bases around the world.</p>
+                    </FullWidth>
                </Row>
           </>
      );

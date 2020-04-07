@@ -18,7 +18,7 @@ class Form extends React.Component {
      handleClick = () => {
           const formName = document.getElementById("formName");
           const formCollege = document.getElementById("formCollege");
-          if (formName.value && formCollege.value !== "choose your college") {
+          if (formName.value && formCollege.value !== "admitted college") {
                gsap.fromTo(".anim:not(.mainIcon)", .5, { "opacity": 1, "bottom": "0px" }, { "opacity": 0, "bottom": "20px" });
                this.setState({
                     name: formName.value,
@@ -64,10 +64,10 @@ class Form extends React.Component {
                          </Row>
                          <Row className="narrow">
                               <FullWidth>
-                                   <p className="anim">Congrats on your admission to UToledo.</p>
-                                   <p className="anim">So many times, we seal the deal when you visit campus. A virtual visit isn't quite the same. But our new tool will allow you to explore our programs and campus and meet fellow Rockets.</p>
-                                   <p className="anim">Let's get started!</p>
-                                   <p className="anim">Introduce yourself and let us know which college you were admitted to.</p>
+                                   <p className="anim text-left">Congrats on your admission to UToledo.</p>
+                                   <p className="anim text-left">So many times, we seal the deal when you visit campus. A virtual visit isn't quite the same. But with our new tool, you can still explore our programs and campus and meet fellow Rockets.</p>
+                                   <p className="anim text-left">Let's get started!</p>
+                                   <p className="anim text-left">Introduce yourself and let us know which college you were admitted to.</p>
                               </FullWidth>
                          </Row>
                          <Row>

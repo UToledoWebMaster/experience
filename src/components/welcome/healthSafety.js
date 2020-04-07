@@ -2,30 +2,54 @@ import React from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import { Row, FullWidth, HalfColumn, ThirdColumn } from "../layout/layoutComponent"
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 import "../css/overlappingBoxes.css"
 
 const HealthSafetyContent = ({ state }) => {
+     const data = useStaticQuery(graphql`
+          query healthSafety {
+          #get all images from particular directory
+            images: allFile(filter: {relativeDirectory: {eq: "healthSafety"}}){
+              nodes{
+              id
+              name
+              childImageSharp{
+                fluid{
+                  ...GatsbyImageSharpFluid
+                }
+              }
+          }
+            }
+
+          }
+          `)
+     const health = data.images.nodes.filter(node => node.name === 'health')[0];
+     const healthSrc = health.childImageSharp.fluid.src;
+     const safety = data.images.nodes.filter(node => node.name === 'safety')[0];
+     const safetySrc = safety.childImageSharp.fluid.src;
      if (state) {
           return (
                <>
                     <Row>
                          <FullWidth>
-                              <h1>How Do I Stay Healthy and Safe on Campus?</h1>
+                              <h1>How Will I Stay Healthy and Safe on Campus?</h1>
                               <h2>Your safety is our top priority.</h2>
                               <div class="overlappingBoxes">
                                    <div class="overlappingBoxes__textBox">
                                         <div class="overlappingBoxes__text">
                                              <ul>
                                                   <li>5-Star Safe Campus Rating from OH Dept. of Education</li>
-                                                  <li>Night Watch team to accompany you after dark</li>
+                                                  <li>Night Watch team to accompany you after dark </li>
                                                   <li>Free safety app and alert system to keep you informed</li>
                                                   <li>24-hour police presence</li>
-                                                  <li>A safe, walkable campus adjacent to two beautiful, residential neighborhoods</li>
+                                                  <li>A safe, walkable campus adjacent to two beautiful, residential neighborhoods </li>
+
                                              </ul>
                                         </div>
                                    </div>
                                    <div class="overlappingBoxes__imageWrapper">
-                                        <img class="overlappingBoxes__image" src="https://via.placeholder.com/600" alt="" />
+                                        <Img className="anim overlappingBoxes__image" fadeIn={true} fluid={safety.childImageSharp.fluid} />
                                    </div>
                               </div>
                          </FullWidth>
@@ -46,7 +70,7 @@ const HealthSafetyContent = ({ state }) => {
                                         </div>
                                    </div>
                                    <div class="overlappingBoxes__imageWrapper">
-                                        <img class="overlappingBoxes__image" src="https://via.placeholder.com/600" alt="" />
+                                        <Img className="anim overlappingBoxes__image" fadeIn={true} fluid={health.childImageSharp.fluid} />
                                    </div>
                               </div>
                          </FullWidth>

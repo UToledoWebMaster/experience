@@ -1,4 +1,3 @@
-
 .flipCard {
     width: 100%;
     height: 250px !important;
@@ -57,12 +56,18 @@ body.accessible .flipCard:focus .flipCard__back {
     justify-content: center;
 }
 
+/*May end up removing this if we can get shorter content*/
+.flipCard__back {
+    overflow-y: scroll;
+    justify-content: start;
+}
+
 @media (max-width: 767px) {
 
-.flipCard__front,
-.flipCard__back {
-    padding: 6%;
-}
+    .flipCard__front,
+    .flipCard__back {
+        padding: 6%;
+    }
 }
 
 .flipCard p {
@@ -82,6 +87,19 @@ body.accessible .flipCard:focus .flipCard__back {
     background-color: #003e7e;
     transition: background-color .3s;
 }
+
+.flipCard.visited {
+    opacity: .6;
+}
+
+/* .flipCard.visited .flipCard__front {
+    background-color: #CAD9E1;
+}
+
+.flipCard.visited .flipCard__front p {
+    color: #003E7E;
+    opacity: .6;
+} */
 
 .flipCard__front:hover {
     background-color: #102B5F;

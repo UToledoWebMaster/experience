@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Colleger from "../../components/college/colleger"
 import { navigate } from "gatsby"
 import { Row, HalfColumn } from "../../components/layout/layoutComponent"
+import CollegeNav from "../../components/college/colleges/collegeNav"
 
 class College extends React.Component {
      constructor(props) {
@@ -62,6 +63,14 @@ class College extends React.Component {
                               state={this.props.location.state}
                          />
                          <br />
+                         <CollegeNav
+                              state={this.props.location.state}
+                              academicSuccessClick={this.state.academicSuccessClick}
+                              careerServicesClick={this.state.careerServicesClick}
+                              experientialLearningClick={this.state.experientialLearningClick}
+                              honorsClick={this.state.honorsClick}
+                              researchClick={this.state.researchClick}
+                         />
                          <Row>
                               <HalfColumn>
                                    <Link className="block button button-primary" to="/welcome" state={this.props.location.state}>&larr; Welcome</Link>

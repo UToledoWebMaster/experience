@@ -13,10 +13,10 @@ const Research = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college/honors" state={{ ...location.state, researchClick: true }}>&larr; Honors</Link>
+                    <Link className="block button button-primary" to="/college/academic-success" state={{ ...location.state, researchClick: true }}>&larr; Find Support</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college/academic-success" state={{ ...location.state, researchClick: true }}>You Will Succeed &rarr;</Link>
+                    <Link className="block button button-primary" to="/college/experiential-learning" state={{ ...location.state, researchClick: true }}>Learn by Doing &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

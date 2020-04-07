@@ -1,35 +1,75 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Row, ThirdColumn } from "../../layout/layoutComponent"
+import { Row, QuarterColumn, ThreeQuarterColumn, FullWidth, HalfColumn } from "../../layout/layoutComponent"
+import SingleTestimony from "../../singleTestimony"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Business = ({ state, academicSuccessClick, careerServicesClick, experientialLearningClick, honorsClick, researchClick }) => {
+     const data = useStaticQuery(graphql`
+     query businessHome {
+     #get all images from particular directory
+       images: allFile(filter: {relativeDirectory: {eq: "business"}}){
+         nodes{
+         id
+         name
+         childImageSharp{
+           fluid{
+             ...GatsbyImageSharpFluid
+           }
+         }
+     }
+       }
+
+     }
+     `)
+     const jaretYost = data.images.nodes.filter(node => node.name === 'jaretYost')[0];
+     const jaretYostSrc = jaretYost.childImageSharp.fluid.src;
+
      return (
           <>
-               <h1>welcome</h1>
-               <h2>You Are Interested in {state.collegeOfInterest}</h2>
                <Row>
-                    <ThirdColumn>
-                         {!academicSuccessClick ? <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success" /></Link><br /></> : <><Link state={state} to="/college/academic-success"><img src="https://via.placeholder.com/728x300.png?text=Academic+Success+Visited" /></Link><br /></>}
-                         <p>Some text about Academic Success</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!careerServicesClick ? <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services" /></Link><br /></> : <><Link state={state} to="/college/career-services"><img src="https://via.placeholder.com/728x300.png?text=Career+Services+Visited" /></Link><br /></>}
-                         <p>Some text about Career Services</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!experientialLearningClick ? <><Link state={state} to="/college/experiential-learning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning" /></Link><br /></> : <><Link state={state} to="/college/experientialLearning"><img src="https://via.placeholder.com/728x300.png?text=Experiential+Learning+Visited" /></Link><br /></>}
-                         <p>Some text about Experiential Learning</p>
-                    </ThirdColumn>
+                    <FullWidth>
+                         <h1>College of {state.collegeOfInterest}</h1>
+                         <p>High-tech education. Engaged faculty experts. Impressive job-placement rates. We'll prepare you for a rewarding career in business no matter what your passion.</p>
+                    </FullWidth>
                </Row>
+               <Row className="text-center">
+                    <HalfColumn>
+                         <h2>13 majors & 17 minors</h2>
+                         <p>in the most in-demand areas of business</p>
+                    </HalfColumn>
+                    <HalfColumn>
+                         <h2>#224</h2>
+                         <p>in ranking of business colleges by U.S. News & World Report</p>
+                    </HalfColumn>
+               </Row>
+               <SingleTestimony>
+                    <ThreeQuarterColumn>
+                         <div className="headshotQuote__text">
+                              <h2>Jaret Yost</h2>
+                              <p>Class of 2020, international business and professional sales</p>
+                              <p>"Through the COBI Job Fair I got an internship with Otis Elevator, the biggest elevator company in the world. I feel ready for this due to all the training and professional development offered by the University."</p>
+
+                         </div>
+                    </ThreeQuarterColumn>
+                    <QuarterColumn>
+                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jaretYostSrc + ")" }}></div>
+                    </QuarterColumn>
+               </SingleTestimony>
+               <br /><br />
                <Row>
-                    <ThirdColumn>
-                         {!honorsClick ? <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors" /></Link><br /></> : <><Link state={state} to="/college/honors"><img src="https://via.placeholder.com/728x300.png?text=Honors+Visited" /></Link><br /></>}
-                         <p>Some text about Honors</p>
-                    </ThirdColumn>
-                    <ThirdColumn>
-                         {!researchClick ? <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research" /></Link><br /></> : <><Link state={state} to="/college/research"><img src="https://via.placeholder.com/728x300.png?text=Research+Visited" /></Link><br /></>}
-                         <p>Some text about Research</p>
-                    </ThirdColumn>
+                    <FullWidth>
+                         <h2>Get ready to...</h2>
+                         <p><strong>Participate in innovative classes.</strong></p>
+                         <ul>
+                              <li>Service learning</li>
+                              <li>Simulations</li>
+                              <li>Flipped classrooms</li>
+                         </ul>
+                         <p><strong>Work with award-winning faculty.</strong> 90% of classes are taught by Ph.D.s and professionally qualified faculty, NOT graduate or teaching assistants.</p>
+                         <p><strong>Build your resume.</strong> 16 student organizations = a professional network + lifelong friends + leadership skills.</p>
+                         <p><strong>Stand out.</strong> Apply for our Klar Leadership Academy.</p>
+                         <p><strong>Be a leader</strong> in your job and your community.</p>
+                    </FullWidth>
                </Row>
           </>
      );
