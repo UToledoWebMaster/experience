@@ -24,7 +24,6 @@ const HealthSafetyContent = ({ state }) => {
 
           }
           `)
-     console.log(data);
      const health = data.images.nodes.filter(node => node.name === 'health')[0];
      const healthSrc = health.childImageSharp.fluid.src;
      const safety = data.images.nodes.filter(node => node.name === 'safety')[0];

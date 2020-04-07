@@ -18,6 +18,14 @@ h2 {
   text-transform: none;
 }
 
+h2.bigger {
+  font-size: 4.3rem;
+}
+
+h2.thinner {
+  font-weight: 600;
+}
+
 ul li,
 ol li {
   font-size: 1.875rem;

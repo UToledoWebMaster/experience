@@ -25,7 +25,6 @@ const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningC
 
      }
      `)
-     console.log(data);
      const postIt = data.images.nodes.filter(node => node.name === 'postIt')[0];
      const homeStudentLife = data.images.nodes.filter(node => node.name === 'homeStudentLife')[0];
      const homeDiverseCommunity = data.images.nodes.filter(node => node.name === 'homeDiverseCommunity')[0];
@@ -38,7 +37,8 @@ const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningC
                          <Img className="anim" fadeIn={true} fluid={postIt.childImageSharp.fluid} />
                     </HalfColumn>
                     <HalfColumn>
-                         <h2>UToledo can help you check off all those boxes!</h2>
+                         <h1>Hi {name}!</h1>
+                         <h2 class="bigger thinner">UToledo can help you check off all those boxes!</h2>
                     </HalfColumn>
                </Row>
                <Row>

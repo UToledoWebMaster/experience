@@ -24,7 +24,6 @@ const LivingDiningContent = ({ state }) => {
 
      }
      `)
-     console.log(data);
      const muniraTaufik = data.images.nodes.filter(node => node.name === 'muniraTaufik')[0];
      const muniraTaufikSrc = muniraTaufik.childImageSharp.fluid.src;
      const eat = data.images.nodes.filter(node => node.name === 'eat')[0];
