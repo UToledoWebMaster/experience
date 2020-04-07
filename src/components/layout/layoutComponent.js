@@ -17,7 +17,18 @@ const FullWidth = ({ children }) => <div className="twelve columns">{children}</
 
 const ThreeQuarterColumn = ({ children }) => <div className="nine columns">{children}</div>
 
-const HalfColumn = ({ children }) => <div className="six columns">{children}</div>
+const HalfColumn = ({ children, className }) => {
+     if (className) {
+          return (
+               <div className={`${className} six columns`}>{children}</div>
+          )
+     } else {
+          return (
+               <div className="six columns">{children}</div>
+          )
+     }
+
+}
 
 const ThirdColumn = ({ children, className }) => {
      if (className) {

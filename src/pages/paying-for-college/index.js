@@ -15,7 +15,7 @@ const PayingForCollege = ({ location }) => (
                     <Link className="block button button-primary" to="/college" state={location.state}>&larr; My College</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/keep-exploring" state={location.state}>Keep Exploring &rarr;</Link>
+                    <Link className="block button button-primary" to="/whats-next" state={location.state}>What's Next? &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

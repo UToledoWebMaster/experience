@@ -18,7 +18,7 @@ class Form extends React.Component {
      handleClick = () => {
           const formName = document.getElementById("formName");
           const formCollege = document.getElementById("formCollege");
-          if (formName.value && formCollege.value !== "choose your college") {
+          if (formName.value && formCollege.value !== "admitted college") {
                gsap.fromTo(".anim:not(.mainIcon)", .5, { "opacity": 1, "bottom": "0px" }, { "opacity": 0, "bottom": "20px" });
                this.setState({
                     name: formName.value,

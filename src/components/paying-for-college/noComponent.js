@@ -9,9 +9,14 @@ const NoContent = ({ state }) => {
                <>
                     <Row>
                          <FullWidth>
-                              <h1>No!</h1>
-                              <p>That's great! You should have received your financial aid package from us by now. If you haven't, contact Rocket Solution Central. RSC is our one-stop shop for info on all things financial. Our team is still on the job and ready to help you! Email us at <a href="mailto:rockesolutioncentral@utoledo.edu">rockesolutioncentral@utoledo.edu</a> or call 419.530.8700.</p>
-                              <p>Your next step - <a href="" target="_blank">Accept your financial aid package</a>.</p>
+                              <h1>No.</h1>
+                              <p>Why not do it today?  The sooner you submit the FAFSA, the sooner you find out if you qualify for aid.</p>
+                              <p>Visit <a href="https://www.utoledo.edu/financial-aid" target="_blank">utoledo.edu/financial-aid</a> for some FAFSA tips and a link to the application.</p>
+                         </FullWidth>
+                    </Row>
+                    <Row className="text-center">
+                         <FullWidth>
+                              <Link className="block button button-primary" to="/whats-next" state={state}>What's Next?</Link>
                          </FullWidth>
                     </Row>
                </>

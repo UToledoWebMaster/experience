@@ -193,6 +193,15 @@ a.forBtn {
   float: right;
 }
 
+.yellowBack {
+  background-color: #FFD200;
+  padding: 2vw;
+}
+
+.yellowCheck {
+  top: 7px;
+}
+
 @media (max-width: 1200px) {
   .row.halfStack .three.columns {
     width: 48%;
