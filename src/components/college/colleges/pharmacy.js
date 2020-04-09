@@ -47,7 +47,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Akshith Dass</h2>
-                              <p>PharmD '18 | Dubai, United Arab Emirates</p>
+                              <p className="collegeTestimonySubtitle">PharmD '18 | Dubai, United Arab Emirates</p>
                               <p>"I chose UToledo because the PharmD program was 6 years compared to 8 at other schools. It also had contingent admission. I was accepted without having to re-interview or take the PCAT. That made it easier. UToledo has amazing faculty. I've worked with faculty on research. I even made connections with the dean. He gave me a letter of recommendation that gave me a leg up on a position I applied for."</p>
                          </div>
                     </ThreeQuarterColumn>

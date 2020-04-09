@@ -46,7 +46,7 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Jaret Yost</h2>
-                              <p>International Business and Professional Sales '20</p>
+                              <p className="collegeTestimonySubtitle">International Business and Professional Sales '20</p>
                               <p>"Through the COBI Job Fair I got an internship with Otis Elevator, the biggest elevator company in the world. I feel ready for this due to all the training and professional development offered by the University."</p>
 
                          </div>

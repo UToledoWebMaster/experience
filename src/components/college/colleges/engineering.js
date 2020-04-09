@@ -37,39 +37,39 @@ const Engineering = ({ state, academicSuccessClick, careerServicesClick, experie
                          {/* Each div child of Slider is one slide in the slider */}
                          {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                          <div className="row skyBack">
-                              <div className="nine columns">
-                                   <div className="headshotQuote__text">
-                                        <h2>Devyani Donde</h2>
-                                        <p>Information Technology '21 | Nashik, India</p>
-                                        <p>"I'm the Treasurer of the Association for Computing Machinery Women's Chapter. ACM-W connects me with amazing women in technology, helps me network, allows me to attend conferences and hackathons, and find trends in technology that prepare me for my career. The diversity at The University of Toledo attracted me. But the thing I liked best was the co-op program."</p>
-                                   </div>
-                              </div>
                               <div className="three columns">
                                    <div className="headshotQuote__image" style={{ backgroundImage: "url(" + devyaniDondeSrc + ")" }}></div>
                               </div>
-                         </div>
-                         <div className="row skyBack">
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
-                                        <h2>Justin Mendoza</h2>
-                                        <p>Bioengineering '22 and Bacc2MD pre-med student | Toledo, Ohio</p>
-                                        <p>"When I visited UToledo, I thought the bioengineering program was ahead of its time and would allow me to pursue my passion for medicine. I applied and got into the Bacc2MD program, which guarantees me a medical school interview without taking the MCAT. It was a no-brainer. I wanted to give myself the greatest chance to become the physician that I want to be."</p>
+                                        <h2>Devyani Donde</h2>
+                                        <p className="collegeTestimonySubtitle">Information Technology '21 | Nashik, India</p>
+                                        <p>"I'm the Treasurer of the Association for Computing Machinery Women's Chapter. ACM-W connects me with amazing women in technology, helps me network, allows me to attend conferences and hackathons, and find trends in technology that prepare me for my career. The diversity at The University of Toledo attracted me. But the thing I liked best was the co-op program."</p>
                                    </div>
                               </div>
+                         </div>
+                         <div className="row skyBack">
                               <div className="three columns">
                                    <div className="headshotQuote__image" style={{ backgroundImage: "url(" + justinMendozaSrc + ")" }}></div>
                               </div>
+                              <div className="nine columns">
+                                   <div className="headshotQuote__text">
+                                        <h2>Justin Mendoza</h2>
+                                        <p className="collegeTestimonySubtitle">Bioengineering '22 and Bacc2MD pre-med student | Toledo, Ohio</p>
+                                        <p>"When I visited UToledo, I thought the bioengineering program was ahead of its time and would allow me to pursue my passion for medicine. I applied and got into the Bacc2MD program, which guarantees me a medical school interview without taking the MCAT. It was a no-brainer. I wanted to give myself the greatest chance to become the physician that I want to be."</p>
+                                   </div>
+                              </div>
                          </div>
                          <div className="row skyBack">
+                              <div className="three columns">
+                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + harishHemmingSrc + ")" }}></div>
+                              </div>
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
                                         <h2>Harish Hemming</h2>
-                                        <p>Computer Science Engineering and Physics '21 | Penang, Malaysia</p>
-                                        <p>"Even the big classes here aren’t huge. You can connect with profesors. Take  the initiative to get close to professors. Meet them; talk to them after class. If they get to know you, it will help you. They can help you do research or be a reference for a job."</p>
+                                        <p className="collegeTestimonySubtitle">Computer Science Engineering and Physics '21 | Penang, Malaysia</p>
+                                        <p>"Even the big classes here aren’t huge. You can connect with professors. Take  the initiative to get close to professors. Meet them; talk to them after class. If they get to know you, it will help you. They can help you do research or be a reference for a job."</p>
                                    </div>
-                              </div>
-                              <div className="three columns">
-                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + harishHemmingSrc + ")" }}></div>
                               </div>
                          </div>
                     </Slider>
