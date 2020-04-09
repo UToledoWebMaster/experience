@@ -28,9 +28,16 @@
 	padding-right: 70px;
 }
 
+/* Default is text on the left */
 .singleTestimony .headshotQuote__text {
-	padding-right: 0;
 	padding-left: 5%;
+	padding-right: 0;
+}
+
+/* This selector targets the text when it's on the right */
+.singleTestimony .columns + .columns .headshotQuote__text {
+	padding-left: 0;
+	padding-right: 5%;
 }
 
 @media only screen and (max-width: 550px) {
