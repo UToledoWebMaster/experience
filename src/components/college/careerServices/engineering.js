@@ -26,8 +26,8 @@ const CareerServicesContentEngineering = ({ state }) => {
      // const engineeringCareerServices = data.images.nodes.filter(node => node.name === 'engineeringCareerServices')[0];
      const jasonGonring = data.images.nodes.filter(node => node.name === 'jasonGonring')[0];
      const jasonGonringSrc = jasonGonring.childImageSharp.fluid.src;
-     // const vimanthaBamunuarachchi = data.images.nodes.filter(node => node.name === 'vimanthaBamunuarachchi')[0];
-     // const vimanthaBamunuarachchiSrc = vimanthaBamunuarachchi.childImageSharp.fluid.src;
+     const vimanthaBamunuarachchi = data.images.nodes.filter(node => node.name === 'vimanthaBamunuarachchi')[0];
+     const vimanthaBamunuarachchiSrc = vimanthaBamunuarachchi.childImageSharp.fluid.src;
      const gradCap = data.images.nodes.filter(node => node.name === 'gradCap')[0];
      const dollarSign = data.images.nodes.filter(node => node.name === 'dollarSign')[0];
      if (state) {
@@ -45,31 +45,31 @@ const CareerServicesContentEngineering = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <Slider>
+                         <Slider className="testimonialSlider">
                               {/* Each div child of Slider is one slide in the slider */}
                               {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                               <div className="row skyBack">
                                    <div className="nine columns">
                                         <div className="headshotQuote__text">
                                              <h2>Jason Gonring</h2>
-                                             <p>Class of 2019, electrical engineering | Lambertville, Mich.</p>
+                                             <p>Electrical Engineering '19 | Lambertville, Mich.</p>
                                              <p>"The project I worked on to put a solar array on Health Science Campus was one of my favorite projects. I applied everything I learned in class, and I learned soft skills, too – like how to compromise with people and make a big initiative like this come together."</p>
                                         </div>
                                    </div>
                                    <div className="three columns">
-                                        {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jasonGonringSrc + ")" }}></div> */}
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jasonGonringSrc + ")" }}></div>
                                    </div>
                               </div>
                               <div className="row skyBack">
                                    <div className="nine columns">
                                         <div className="headshotQuote__text">
                                              <h2>Vimantha Bamunuarachchi</h2>
-                                             <p>Class of 2020, chemical engineering | Colombo, Sri Lanka</p>
+                                             <p>Chemical Engineering '20 | Colombo, Sri Lanka</p>
                                              <p>"When I graduate, I'll have more than a year of industrial experience. It's priceless to connect with engineers and scientists as an undergraduate and get that hands-on experience. I have friends at bigger schools, but they don't have job experience when they get their degree."</p>
                                         </div>
                                    </div>
                                    <div className="three columns">
-                                        {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + vimanthaBamunuarachchiSrc + ")" }}></div> */}
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + vimanthaBamunuarachchiSrc + ")" }}></div>
                                    </div>
                               </div>
                          </Slider>
@@ -77,7 +77,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                     <br /><br />
                     <Row>
                          <FullWidth>
-                              <p>Graduate with a year's worth of work experience, thanks to our co-op program (We are 1 of just 8 in the U.S. with required co-ops.)</p>
+                              <p>Graduate with a year's worth of work experience, thanks to our co-op program. (We are 1 of just 8 in the U.S. with required co-ops.)</p>
                          </FullWidth>
                     </Row>
                     <Row>
@@ -99,8 +99,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                     </Row>
                     <Row>
                          <FullWidth>
-                              <p>Many students find permanent jobs with their co-op employers – even before they graduate.</p>
-                              <p>2 career expos every year with 170+ companies recruiting for permanent and co-op positions.</p>
+                              <p>Many students find permanent jobs with their co-op employers – even before they graduate. We hold 2 career expos every year with 170+ companies that recruit for permanent and co-op positions.</p>
                               <p>UToledo's Career Services also offers resources and strategies.</p>
                               <ul>
                                    <li>Choose a major</li>

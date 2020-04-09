@@ -21,8 +21,8 @@ const Health = ({ state, academicSuccessClick, careerServicesClick, experiential
 
      }
      `)
-     // const marieJackson = data.images.nodes.filter(node => node.name === 'marieJackson')[0];
-     // const marieJacksonSrc = marieJackson.childImageSharp.fluid.src;
+     const marieJackson = data.images.nodes.filter(node => node.name === 'marieJackson')[0];
+     const marieJacksonSrc = marieJackson.childImageSharp.fluid.src;
 
      return (
           <>
@@ -32,12 +32,12 @@ const Health = ({ state, academicSuccessClick, careerServicesClick, experiential
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Marie Jackson</h2>
-                              <p>Class of 2020, recreational therapy | Southfield, Mich.</p>
+                              <p>Recreational Therapy '20 | Southfield, Mich.</p>
                               <p>"When I first came to UToledo, I had my heart set on athletic training, but thanks to the support and mentorship of Professor Holly Eichner, I discovered that my true passion is in recreational therapy. I love being able to help individuals with illnesses and disabling conditions live healthier, more satisfying lives."</p>
                          </div>
                     </ThreeQuarterColumn>
                     <QuarterColumn>
-                         {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + marieJacksonSrc + ")" }}></div> */}
+                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + marieJacksonSrc + ")" }}></div>
                     </QuarterColumn>
                </SingleTestimony>
                <br /><br />
@@ -48,7 +48,11 @@ const Health = ({ state, academicSuccessClick, careerServicesClick, experiential
                          <p><strong>Engage with our local community.</strong> If you’re in it to help people and improve their lives, our social-justice outreach opportunities will be right up your alley.</p>
                          <p><strong>Learn and practice collaboratively</strong> with students in other health-related majors.</p>
                          <p><strong>Change the world.</strong></p>
-                         <p><strong>Program Highlights</strong></p>
+                    </FullWidth>
+               </Row>
+               <Row className="grayBack">
+                    <FullWidth>
+                         <h2>Program Highlights</h2>
                          <ul>
                               <li>Paralegal program — Our program is one of the nation's best. It’s a national demonstration program and approved by the American Bar Association (only 1 in 5 programs is).</li>
                               <li>Recreation therapy program — We have the only such program in Ohio.</li>

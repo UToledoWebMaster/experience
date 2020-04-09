@@ -60,7 +60,7 @@ const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningC
                <Row>
                     <HalfColumn>
                          {!livingDiningClick ? <><Link state={state} to="/welcome/living-dining"><Img className="anim" fadeIn={true} fluid={homeLivingDining.childImageSharp.fluid} /></Link><br /></> : <><Link state={state} to="/welcome/living-dining"><div className="img-wrapper"><div class="img-overlay"></div><Img className="anim" fadeIn={true} fluid={homeLivingDining.childImageSharp.fluid} /></div></Link><br /></>}
-                         <h2><Link state={state} to="/welcome/living-dining">Where wil I live and what will I eat?</Link></h2>
+                         <h2><Link state={state} to="/welcome/living-dining">Where will I live and what will I eat?</Link></h2>
                     </HalfColumn>
                     <HalfColumn>
                          {!healthSafetyClick ? <><Link state={state} to="/welcome/health-safety"><Img className="anim" fadeIn={true} fluid={homeHealthSafety.childImageSharp.fluid} /></Link><br /></> : <><Link state={state} to="/welcome/health-safety"><div className="img-wrapper"><div class="img-overlay"></div><Img className="anim" fadeIn={true} fluid={homeHealthSafety.childImageSharp.fluid} /></div></Link><br /></>}

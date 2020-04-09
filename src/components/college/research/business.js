@@ -23,8 +23,8 @@ const ResearchContentBusiness = ({ state }) => {
 
      }
      `)
-     const nathanSzymanski = data.images.nodes.filter(node => node.name === 'nathanSzymanski')[0];
-     const nathanSzymanskiSrc = nathanSzymanski.childImageSharp.fluid.src;
+     // const nathanSzymanski = data.images.nodes.filter(node => node.name === 'nathanSzymanski')[0];
+     // const nathanSzymanskiSrc = nathanSzymanski.childImageSharp.fluid.src;
      const businessResearch = data.images.nodes.filter(node => node.name === 'businessResearch')[0];
      if (state) {
           return (
@@ -62,7 +62,7 @@ const ResearchContentBusiness = ({ state }) => {
                               <p>invested in undergraduate research</p>
                          </ThirdColumn>
                     </Row>
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + nathanSzymanskiSrc + ")" }}></div>
                          </QuarterColumn>
@@ -73,7 +73,7 @@ const ResearchContentBusiness = ({ state }) => {
                                    <p>"I conducted research starting my freshman year at UToledo. Both in and out of my major, the professors really cared about their students. They wanted us to learn, they promoted our involvement with research, and they were collaborative. In my research, I plugged into Ohio's largest supercomputer and ended up with one of the nation’s most prestigious scholarships."</p>
                               </div>
                          </ThreeQuarterColumn>
-                    </SingleTestimony>
+                    </SingleTestimony> */}
                     <br /><br />
                </>
           );

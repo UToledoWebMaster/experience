@@ -73,7 +73,7 @@ class College extends React.Component {
                          />
                          <Row>
                               <HalfColumn>
-                                   <Link className="block button button-primary" to="/welcome" state={this.props.location.state}>&larr; Welcome</Link>
+                                   <Link className="block button button-primary" to="/welcome" state={this.props.location.state}>&larr; Back to Welcome</Link>
                               </HalfColumn>
                               <HalfColumn>
                                    <Link className="block button button-primary" to="/paying-for-college" state={this.props.location.state}>Paying for College &rarr;</Link>

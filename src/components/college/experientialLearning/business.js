@@ -45,7 +45,7 @@ const ExperientialLearningContentBusiness = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Octavio Vazquez-Ederra</h2>
-                                   <p>Class of 2019, international business and professional sales</p>
+                                   <p>International Business and Professional Sales '19</p>
                                    <p>"My internship at Owens Corning was really intense. It let me experience an outside sales role. I rode along with a sales manager in Florida and got to see what the job was like and if it was right for me. I don’t think I'd have gotten my full-time job at O-C without those internships."</p>
                               </div>
                          </ThreeQuarterColumn>

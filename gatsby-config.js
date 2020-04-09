@@ -2,10 +2,17 @@ module.exports = {
   pathPrefix: `/larry-test/app-test/test`,
   siteMetadata: {
     title: `UToledo`,
-    description: `Experience UToledo`,
+    description: `UToledo New Rocket`,
     author: `@LarryCarter`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-36852061-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

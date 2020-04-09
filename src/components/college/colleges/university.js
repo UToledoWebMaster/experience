@@ -9,14 +9,13 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                <Row>
                     <FullWidth>
                          <h1>University College</h1>
-                         <p>Nationally accredited. Nationally ranked.</p>
-                         <p>We offer two pathways: one for aspiring pharmacists and one for students interested in pharmacy science or other careers in pharmacy (this is a great pre-med track). Course work for each is identical in the first two years.</p>
+                         <p>Undecided? That's OK.</p>
                     </FullWidth>
                </Row>
                <Row className="text-center">
                     <HalfColumn>
                          <h2>1 in 5</h2>
-                         <p>college student start undecided</p>
+                         <p>college students start undecided</p>
                     </HalfColumn>
                     <HalfColumn>
                          <h2>50%</h2>

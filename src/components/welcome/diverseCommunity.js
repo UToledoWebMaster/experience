@@ -43,20 +43,6 @@ const DiverseCommunityContent = ({ state }) => {
                               <p>Nearly 20,000 students from all over the world find a home here. You will, too.</p>
                          </FullWidth>
                     </Row>
-                    <SingleTestimony>
-                         <QuarterColumn>
-                              <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jannetFriasSrc + ")" }}></div>
-                         </QuarterColumn>
-                         <ThreeQuarterColumn>
-                              <div className="headshotQuote__text">
-                                   <h2>Meet Jannet</h2>
-                                   <p>"I was nervous when I came to Toledo. But now I feel completely at home. A summer program for multicultural students helped me make new friends. And there's so much to do, so many organizations and diversity, it's easy to meet people and connect."</p>
-                                   <p><strong>Jannet Frias</strong><br />Class of 2022, special education | Immokalee, Fla.</p>
-
-                              </div>
-                         </ThreeQuarterColumn>
-                    </SingleTestimony>
-                    <br /><br />
                     <Row>
                          <HalfColumn>
                               <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faGlobeAmericas} /><br />84 countries</h2>
@@ -65,6 +51,20 @@ const DiverseCommunityContent = ({ state }) => {
                               <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faMapMarkerAlt} /><br />42 states</h2>
                          </HalfColumn>
                     </Row>
+                    <br />
+                    <SingleTestimony>
+                         <QuarterColumn>
+                              <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jannetFriasSrc + ")" }}></div>
+                         </QuarterColumn>
+                         <ThreeQuarterColumn>
+                              <div className="headshotQuote__text">
+                                   <h2>Meet Jannet</h2>
+                                   <p><strong>Jannet Frias</strong><br />Special Education '22 | Immokalee, Fla.</p>
+                                   <p>"I was nervous when I came to Toledo. But now I feel completely at home. A summer program for multicultural students helped me make new friends. And there's so much to do, so many organizations and diversity, it's easy to meet people and connect."</p>
+                              </div>
+                         </ThreeQuarterColumn>
+                    </SingleTestimony>
+                    <br /><br />
                     <Row>
                          <FullWidth>
                               <p>UToledo is just the right size. Students tell us that all the time. Big enough to have tons of opportunities. Small enough to forge meaningful relationships.</p>
@@ -99,7 +99,7 @@ const DiverseCommunityContent = ({ state }) => {
                               <ul>
                                    <li>Office of Multicultural Student Success</li>
                                    <li>Student Disability Services</li>
-                                   <li>Center of International Studies and Programs</li>
+                                   <li>Center for International Studies and Programs</li>
                                    <li>Catherine S. Eberly Center for Women</li>
                                    <li>LGBTQA+ initiatives</li>
                               </ul>

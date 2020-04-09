@@ -33,13 +33,12 @@ const StudentLifeContent = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>What's There to Do on Campus After Class?</h1>
-                              <p>Plenty – and the more you get involved, the more likely you’ll graduate on time and be a successful student.</p>
+                              <p>Plenty – and the more you get involved, the more likely you’ll graduate on time and be a successful student. Just ask Jason.</p>
                          </FullWidth>
                     </Row>
                     <SingleTestimony>
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
-                                   <h2>Just ask Jason</h2>
                                    <p>"I participated in student organizations that focused on leadership development and built a network of people that will continue to be close friends and valuable connections far beyond graduation. If I wasn't so involved, I most likely wouldn't have found my business partner. We founded Urbivors, an online farmer's market that delivers local produce to students."</p>
                                    <p><strong>Jason Gonring</strong><br />Class of 2019, electrical engineering | Lambertville, Mich.</p>
 
@@ -94,7 +93,7 @@ const StudentLifeContent = ({ state }) => {
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Be a leader."
-                                   backContent="Get involved in any of 400+ student organizations. Our most successful students say this is their best piece of advice. Build your resume. Make friends. Find yourself."
+                                   backContent="Get involved in any of 400+ student organizations. Build your resume. Make friends. Find yourself."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
@@ -106,13 +105,13 @@ const StudentLifeContent = ({ state }) => {
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Make lifelong friends."
-                                   backContent="Get outside your room. Attend lectures, concerts and plays. Cheer on 15 NCAA Division I athletic teams. Rocket spirit is loud and proud. Embrace it."
+                                   backContent="Attend lectures, concerts and plays. Cheer on 15 NCAA Division I athletic teams. Embrace Rocket spirit."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Explore."
-                                   backContent="Toledo is a cool city. Hop on a city bus for free with your ID and explore Toledo's growing downtown. We’ve got minor-league hockey and baseball. Tons of restaurants and concerts. A world-renowned art museum. A dozen hikable metroparks."
+                                   backContent="Hop on a city bus for free and explore downtown: hockey, baseball, food, concerts and a world-class art museum."
                               />
                          </QuarterColumn>
                     </Row>

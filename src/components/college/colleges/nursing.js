@@ -31,7 +31,7 @@ const Nursing = ({ state, academicSuccessClick, careerServicesClick, experientia
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Zoe Kloster-Mockeridge</h2>
-                              <p>Class of 2020 | Ann Arbor, Mich.</p>
+                              <p>Nursing '20 | Ann Arbor, Mich.</p>
                               <p>"I chose UToledo nursing because of the smaller class sizes and the personalized education. My favorite part about the program has to be my lab experience. The lab professors make learning the skills so fun and easy, while also very informative! The professors are amazing, I can come to them with any questions that I have about school or about life."</p>
                          </div>
                     </ThreeQuarterColumn>

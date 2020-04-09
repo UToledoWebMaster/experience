@@ -43,9 +43,9 @@ const LivingDiningContent = ({ state }) => {
                          </QuarterColumn>
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
-                                   <p>"I would recommend every freshman stay on campus. I lived in the Honors Academic Village my freshman year. It changed my life. It's how I started to meet people, including my best friend. I'd also see flyers about events and know what was happening on campus.</p>
-                                   <p><strong>Munira Taufik</strong><br />Class of 2019, geology pursuing a master's in higher education | Kuala Lumpur, Malaysia</p>
-
+                                   <h2>Munira Taufik</h2>
+                                   <p>Geology '19; M.Ed. Higher Education '20 | Kuala Lumpur, Malaysia</p>
+                                   <p>"I would recommend every freshman stay on campus. I lived in the Honors Academic Village my freshman year. It changed my life. It's how I started to meet people, including my best friend. I'd also see flyers about events and know what was happening on campus."</p>
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
@@ -59,7 +59,7 @@ const LivingDiningContent = ({ state }) => {
                                    <li>Close to classes</li>
                                    <li>Cable and internet access in your room</li>
                               </ul>
-                              <p>Plan to commute? Check out our commuter services and lounges. Connect with other commuters.</p>
+                              <p>Plan to commute? Check out our commuter services and lounges and connect with other commuters.</p>
                          </FullWidth>
                     </Row>
                     <Row>
@@ -70,18 +70,13 @@ const LivingDiningContent = ({ state }) => {
                               <p>Use your meal plan at:</p>
                               <ul>
                                    <li>3 dining hall locations</li>
-                                   <li>11 retail locations on campus, including Starbucks, Chick-fil-A, Steak ‘n Shake</li>
+                                   <li>11 retail locations on campus, including Starbucks, Chick-fil-A, Subway</li>
                                    <li>2 convenience stores</li>
                               </ul>
                          </HalfColumn>
                          <HalfColumn>
                               <Img className="anim" fadeIn={true} fluid={eat.childImageSharp.fluid} />
                          </HalfColumn>
-                    </Row>
-                    <Row>
-                         <FullWidth>
-                              <p>And don't forget: Many student-friendly restaurants close to campus allow you to use your Rocket Card as a debit card.</p>
-                         </FullWidth>
                     </Row>
                </>
           );

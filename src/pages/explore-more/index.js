@@ -12,7 +12,7 @@ const ExploreMore = ({ location }) => (
           <br />
           <Row>
                <FullWidth>
-                    <Link className="block button button-primary" to="/whats-next" state={location.state}>&larr; What's Next</Link>
+                    <Link className="block button button-primary" to="/whats-next" state={location.state}>&larr; Back to What's Next</Link>
                </FullWidth>
           </Row>
      </Layout >

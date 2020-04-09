@@ -55,7 +55,7 @@ const ExperientialLearningContentScience = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Munira Taufik</h2>
-                                   <p>Class of 2019 | geology; M.Ed. higher education | Kuala Lumpur, Malaysia</p>
+                                   <p>Geology '19; M.Ed. Higher Education '20 | Kuala Lumpur, Malaysia</p>
                                    <p>"I traveled all over the country on field trips. I went to Hocking Hills, a park in southern Ohio; Death Valley, a desert in California; and the Grand Canyon in Arizona. Whatever you learn in class, you see it and can apply it on these trips. We talked about earthquake faults and then went out and saw them."</p>
                               </div>
                          </ThreeQuarterColumn>

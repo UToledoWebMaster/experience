@@ -23,8 +23,8 @@ const ExperientialLearningContentNursing = ({ state }) => {
 
      }
      `)
-     const isaacPetkac = data.images.nodes.filter(node => node.name === 'isaacPetkac')[0];
-     const isaacPetkacSrc = isaacPetkac.childImageSharp.fluid.src;
+     // const isaacPetkac = data.images.nodes.filter(node => node.name === 'isaacPetkac')[0];
+     // const isaacPetkacSrc = isaacPetkac.childImageSharp.fluid.src;
      const nursingExperientialLearning = data.images.nodes.filter(node => node.name === 'nursingExperientialLearning')[0];
      if (state) {
           return (
@@ -49,7 +49,7 @@ const ExperientialLearningContentNursing = ({ state }) => {
                          </HalfColumn>
                     </Row>
                     <br /><br />
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + isaacPetkacSrc + ")" }}></div>
                          </QuarterColumn>
@@ -61,7 +61,7 @@ const ExperientialLearningContentNursing = ({ state }) => {
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
-                    <br /><br />
+                    <br /><br /> */}
                </>
           );
      } else {

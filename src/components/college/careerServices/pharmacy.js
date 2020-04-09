@@ -48,8 +48,8 @@ const CareerServicesContentPharmacy = ({ state }) => {
                          </QuarterColumn>
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
-                                   <h2>Margaret Gorz</h2>
-                                   <p>Class of 2018, Associate Scientist at Estée Lauder Companies, New York</p>
+                                   <h2>Margaret Gorz '18</h2>
+                                   <p>Associate Scientist at Estée Lauder Companies, New York</p>
                                    <p>"UToledo gave me a competitive advantage that made me stand out, and helped me land my dream job. I started college with plans to go to medical school, but I felt like something was missing because I am also a creative person. UToledo's Cosmetic Science and Formulation program allowed me to mix two of my passions into one career."</p>
                               </div>
                          </ThreeQuarterColumn>

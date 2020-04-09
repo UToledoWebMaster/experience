@@ -206,6 +206,11 @@ a.forBtn {
   padding: 2vw;
 }
 
+.grayBack {
+  background-color: #CAD9E1;
+  padding: 2vw;
+}
+
 .yellowCheck {
   top: 7px;
 }

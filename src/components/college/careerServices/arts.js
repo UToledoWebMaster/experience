@@ -28,7 +28,7 @@ const CareerServicesContentArts = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>Graduate Career-Ready</h1>
-                              <p>Because that's end game, right? To get a job? UToledo's Career Services  offers resources and strategies.</p>
+                              <p>Because that's the end game, right? To get a job? UToledo's Career Services  offers resources and strategies.</p>
                               <ul>
                                    <li>Choose a major.</li>
                                    <li>Develop career plans.</li>
