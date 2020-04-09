@@ -94,7 +94,7 @@ const StudentLifeContent = ({ state }) => {
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Be a leader."
-                                   backContent="Get involved in any of 400+ student organizations. Our most successful students say this is their best piece of advice. Build your resume. Make friends. Find yourself."
+                                   backContent="Get involved in any of 400+ student organizations. Build your resume. Make friends. Find yourself."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
@@ -106,13 +106,13 @@ const StudentLifeContent = ({ state }) => {
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Make lifelong friends."
-                                   backContent="Get outside your room. Attend lectures, concerts and plays. Cheer on 15 NCAA Division I athletic teams. Rocket spirit is loud and proud. Embrace it."
+                                   backContent="Attend lectures, concerts and plays. Cheer on 15 NCAA Division I athletic teams. Embrace Rocket spirit."
                               />
                          </QuarterColumn>
                          <QuarterColumn>
                               <FlipCard
                                    frontContent="Explore."
-                                   backContent="Toledo is a cool city. Hop on a city bus for free with your ID and explore Toledo's growing downtown. We’ve got minor-league hockey and baseball. Tons of restaurants and concerts. A world-renowned art museum. A dozen hikable metroparks."
+                                   backContent="Hop on a city bus for free and explore downtown: hockey, baseball, food, concerts and a world-class art museum."
                               />
                          </QuarterColumn>
                     </Row>

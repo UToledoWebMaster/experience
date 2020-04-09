@@ -11,7 +11,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 class Slider extends React.Component {
     render() {
         return (
-            <div className="sliderComponent">
+            <div className={`${this.props.className} sliderComponent`}>
                 {this.props.children}
             </div>
         )

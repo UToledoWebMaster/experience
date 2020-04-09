@@ -18,6 +18,11 @@
     background-color: #CAD9E1;
     padding: 5rem 3.5vw;
 }
+@media (min-width: 767px) {
+    .overlappingBoxes__textBox {
+        padding-right: 10vw;
+    }
+}
 .overlappingBoxes__quotationMarks {
     position: absolute;
     top: 3rem;

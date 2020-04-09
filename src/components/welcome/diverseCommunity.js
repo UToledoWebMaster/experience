@@ -7,6 +7,7 @@ import { faGlobeAmericas, faMapMarkerAlt } from '@fortawesome/free-solid-svg-ico
 import SingleTestimony from "../singleTestimony.js"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../slider.js"
+import Img from "gatsby-image";
 
 const DiverseCommunityContent = ({ state }) => {
      const data = useStaticQuery(graphql`
@@ -77,19 +78,34 @@ const DiverseCommunityContent = ({ state }) => {
                               {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + welcomingSrc + ")", backgroundSize: "auto" }}></div>
+                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + welcomingSrc + ")"}}></div>
                                    </div>
                               </div>
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + multiculturalSrc + ")", backgroundSize: "auto" }}></div>
+                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + multiculturalSrc + ")"}}></div>
                                    </div>
                               </div>
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + midwesternFriendlySrc + ")", backgroundSize: "auto" }}></div>
+                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + midwesternFriendlySrc + ")"}}></div>
                                    </div>
                               </div>
+                              {/* Alternatively, we could have the images be full sized (in which case we'd need to crop them uniformly)
+                              <div className="row">
+                                        <Img fluid={welcoming.childImageSharp.fluid}></Img>
+                              </div>
+                              <div className="row">
+                                   <div className="twelve columns">
+                                        <Img fluid={multicultural.childImageSharp.fluid}></Img>
+                                   </div>
+                              </div>
+                              <div className="row">
+                                   <div className="twelve columns">
+                                        <Img fluid={midwesternFriendly.childImageSharp.fluid}></Img>
+                                   </div>
+                              </div>
+                              */}
                          </Slider>
                     </Row>
                     <br /><br />

@@ -56,12 +56,6 @@ body.accessible .flipCard:focus .flipCard__back {
     justify-content: center;
 }
 
-/*May end up removing this if we can get shorter content*/
-.flipCard__back {
-    overflow-y: scroll;
-    justify-content: start;
-}
-
 @media (max-width: 767px) {
 
     .flipCard__front,
