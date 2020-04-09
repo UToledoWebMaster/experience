@@ -33,8 +33,8 @@
 }
 
 @media only screen and (max-width: 550px) {
-	.slick-prev,
-	.slick-next
+	.testimonialSlider .slick-prev,
+	.testimonialSlider .slick-next
 	{
 		top: 160px; /* Half of height of image */
 	}
