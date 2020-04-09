@@ -244,11 +244,11 @@ a.forBtn {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px !important; /* This value can be tweaked */
+  height: 450px !important; /* This value can be tweaked */
 }
 
 @media (max-width: 550px) {
   .fullBackgroundImage {
-    height: 400px !important; /* This value can be tweaked */
+    height: 250px !important; /* This value can be tweaked */
   }
 }
