@@ -59,7 +59,7 @@ const AcademicSuccessContentScience = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Chao Zhou</h2>
-                                   <p>Mathematics with a concentration in statistics '21 | Kun Ming, China</p>
+                                   <p className="collegeTestimonySubtitle">Mathematics with a concentration in statistics '21 | Kun Ming, China</p>
                                    <p>"My math classes aren’t easy, but my professors make hard things easy to understand. They are friendly and give me lots of help. I'm a traveler and want to meet people from different countries and cultures. At UToledo, I have met people from all over – Japan, Korea, America, Europe. People are welcoming and friendly."</p>
                               </div>
                          </ThreeQuarterColumn>

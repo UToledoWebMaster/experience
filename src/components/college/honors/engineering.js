@@ -75,7 +75,7 @@ const HonorsContentEngineering = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Lauren Bahonsua '19</h2>
-                                   <p>Chicago, Ill.</p>
+                                   <p className="collegeTestimonySubtitle">Chicago, Ill.</p>
                                    <p>"A part of me wanted to get away from home. But I was also scared being on my own for the first time. The Honors College was a nice way for me to form a community. After joining the Honors College, I was able to step out of my comfort zone. I became more active with organizations around campus, volunteered at events and took on leadership positions that allowed me to grow."</p>
                               </div>
                          </ThreeQuarterColumn>
