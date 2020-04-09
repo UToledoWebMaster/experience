@@ -51,6 +51,7 @@ const AcademicSuccessContentScience = ({ state }) => {
                               <Img className="anim" fadeIn={true} fluid={academicSuccess.childImageSharp.fluid} />
                          </HalfColumn>
                     </Row>
+                    <br />
                     <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + chaoZhouSrc + ")" }}></div>

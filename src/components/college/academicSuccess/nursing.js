@@ -50,7 +50,7 @@ const AcademicSuccessContentNursing = ({ state }) => {
                               <Img className="anim" fadeIn={true} fluid={nursingAcademicSuccess.childImageSharp.fluid} />
                          </HalfColumn>
                     </Row>
-                    <br /><br />
+                    <br />
                     <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + alexisAlvaradoSrc + ")" }}></div>
