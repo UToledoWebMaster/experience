@@ -195,6 +195,34 @@ a.forBtn {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   text-align: center;
+  grid-row-gap: 0;
+}
+
+@media (max-width: 1000px) {
+  .grid.collegeNav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    grid-column-gap: 2vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid.collegeNav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+  }
+}
+
+.grid.collegeNav .flipCard {
+  height: 180px !important;
+}
+
+@media (max-width: 767px) {
+  .grid.collegeNav .flipCard {
+      height: 120px !important;
+  }
 }
 
 .floatRight {
