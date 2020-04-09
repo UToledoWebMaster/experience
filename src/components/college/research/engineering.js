@@ -69,7 +69,7 @@ const ResearchContentEngineering = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Vimantha Bamunuarachi</h2>
-                                   <p>Class of 2020, chemical engineering | Colombo, Sri Lanka</p>
+                                   <p>Chemical Engineering '20 | Colombo, Sri Lanka</p>
                                    <p>"I did research the summer of my freshman year for a chemical engineering professor. Then Dr. Ana C. Alba-Rubio offered me a position in her lab. I'm doing research on sustainable and green energy. I also worked part time as an intern at a startup company that manufactured scanners to test the life span of solar cells. I learned a plethora of technical skills a typical undergraduate wouldn't. My research experience helped me get my co-op at AstraZeneca."</p>
                               </div>
                          </ThreeQuarterColumn>

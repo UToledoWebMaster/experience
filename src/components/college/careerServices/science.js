@@ -3,7 +3,7 @@ import { navigate } from "gatsby"
 import { Row, FullWidth, HalfColumn, QuarterColumn, ThreeQuarterColumn } from "../../layout/layoutComponent"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import SingleTestimony from "../../singleTestimony"
+import Slider from "../../slider"
 
 const CareerServicesContentScience = ({ state }) => {
      const data = useStaticQuery(graphql`
@@ -23,8 +23,10 @@ const CareerServicesContentScience = ({ state }) => {
 
      }
      `)
-     // const jamesDunaway = data.images.nodes.filter(node => node.name === 'jamesDunaway')[0];
-     // const jamesDunawaySrc = jamesDunaway.childImageSharp.fluid.src;
+     const jamesDunaway = data.images.nodes.filter(node => node.name === 'jamesDunaway')[0];
+     const jamesDunawaySrc = jamesDunaway.childImageSharp.fluid.src;
+     const navindiWeerasinghe = data.images.nodes.filter(node => node.name === 'navindiWeerasinghe')[0];
+     const navindiWeerasingheSrc = navindiWeerasinghe.childImageSharp.fluid.src;
 
      if (state) {
           return (
@@ -43,18 +45,36 @@ const CareerServicesContentScience = ({ state }) => {
                               </ul>
                          </FullWidth>
                     </Row>
-                    <SingleTestimony>
-                         <QuarterColumn>
-                              {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jamesDunawaySrc + ")" }}></div> */}
-                         </QuarterColumn>
-                         <ThreeQuarterColumn>
-                              <div className="headshotQuote__text">
-                                   <h2>James Dunaway</h2>
-                                   <p>Class of 2016, chemistry | Oregon, Ohio</p>
-                                   <p>"My education was challenging. But it built a mindset in me that nothing is too hard. You just have to try. It gave me confidence. I had people who took an interest in me. I didn’t have to ask. It was a given. It was a defining moment when I got my internship my junior year. I could answer all their questions – Have you done this? – with a yes. I knew the instrumentation. I knew the chemistry. I got a full-time job as a chemist when I graduated. I was able to pay back all my loans in three years."</p>
+                    <Row>
+                         <Slider className="testimonialSlider">
+                              {/* Each div child of Slider is one slide in the slider */}
+                              {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
+                              <div className="row skyBack">
+                                   <div className="nine columns">
+                                        <div className="headshotQuote__text">
+                                             <h2>James Dunaway</h2>
+                                             <p>Chemistry '16 | Oregon, Ohio</p>
+                                             <p>"My education was challenging. But it built a mindset in me that nothing is too hard. You just have to try. It gave me confidence. I had people who took an interest in me. I didn’t have to ask. It was a given. It was a defining moment when I got my internship my junior year. I could answer all their questions – Have you done this? – with a yes. I knew the instrumentation. I knew the chemistry. I got a full-time job as a chemist when I graduated. I was able to pay back all my loans in three years."</p>
+                                        </div>
+                                   </div>
+                                   <div className="three columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jamesDunawaySrc + ")" }}></div>
+                                   </div>
                               </div>
-                         </ThreeQuarterColumn>
-                    </SingleTestimony>
+                              <div className="row skyBack">
+                                   <div className="nine columns">
+                                        <div className="headshotQuote__text">
+                                             <h2>Navindi Weerasinghe '18</h2>
+                                             <p>Navindi plans to become an optometrist and may pursue an M.B.A.</p>
+                                             <p>"I received more than my money's worth at UToledo — a lot of things that money can’t buy. The best skill I mastered was to prioritize my time. My degree was rigorous, and I learned how to do many things at once. Now I apply it in my job. I've progressed quickly through the training, and now they want to cross-train me in different departments. I work with a diverse population and have no trouble connecting to anyone because we had students of all backgrounds at UToledo. The seeds of diversity and inclusion were planted in me there."</p>
+                                        </div>
+                                   </div>
+                                   <div className="three columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + navindiWeerasingheSrc + ")" }}></div>
+                                   </div>
+                              </div>
+                         </Slider>
+                    </Row>
                     <br /><br />
                </>
           );

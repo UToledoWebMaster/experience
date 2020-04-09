@@ -59,7 +59,7 @@ class Welcome extends React.Component {
                          <br />
                          <Row>
                               <HalfColumn>
-                                   <Link className="block button button-primary" to="/">&larr; To Start</Link>
+                                   <Link className="block button button-primary" to="/">&larr; Back to Start</Link>
                               </HalfColumn>
                               <HalfColumn>
                                    <Link className="block button button-primary" to="/college" state={this.props.location.state}>My College &rarr;</Link>

@@ -47,7 +47,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Akshith Dass</h2>
-                              <p>Class of 2018, PharmD | Dubai, United Arab Emirates</p>
+                              <p>PharmD '18 | Dubai, United Arab Emirates</p>
                               <p>"I chose UToledo because the PharmD program was 6 years compared to 8 at other schools. It also had contingent admission. I was accepted without having to re-interview or take the PCAT. That made it easier. UToledo has amazing faculty. I've worked with faculty on research. I even made connections with the dean. He gave me a letter of recommendation that gave me a leg up on a position I applied for."</p>
                          </div>
                     </ThreeQuarterColumn>
@@ -62,7 +62,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <p><strong>Save time and money.</strong> UToledo's Pharm.D. program is 6 years, compared to 8 at most other schools.</p>
                          <p><strong>Learn and practice in collaboration</strong> with students in other health-related majors.</p>
                          <p><strong>Gain a competitive edge in the job market.</strong> Earn 2 degrees. Two of our majors offer a B.S./M.S. option in just 5 years. You also can combine PharmD with a Ph.D. or M.B.A.</p>
-                         <p><strong>Set yourself apart.</strong> Fewer than 20 universities in the U.S. offer a B.S. in pharmaceutical sciences.</p>
+                         <p><strong>Set yourself apart.</strong> Fewer than 20 universities in the U.S. offer a B.S. in pharmaceutical sciences. And UToledo offers the country's only undergraduate program in cosmetic science and formulation design.</p>
                          <p><strong>Make your med school app stand out.</strong> Med schools love students with unique majors and course work.</p>
                          <p><strong>Network and grow</strong> in 20 professional pharmacy student organizations.</p>
                     </FullWidth>

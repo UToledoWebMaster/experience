@@ -23,8 +23,8 @@ const ResearchContentPharmacy = ({ state }) => {
 
      }
      `)
-     const nathanSzymanski = data.images.nodes.filter(node => node.name === 'nathanSzymanski')[0];
-     const nathanSzymanskiSrc = nathanSzymanski.childImageSharp.fluid.src;
+     // const nathanSzymanski = data.images.nodes.filter(node => node.name === 'nathanSzymanski')[0];
+     // const nathanSzymanskiSrc = nathanSzymanski.childImageSharp.fluid.src;
      const pharmacyResearch = data.images.nodes.filter(node => node.name === 'pharmacyResearch')[0];
      if (state) {
           return (
@@ -62,7 +62,7 @@ const ResearchContentPharmacy = ({ state }) => {
                               <p>invested in undergraduate research</p>
                          </ThirdColumn>
                     </Row>
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + nathanSzymanskiSrc + ")" }}></div>
                          </QuarterColumn>
@@ -74,7 +74,7 @@ const ResearchContentPharmacy = ({ state }) => {
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
-                    <br /><br />
+                    <br /><br /> */}
                </>
           );
      } else {

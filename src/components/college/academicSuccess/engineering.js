@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
-import { Row, FullWidth, QuarterColumn, ThreeQuarterColumn } from "../../layout/layoutComponent"
+import { Row, FullWidth, QuarterColumn, HalfColumn, ThreeQuarterColumn } from "../../layout/layoutComponent"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SingleTestimony from "../../singleTestimony"
@@ -24,7 +24,7 @@ const AcademicSuccessContentEngineering = ({ state }) => {
 
      }
      `)
-     // const engineeringAcademicSuccess = data.images.nodes.filter(node => node.name === 'engineeringAcademicSuccess')[0];
+     const academicSuccess = data.images.nodes.filter(node => node.name === 'academicSuccess')[0];
      const alexisAlvarado = data.images.nodes.filter(node => node.name === 'alexisAlvarado')[0];
      const alexisAlvaradoSrc = alexisAlvarado.childImageSharp.fluid.src;
      if (state) {
@@ -33,7 +33,10 @@ const AcademicSuccessContentEngineering = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>Find Support</h1>
-                              {/* <Img className="anim" fadeIn={true} fluid={engineeringAcademicSuccess.childImageSharp.fluid} /> */}
+                         </FullWidth>
+                    </Row>
+                    <Row>
+                         <HalfColumn>
                               <p>We don't forget you once you pay your deposit. We want you to succeed. The College of Engineering has student service staff in every department.</p>
                               <ul>
                                    <li>Faculty who know your name and your strengths</li>
@@ -43,7 +46,10 @@ const AcademicSuccessContentEngineering = ({ state }) => {
                                    <li>Free tutoring and writing help</li>
                                    <li>Office of Multicultural Student Success</li>
                               </ul>
-                         </FullWidth>
+                         </HalfColumn>
+                         <HalfColumn>
+                              <Img className="anim" fadeIn={true} fluid={academicSuccess.childImageSharp.fluid} />
+                         </HalfColumn>
                     </Row>
                     <SingleTestimony>
                          <QuarterColumn>
@@ -51,8 +57,8 @@ const AcademicSuccessContentEngineering = ({ state }) => {
                          </QuarterColumn>
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
-                                   <h2>Alexis Alvarado</h2>
-                                   <p>Class of 2021 | Defiance, Ohio</p>
+                                   <h2>Alexis Alvarado '21</h2>
+                                   <p>Defiance, Ohio</p>
                                    <p>"Coming into college as a first-generation student with absolutely no knowledge of anything was scary. When I connected to the TRiO (Student Support Services) team at UToledo, I felt like I had a home on campus. It was somewhere I could go and study, chill or talk to someone in times of need."</p>
                               </div>
                          </ThreeQuarterColumn>

@@ -69,7 +69,7 @@ const ResearchContentArts = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Deidra Buenger</h2>
-                                   <p>Class of 2020, english literature and asian studies with minor in japanese | Holland, Ohio</p>
+                                   <p>English Literature and Asian Studies with minor in Japanese '20 | Holland, Ohio</p>
                                    <p>"My professor encouraged me to do research. I was fired up that there was someone who gave me an opportunity. I am investigating how mobile technologies — such as smartphones and apps — can be used as tools for those learning Japanese. I went to Japan to collect data."</p>
                               </div>
                          </ThreeQuarterColumn>

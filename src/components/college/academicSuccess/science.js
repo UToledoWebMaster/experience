@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
-import { Row, FullWidth, QuarterColumn, ThreeQuarterColumn } from "../../layout/layoutComponent"
+import { Row, FullWidth, QuarterColumn, HalfColumn, ThreeQuarterColumn } from "../../layout/layoutComponent"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SingleTestimony from "../../singleTestimony"
@@ -24,7 +24,7 @@ const AcademicSuccessContentScience = ({ state }) => {
 
      }
      `)
-     // const scienceAcademicSuccess = data.images.nodes.filter(node => node.name === 'scienceAcademicSuccess')[0];
+     const academicSuccess = data.images.nodes.filter(node => node.name === 'academicSuccess')[0];
      const chaoZhou = data.images.nodes.filter(node => node.name === 'chaoZhou')[0];
      const chaoZhouSrc = chaoZhou.childImageSharp.fluid.src;
      if (state) {
@@ -33,7 +33,10 @@ const AcademicSuccessContentScience = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>Find Support</h1>
-                              {/* <Img className="anim" fadeIn={true} fluid={scienceAcademicSuccess.childImageSharp.fluid} /> */}
+                         </FullWidth>
+                    </Row>
+                    <Row>
+                         <HalfColumn>
                               <p>We don't forget you once you pay your deposit. We want you to succeed. </p>
                               <ul>
                                    <li>Faculty who know your name and your strengths</li>
@@ -43,7 +46,10 @@ const AcademicSuccessContentScience = ({ state }) => {
                                    <li>Free tutoring and writing help</li>
                                    <li>Office of Multicultural Student Success</li>
                               </ul>
-                         </FullWidth>
+                         </HalfColumn>
+                         <HalfColumn>
+                              <Img className="anim" fadeIn={true} fluid={academicSuccess.childImageSharp.fluid} />
+                         </HalfColumn>
                     </Row>
                     <SingleTestimony>
                          <QuarterColumn>
@@ -52,7 +58,7 @@ const AcademicSuccessContentScience = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Chao Zhou</h2>
-                                   <p>Class of 2021, mathematics with a concentration in statistics | Kun Ming, China</p>
+                                   <p>Mathematics with a concentration in statistics '21 | Kun Ming, China</p>
                                    <p>"My math classes aren’t easy, but my professors make hard things easy to understand. They are friendly and give me lots of help. I'm a traveler and want to meet people from different countries and cultures. At UToledo, I have met people from all over – Japan, Korea, America, Europe. People are welcoming and friendly."</p>
                               </div>
                          </ThreeQuarterColumn>

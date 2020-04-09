@@ -33,13 +33,12 @@ const StudentLifeContent = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>What's There to Do on Campus After Class?</h1>
-                              <p>Plenty – and the more you get involved, the more likely you’ll graduate on time and be a successful student.</p>
+                              <p>Plenty – and the more you get involved, the more likely you’ll graduate on time and be a successful student. Just ask Jason.</p>
                          </FullWidth>
                     </Row>
                     <SingleTestimony>
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
-                                   <h2>Just ask Jason</h2>
                                    <p>"I participated in student organizations that focused on leadership development and built a network of people that will continue to be close friends and valuable connections far beyond graduation. If I wasn't so involved, I most likely wouldn't have found my business partner. We founded Urbivors, an online farmer's market that delivers local produce to students."</p>
                                    <p><strong>Jason Gonring</strong><br />Class of 2019, electrical engineering | Lambertville, Mich.</p>
 

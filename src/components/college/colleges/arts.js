@@ -29,7 +29,7 @@ const Arts = ({ state, academicSuccessClick, careerServicesClick, experientialLe
      return (
           <>
                <h1>College of {state.collegeOfInterest}</h1>
-               <p>Our degrees are diverse, from film and video to data analytics and psychology. But all our departments work together — a big plus for you. You'll graduate career ready with skills that allow you to adapt – a critical need in today's job market.</p>
+               <p>Our degrees are diverse, from film and video to data analytics and psychology. But all our departments work together — a big plus for you. You'll graduate career ready with skills that allow you to adapt — a critical need in today's job market.</p>
                <SingleTestimony>
                     <QuarterColumn>
                          <div className="headshotQuote__image" style={{ backgroundImage: "url(" + justinPettySrc + ")" }}></div>
@@ -37,7 +37,7 @@ const Arts = ({ state, academicSuccessClick, careerServicesClick, experientialLe
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Justin Petty</h2>
-                              <p>Class of 2020, theatre | Southfield, Mich.</p>
+                              <p>Theatre '20 | Southfield, Mich.</p>
                               <p>"I came to UToledo knowing I had a better chance to get cast. I never thought I'd get to be a lead unless the play was a black play. But they let me play roles usually played by straight, white men. They truly cast based on your talent and potential. I did a show outside of school, and every teacher came to see me and support me. That's so important — having teachers who care."</p>
 
                          </div>
@@ -56,7 +56,7 @@ const Arts = ({ state, academicSuccessClick, careerServicesClick, experientialLe
                          </ul>
                          <p><strong>Take innovative classes.</strong></p>
                          <ul>
-                              <li>Inside/Out Prison Exchange program. Attend class with incarcerated students at the Toledo Correctional Institution.</li>
+                              <li>Learn about social and criminal justice by attending class with incarcerated students at the Toledo Correctional Institution as part of UToledo's Inside/Out Prison Exchange program.</li>
                               <li>Study urban poverty in the Dominican Republic in an international field school.</li>
                               <li>Curate an exhibit at the world-renowned Toledo Museum of Art.</li>
                          </ul>

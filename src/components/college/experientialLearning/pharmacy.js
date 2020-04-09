@@ -36,7 +36,7 @@ const ExperientialLearningContentPharmacy = ({ state }) => {
                     </Row>
                     <Row>
                          <HalfColumn>
-                              <p>UToledo focuses on experiential education for all students. It’s even more critical for nursing majors. Regional health care partners, including The University of Toledo Medical Center and ProMedica, provide valuable clinical and career opportunities.</p>
+                              <p>We believe in experiential education. Learn real-world skills. Build a resume. Find a career.</p>
                               <ul>
                                    <li>Labs in state-of-the-art facilities with the latest equipment and technology</li>
                                    <li>Required internships and clinical rotations </li>
@@ -56,7 +56,7 @@ const ExperientialLearningContentPharmacy = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Emmanuel Ayanjoke</h2>
-                                   <p>Class of 2020, PharmD | Ogun, Nigeria</p>
+                                   <p>PharmD '20 | Ogun, Nigeria</p>
                                    <p>"I had my first internship ― with an independent pharmacist — in spring semester of my first professional year (year 3 at UToledo). I didn't really understand the value of this experience until I met non-UToledo students, who don't start internships until later. UToledo has a huge network of hospitals and rotation sites, and they prefer UToledo students. I had a rotation at Cleveland Clinic, one of the top hospitals in the world."</p>
                               </div>
                          </ThreeQuarterColumn>

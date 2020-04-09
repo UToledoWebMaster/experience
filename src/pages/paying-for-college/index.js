@@ -12,7 +12,7 @@ const PayingForCollege = ({ location }) => (
           <br />
           <Row>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college" state={location.state}>&larr; My College</Link>
+                    <Link className="block button button-primary" to="/college" state={location.state}>&larr; Back to My College</Link>
                </HalfColumn>
                <HalfColumn>
                     <Link className="block button button-primary" to="/whats-next" state={location.state}>What's Next? &rarr;</Link>

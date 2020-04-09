@@ -21,10 +21,10 @@ const Engineering = ({ state, academicSuccessClick, careerServicesClick, experie
 
      }
      `)
-     // const devyaniDonde = data.images.nodes.filter(node => node.name === 'devyaniDonde')[0];
-     // const devyaniDondeSrc = devyaniDonde.childImageSharp.fluid.src;
-     // const justinMendoza = data.images.nodes.filter(node => node.name === 'justinMendoza')[0];
-     // const justinMendozaSrc = justinMendoza.childImageSharp.fluid.src;
+     const devyaniDonde = data.images.nodes.filter(node => node.name === 'devyaniDonde')[0];
+     const devyaniDondeSrc = devyaniDonde.childImageSharp.fluid.src;
+     const justinMendoza = data.images.nodes.filter(node => node.name === 'justinMendoza')[0];
+     const justinMendozaSrc = justinMendoza.childImageSharp.fluid.src;
      const harishHemming = data.images.nodes.filter(node => node.name === 'harishHemming')[0];
      const harishHemmingSrc = harishHemming.childImageSharp.fluid.src;
 
@@ -33,38 +33,38 @@ const Engineering = ({ state, academicSuccessClick, careerServicesClick, experie
                <h1>College of {state.collegeOfInterest}</h1>
                <p>Earn a patent, start a business, conduct research. These are the kinds of experiences our engineering undergraduates get at UToledo. We are one of only 8 programs in the U.S. that requires co-ops. Our students graduate with a year's worth of paid industry experience. Many find jobs before they graduate.</p>
                <Row>
-                    <Slider>
+                    <Slider className="testimonialSlider">
                          {/* Each div child of Slider is one slide in the slider */}
                          {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                          <div className="row skyBack">
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
                                         <h2>Devyani Donde</h2>
-                                        <p>Class of 2021, information technology | Nashik, India</p>
+                                        <p>Information Technology '21 | Nashik, India</p>
                                         <p>"I'm the Treasurer of the Association for Computing Machinery Women's Chapter. ACM-W connects me with amazing women in technology, helps me network, allows me to attend conferences and hackathons, and find trends in technology that prepare me for my career. The diversity at The University of Toledo attracted me. But the thing I liked best was the co-op program."</p>
                                    </div>
                               </div>
                               <div className="three columns">
-                                   {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + devyaniDondeSrc + ")" }}></div> */}
+                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + devyaniDondeSrc + ")" }}></div>
                               </div>
                          </div>
                          <div className="row skyBack">
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
                                         <h2>Justin Mendoza</h2>
-                                        <p>Class of 2022, bioengineering and Bacc2MD pre-med student | Toledo, Ohio</p>
+                                        <p>Bioengineering '22 and Bacc2MD pre-med student | Toledo, Ohio</p>
                                         <p>"When I visited UToledo, I thought the bioengineering program was ahead of its time and would allow me to pursue my passion for medicine. I applied and got into the Bacc2MD program, which guarantees me a medical school interview without taking the MCAT. It was a no-brainer. I wanted to give myself the greatest chance to become the physician that I want to be."</p>
                                    </div>
                               </div>
                               <div className="three columns">
-                                   {/* <div className="headshotQuote__image" style={{ backgroundImage: "url(" + justinMendozaSrc + ")" }}></div> */}
+                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + justinMendozaSrc + ")" }}></div>
                               </div>
                          </div>
                          <div className="row skyBack">
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
                                         <h2>Harish Hemming</h2>
-                                        <p>Class of 2021, computer science engineering and physics | Penang, Malaysia</p>
+                                        <p>Computer Science Engineering and Physics '21 | Penang, Malaysia</p>
                                         <p>"Even the big classes here aren’t huge. You can connect with profesors. Take  the initiative to get close to professors. Meet them; talk to them after class. If they get to know you, it will help you. They can help you do research or be a reference for a job."</p>
                                    </div>
                               </div>

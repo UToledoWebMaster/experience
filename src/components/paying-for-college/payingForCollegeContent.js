@@ -33,7 +33,7 @@ const PayingForCollegeContent = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>Great Info About My College. But How Do I Pay for It All?</h1>
-                              <p>We can help with that.</p>
+                              <p>We can help with that. We are committed to making a college education accessible to all.</p>
                               <p>No. 1: Our Tuition Guarantee helps you budget. Year 1 tuition = Year 4 tuition. Your housing and meal plan rates won't change either.</p>
                               <p>No. 2: We give generous aid. UToledo students have the lowest student debt among Ohio's public colleges.</p>
                          </FullWidth>
@@ -55,7 +55,7 @@ const PayingForCollegeContent = ({ state }) => {
                               <ul>
                                    <li>Scholarships and grants (You don’t have to pay these back.)</li>
                                    <li>Loans (Sorry, you have to pay these back!)</li>
-                                   <li>Workstudy</li>
+                                   <li>Work study</li>
                               </ul>
                          </FullWidth>
                     </Row>

@@ -22,8 +22,8 @@ const CareerServicesContentNursing = ({ state }) => {
 
      }
      `)
-     const navindiWeerasinghe = data.images.nodes.filter(node => node.name === 'navindiWeerasinghe')[0];
-     const navindiWeerasingheSrc = navindiWeerasinghe.childImageSharp.fluid.src;
+     // const navindiWeerasinghe = data.images.nodes.filter(node => node.name === 'navindiWeerasinghe')[0];
+     // const navindiWeerasingheSrc = navindiWeerasinghe.childImageSharp.fluid.src;
 
      if (state) {
           return (
@@ -42,7 +42,7 @@ const CareerServicesContentNursing = ({ state }) => {
                               </ul>
                          </FullWidth>
                     </Row>
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + navindiWeerasingheSrc + ")" }}></div>
                          </QuarterColumn>
@@ -54,7 +54,7 @@ const CareerServicesContentNursing = ({ state }) => {
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
-                    <br /><br />
+                    <br /><br /> */}
                </>
           );
      } else {

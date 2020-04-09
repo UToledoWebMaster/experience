@@ -23,9 +23,8 @@ const CareerServicesContentEducation = ({ state }) => {
 
      }
      `)
-     // const educationCareerServices = data.images.nodes.filter(node => node.name === 'educationCareerServices')[0];
-     const navindiWeerasinghe = data.images.nodes.filter(node => node.name === 'navindiWeerasinghe')[0];
-     const navindiWeerasingheSrc = navindiWeerasinghe.childImageSharp.fluid.src;
+     // const navindiWeerasinghe = data.images.nodes.filter(node => node.name === 'navindiWeerasinghe')[0];
+     // const navindiWeerasingheSrc = navindiWeerasinghe.childImageSharp.fluid.src;
 
      if (state) {
           return (
@@ -36,15 +35,12 @@ const CareerServicesContentEducation = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <HalfColumn>
+                         <FullWidth>
                               <p>Because that's the end game, right? To get a job.</p>
                               <p>Our education graduates are highly sought after. Employers know you often spend twice as much time in the field as other students and are ready to hit the ground running.</p>
-                         </HalfColumn>
-                         <HalfColumn>
-                              {/* <Img className="anim" fadeIn={true} fluid={educationCareerServices.childImageSharp.fluid} /> */}
-                         </HalfColumn>
+                         </FullWidth>
                     </Row>
-                    <br /><br />
+                    <br />
                     <Row className="text-center">
                          <FullWidth>
                               <h2 style={{ display: "inline" }}>90.4%</h2><p style={{ display: "inline" }}> of graduates found jobs in education</p>
@@ -63,7 +59,7 @@ const CareerServicesContentEducation = ({ state }) => {
                               </ul>
                          </FullWidth>
                     </Row>
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + navindiWeerasingheSrc + ")" }}></div>
                          </QuarterColumn>
@@ -75,31 +71,7 @@ const CareerServicesContentEducation = ({ state }) => {
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
-                    <br /><br />
-                    <Row>
-                         <FullWidth>
-                              <h2>Where Do COBI Graduates start Their Careers?</h2>
-                         </FullWidth>
-                    </Row>
-                    <Row>
-                         <HalfColumn>
-                              <ul>
-                                   <li>Amazon</li>
-                                   <li>Owens Corning</li>
-                                   <li>Owens-Illinois</li>
-                                   <li>3M</li>
-                                   <li>Ford</li>
-                              </ul>
-                         </HalfColumn>
-                         <HalfColumn>
-                              <ul>
-                                   <li>SpaceX</li>
-                                   <li>Microsoft</li>
-                                   <li>IBM</li>
-                                   <li>Ernst and Young</li>
-                              </ul>
-                         </HalfColumn>
-                    </Row>
+                    <br /><br /> */}
                </>
           );
      } else {

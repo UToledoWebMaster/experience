@@ -43,19 +43,19 @@ const WhatsNextContent = ({ state }) => {
                     </Row>
                     <Row>
                          <HalfColumn className="yellowBack">
-                              <h2>Have a myUT account?</h2>
+                              <h2>Already set up your myUT account?</h2>
                               <p style={{ marginBottom: "0px" }}>Great! <a href="http://myut.utoledo.edu/" target="_blank">Log in</a> and you'll find everything you need on the New Student tab to submit your deposit.</p>
                          </HalfColumn>
                          <HalfColumn className="yellowBack">
-                              <h2>Haven't created a myUT account yet?</h2>
+                              <h2>Need to set up your myUT account?</h2>
                               <p style={{ marginBottom: "0px" }}>No worries. Visit <a href="https://myutaccount.utoledo.edu/" target="_blank">myutaccount.utoledo.edu</a> and we'll lead you through the setup.</p>
                          </HalfColumn>
                     </Row>
                     <br /><br />
                     <Row>
                          <FullWidth>
-                              <h1>Have You Already Submitted Your Deposit?</h1>
-                              <p>Fantastic! Now you can register for Rocket Launch orientation and check your next steps. It's all outlined on the New Student tab in your myUT account.</p>
+                              <h1>Committed to being a Rocket?</h1>
+                              <p>Fantastic! Once you've paid your enrollment deposit you can register for Rocket Launch orientation and check your next steps. It's all outlined on the New Student tab in your myUT account.</p>
                               <h2>Congratulations {state.name}.<br />Welcome to the Rocket Family!</h2>
                               <Img className="anim" fadeIn={true} fluid={welcomeToTheFamily.childImageSharp.fluid} />
                          </FullWidth>

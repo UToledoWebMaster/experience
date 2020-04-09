@@ -23,8 +23,8 @@ const ExperientialLearningContentEducation = ({ state }) => {
 
      }
      `)
-     const isaacPetkac = data.images.nodes.filter(node => node.name === 'isaacPetkac')[0];
-     const isaacPetkacSrc = isaacPetkac.childImageSharp.fluid.src;
+     // const isaacPetkac = data.images.nodes.filter(node => node.name === 'isaacPetkac')[0];
+     // const isaacPetkacSrc = isaacPetkac.childImageSharp.fluid.src;
      const educationExperientialLearning = data.images.nodes.filter(node => node.name === 'educationExperientialLearning')[0];
      if (state) {
           return (
@@ -48,7 +48,7 @@ const ExperientialLearningContentEducation = ({ state }) => {
                          </HalfColumn>
                     </Row>
                     <br /><br />
-                    <SingleTestimony>
+                    {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + isaacPetkacSrc + ")" }}></div>
                          </QuarterColumn>
@@ -60,7 +60,7 @@ const ExperientialLearningContentEducation = ({ state }) => {
                               </div>
                          </ThreeQuarterColumn>
                     </SingleTestimony>
-                    <br /><br />
+                    <br /><br /> */}
                </>
           );
      } else {

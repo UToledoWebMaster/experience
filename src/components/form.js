@@ -87,7 +87,7 @@ class Form extends React.Component {
                          </Row>
                          <Row>
                               <FullWidth>
-                                   <input onClick={this.handleClick} className="continueBtn anim" type="button" value="Continue" />
+                                   <input onClick={this.handleClick} className="continueBtn anim" type="button" value="Let's go" />
                               </FullWidth>
                          </Row>
                     </center>
