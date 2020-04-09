@@ -42,17 +42,18 @@ const HonorsContentHealth = ({ state }) => {
                     <Row>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={communityEngagement.childImageSharp.fluid} />
-                              <h2>Community Engagement</h2>
+                              <h2>Community <br />Engagement</h2>
                          </ThirdColumn>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={creativeApproaches.childImageSharp.fluid} />
-                              <h2>Creative Approaches</h2>
+                              <h2>Creative <br />Approaches</h2>
                          </ThirdColumn>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={enrichingExperiences.childImageSharp.fluid} />
-                              <h2>Enriching Experiences</h2>
+                              <h2>Enriching <br />Experiences</h2>
                          </ThirdColumn>
                     </Row>
+                    <br />
                     <Row>
                          <FullWidth>
                               <ul>
@@ -66,6 +67,7 @@ const HonorsContentHealth = ({ state }) => {
                               </ul>
                          </FullWidth>
                     </Row>
+                    <br />
                     <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + laurenBahonsuaSrc + ")" }}></div>
