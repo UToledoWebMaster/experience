@@ -11,7 +11,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 class Slider extends React.Component {
     render() {
         return (
-            <div className={`${this.props.className} sliderComponent`}>
+            <div className={`${this.props.className} sliderComponent skyBack`}>
                 {this.props.children}
             </div>
         )
@@ -620,7 +620,7 @@ class Slider extends React.Component {
                         _.$slider.children().children().children()
                             .css({
                                 'width':(100 / _.options.slidesPerRow) + '%',
-                                'display': 'inline-block'
+                                'display': 'block' // Custom change, was inline-block
                             });
 
                     }
