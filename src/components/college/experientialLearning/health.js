@@ -55,7 +55,7 @@ const ExperientialLearningContentHealth = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Isaac Petkac</h2>
-                                   <p>'21 | Edinboro, Penn.</p>
+                                   <p className="collegeTestimonySubtitle">'21 | Edinboro, Penn.</p>
                                    <p>"Hands-on learning is miles better than sitting in a classroom. When I visited UToledo, I met a professor who showed me all the opportunities I would have as a freshman. And I had more than I thought I would. I was able to get my experience from day one and I haven't stopped."</p>
                               </div>
                          </ThreeQuarterColumn>

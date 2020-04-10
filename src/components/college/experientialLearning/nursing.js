@@ -56,7 +56,7 @@ const ExperientialLearningContentNursing = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Isaac Petkac</h2>
-                                   <p>Class of 2021 | Edinboro, Penn.</p>
+                                   <p className="collegeTestimonySubtitle">Class of 2021 | Edinboro, Penn.</p>
                                    <p>"Hands-on learning is miles better than sitting in a classroom. When I visited UToledo, I met a professor who showed me all the opportunities I would have as a freshman. And I had more than I thought I would. I called nine football games, including the MAC championship for UToledo's radio station, WXUT. I called softball and baseball games on ESPN. I was able to get my experience from day one and I haven’t stopped."</p>
                               </div>
                          </ThreeQuarterColumn>

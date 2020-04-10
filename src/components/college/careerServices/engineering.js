@@ -49,27 +49,27 @@ const CareerServicesContentEngineering = ({ state }) => {
                               {/* Each div child of Slider is one slide in the slider */}
                               {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                               <div className="row skyBack">
-                                   <div className="nine columns">
-                                        <div className="headshotQuote__text">
-                                             <h2>Jason Gonring</h2>
-                                             <p>Electrical Engineering '19 | Lambertville, Mich.</p>
-                                             <p>"The project I worked on to put a solar array on Health Science Campus was one of my favorite projects. I applied everything I learned in class, and I learned soft skills, too – like how to compromise with people and make a big initiative like this come together."</p>
-                                        </div>
-                                   </div>
                                    <div className="three columns">
                                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + jasonGonringSrc + ")" }}></div>
                                    </div>
+                                   <div className="nine columns">
+                                        <div className="headshotQuote__text">
+                                             <h2>Jason Gonring</h2>
+                                             <p className="collegeTestimonySubtitle">Electrical Engineering '19 | Lambertville, Mich.</p>
+                                             <p>"The project I worked on to put a solar array on Health Science Campus was one of my favorite projects. I applied everything I learned in class, and I learned soft skills, too – like how to compromise with people and make a big initiative like this come together."</p>
+                                        </div>
+                                   </div>
                               </div>
                               <div className="row skyBack">
+                                   <div className="three columns">
+                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + vimanthaBamunuarachchiSrc + ")" }}></div>
+                                   </div>
                                    <div className="nine columns">
                                         <div className="headshotQuote__text">
                                              <h2>Vimantha Bamunuarachchi</h2>
-                                             <p>Chemical Engineering '20 | Colombo, Sri Lanka</p>
+                                             <p className="collegeTestimonySubtitle">Chemical Engineering '20 | Colombo, Sri Lanka</p>
                                              <p>"When I graduate, I'll have more than a year of industrial experience. It's priceless to connect with engineers and scientists as an undergraduate and get that hands-on experience. I have friends at bigger schools, but they don't have job experience when they get their degree."</p>
                                         </div>
-                                   </div>
-                                   <div className="three columns">
-                                        <div className="headshotQuote__image" style={{ backgroundImage: "url(" + vimanthaBamunuarachchiSrc + ")" }}></div>
                                    </div>
                               </div>
                          </Slider>

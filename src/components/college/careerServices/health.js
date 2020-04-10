@@ -50,7 +50,7 @@ const CareerServicesContentHealth = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Colette Boothman</h2>
-                                   <p>M.A. in Recreation and Leisure '16; natural resources specialist/park ranger | Raymond, Calif.</p>
+                                   <p className="collegeTestimonySubtitle">M.A. in Recreation and Leisure '16; natural resources specialist/park ranger | Raymond, Calif.</p>
                                    <p>"I had wanted to become a U.S. park ranger since childhood. Thanks to the encouragement and education I received at The University of Toledo, that dream came true."</p>
                               </div>
                          </ThreeQuarterColumn>
