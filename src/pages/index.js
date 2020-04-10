@@ -55,7 +55,7 @@ class IndexPage extends React.Component {
   loadAnim() {
     const loader = document.querySelector('.loader');
     gsap.to(loader, 1, {
-      "rotateY": "180deg", "repeat": 1, onComplete: () => {
+      "rotateY": "180deg", "repeat": 2, onComplete: () => {
         gsap.to(loader, .8, {
           "opacity": 0, onComplete: () => {
             this.setState(
