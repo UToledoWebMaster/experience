@@ -81,7 +81,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <div className="one column">
+                         <div className="one column iconColumn">
                               <Img className="anim" fadeIn={true} fluid={gradCap.childImageSharp.fluid} />
                          </div>
                          <div className="eleven columns"><p>Average 2019 starting salary of UToledo engineering graduates: $62,819</p></div>
@@ -92,7 +92,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <div className="one column">
+                         <div className="one column iconColumn">
                               <Img className="anim" fadeIn={true} fluid={dollarSign.childImageSharp.fluid} />
                          </div>
                          <div className="eleven columns"><p>Average 2019 co-op wage: $18.04/hour</p></div>

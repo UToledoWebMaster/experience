@@ -301,3 +301,7 @@ a.forBtn {
     height: 250px !important; /* This value can be tweaked */
   }
 }
+
+.iconColumn {
+  max-width: 100px;
+}
