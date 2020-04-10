@@ -52,7 +52,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          </div>
                     </ThreeQuarterColumn>
                     <QuarterColumn>
-                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + akshithDassSrc + ")" }}></div>
+                         <div className="headshotQuote__image" style={{ backgroundImage: "url(" + akshithDassSrc + ")", backgroundPositionY: "bottom" }}></div>
                     </QuarterColumn>
                </SingleTestimony>
                <br /><br />

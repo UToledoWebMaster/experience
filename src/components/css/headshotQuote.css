@@ -23,6 +23,12 @@
 	background-size: cover;
 }
 
+@media only screen and (max-width: 550px) {
+	.headshotQuote__image {
+		background-position-y: -30px;
+	}
+}
+
 /* In a slider, text on the left*/
 .headshotQuote__text {
 	margin-top: 2.5rem;
