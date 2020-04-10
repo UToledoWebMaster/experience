@@ -39,9 +39,11 @@ class Form extends React.Component {
           }
      }
      componentDidMount() {
-          gsap.fromTo(".anim", .5, { "opacity": 0, "bottom": "20px" }, { "opacity": 1, "bottom": "0px", stagger: .3 });
-          gsap.to(".welcomeTo", 3, { "left": "-80px", ease: "power2.out" });
-          gsap.to(".experienceDay", 3, { "left": "80px", ease: "power2.out" });
+          if (window.innerWidth > 550) {
+               gsap.fromTo(".anim", .5, { "opacity": 0, "bottom": "20px" }, { "opacity": 1, "bottom": "0px", stagger: .3 });
+               gsap.to(".welcomeTo", 3, { "left": "-80px", ease: "power2.out" });
+               gsap.to(".experienceDay", 3, { "left": "80px", ease: "power2.out" });
+          }
      }
      render() {
           return (

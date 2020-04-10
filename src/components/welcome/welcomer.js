@@ -35,6 +35,7 @@ const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningC
                <Row>
                     <HalfColumn>
                          <Img className="anim" fadeIn={true} fluid={postIt.childImageSharp.fluid} />
+                         <br />
                     </HalfColumn>
                     <HalfColumn>
                          <h1>Hi {name}!</h1>
