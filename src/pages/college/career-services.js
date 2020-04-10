@@ -16,7 +16,7 @@ const CareerServices = ({ location }) => (
                     <Link className="block button button-primary" to="/college/experiential-learning" state={{ ...location.state, careerServicesClick: true }}>&larr; Learn by Doing</Link>
                </HalfColumn>
                <HalfColumn>
-                    <Link className="block button button-primary" to="/college/honors" state={{ ...location.state, careerServicesClick: true }}>Accept the Challenge &rarr;</Link>
+                    <Link className="block button button-primary" to="/paying-for-college" state={{ ...location.state, careerServicesClick: true }}>Paying for College &rarr;</Link>
                </HalfColumn>
           </Row>
      </Layout >

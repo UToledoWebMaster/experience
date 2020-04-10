@@ -3,7 +3,7 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
 import ExploreMoreContent from '../../components/exploreMore/exploreMoreContent'
-import { Row, FullWidth } from '../../components/layout/layoutComponent'
+import { Row, FullWidth, HalfColumn } from '../../components/layout/layoutComponent'
 
 const ExploreMore = ({ location }) => (
      <Layout>
@@ -11,9 +11,12 @@ const ExploreMore = ({ location }) => (
           <ExploreMoreContent state={location.state} />
           <br />
           <Row>
-               <FullWidth>
+               <HalfColumn>
                     <Link className="block button button-primary" to="/whats-next" state={location.state}>&larr; Back to What's Next</Link>
-               </FullWidth>
+               </HalfColumn>
+               <HalfColumn>
+                    <Link className="block button button-primary" to="/" state={location.state}>Explore Other Colleges &rarr;</Link>
+               </HalfColumn>
           </Row>
      </Layout >
 )

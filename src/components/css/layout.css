@@ -205,6 +205,10 @@ a.forBtn {
   grid-row-gap: 0;
 }
 
+.stats h2 {
+  margin-bottom: 0px;
+}
+
 @media (max-width: 1000px) {
   .grid.collegeNav {
     grid-template-columns: 1fr 1fr;
@@ -228,16 +232,19 @@ a.forBtn {
 
 @media (max-width: 767px) {
   .grid.collegeNav .flipCard {
-      height: 120px !important;
+    height: 120px !important;
   }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
   /* IE10+ CSS */
   .grid.collegeNav {
     display: block;
     text-align: center;
   }
+
   .grid.collegeNav .flipCard {
     display: inline-block;
     width: 160px;
@@ -293,12 +300,14 @@ a.forBtn {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 450px !important; /* This value can be tweaked */
+  height: 450px !important;
+  /* This value can be tweaked */
 }
 
 @media (max-width: 550px) {
   .fullBackgroundImage {
-    height: 250px !important; /* This value can be tweaked */
+    height: 250px !important;
+    /* This value can be tweaked */
   }
 }
 

@@ -33,7 +33,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <p>We offer two pathways: one for aspiring pharmacists and one for students interested in pharmacy science or other careers in pharmacy (this is a great pre-med track). Course work for each is identical in the first two years.</p>
                     </FullWidth>
                </Row>
-               <Row className="text-center">
+               <Row className="text-center stats">
                     <HalfColumn>
                          <h2>96%</h2>
                          <p>Best passage rate in Ohio on licensing exam</p>
@@ -43,6 +43,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <p>Highest passage rate in U.S. on in-state pharmacy law exam and the only university with a perfect pass rate</p>
                     </HalfColumn>
                </Row>
+               <br />
                <SingleTestimony>
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">

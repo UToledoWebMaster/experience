@@ -48,7 +48,7 @@ const ResearchContentNursing = ({ state }) => {
                          </HalfColumn>
                     </Row>
                     <br /><br />
-                    <Row className="text-center">
+                    <Row className="text-center stats">
                          <ThirdColumn>
                               <h2>82</h2>
                               <p>undergradutes received funding in 2019</p>
@@ -62,6 +62,7 @@ const ResearchContentNursing = ({ state }) => {
                               <p>invested in undergraduate research</p>
                          </ThirdColumn>
                     </Row>
+                    <br />
                     {/* <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + nathanSzymanskiSrc + ")" }}></div>

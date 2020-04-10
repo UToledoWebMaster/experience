@@ -368,6 +368,17 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
+  color: #003E7E;
+  background-color: #FFD200;
+  border-color: #FFD200;
+  transition: .3s all;
+}
+
+.yellowBack .button.button-primary,
+.yellowBack button.button-primary,
+.yellowBack input[type="submit"].button-primary,
+.yellowBack input[type="reset"].button-primary,
+.yellowBack input[type="button"].button-primary {
   color: white;
   background-color: #003E7E;
   border-color: #003E7E;
@@ -384,9 +395,24 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
+  color: #003E7E;
+  background-color: #FFE04D;
+  border-color: #FFE04D;
+}
+
+.yellowBack .button.button-primary:hover,
+.yellowBack button.button-primary:hover,
+.yellowBack input[type="submit"].button-primary:hover,
+.yellowBack input[type="reset"].button-primary:hover,
+.yellowBack input[type="button"].button-primary:hover,
+.yellowBack .button.button-primary:focus,
+.yellowBack button.button-primary:focus,
+.yellowBack input[type="submit"].button-primary:focus,
+.yellowBack input[type="reset"].button-primary:focus,
+.yellowBack input[type="button"].button-primary:focus {
   color: white;
-  background-color: #00254B;
-  border-color: #00254B;
+  background-color: #003E7E;
+  border-color: #003E7E;
 }
 
 

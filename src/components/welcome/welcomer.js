@@ -42,6 +42,7 @@ const Welcomer = ({ name, college, diverseClick, studentLifeClick, livingDiningC
                          <h2 class="bigger thinner">UToledo can help you check off all those boxes!</h2>
                     </HalfColumn>
                </Row>
+               <br /><br />
                <Row>
                     <FullWidth>
                          <p>Let's begin with a few of your most common questions.</p>
