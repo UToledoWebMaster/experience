@@ -2,7 +2,7 @@
     width: 100%;
     height: 250px !important;
     /* !important to override inline height: auto script */
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     position: relative;
     cursor: pointer;
 }

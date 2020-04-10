@@ -51,6 +51,7 @@ const AcademicSuccessContentHealth = ({ state }) => {
                               <Img className="anim" fadeIn={true} fluid={academicSuccess.childImageSharp.fluid} />
                          </HalfColumn>
                     </Row>
+                    <br />
                     <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + alexisAlvaradoSrc + ")" }}></div>
@@ -58,7 +59,7 @@ const AcademicSuccessContentHealth = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Alexis Alvarado '21</h2>
-                                   <p>Defiance, Ohio</p>
+                                   <p className="collegeTestimonySubtitle">Defiance, Ohio</p>
                                    <p>"Coming into college as a first-generation student with absolutely no knowledge of anything was scary. When I connected to the TRiO (Student Support Services) team at UToledo, I felt like I had a home on campus. It was somewhere I could go and study, chill or talk to someone in times of need."</p>
                               </div>
                          </ThreeQuarterColumn>

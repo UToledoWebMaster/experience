@@ -37,7 +37,7 @@ const Arts = ({ state, academicSuccessClick, careerServicesClick, experientialLe
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Justin Petty</h2>
-                              <p>Theatre '20 | Southfield, Mich.</p>
+                              <p className="collegeTestimonySubtitle">Theatre '20 | Southfield, Mich.</p>
                               <p>"I came to UToledo knowing I had a better chance to get cast. I never thought I'd get to be a lead unless the play was a black play. But they let me play roles usually played by straight, white men. They truly cast based on your talent and potential. I did a show outside of school, and every teacher came to see me and support me. That's so important — having teachers who care."</p>
 
                          </div>

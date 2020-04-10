@@ -32,7 +32,7 @@ const Health = ({ state, academicSuccessClick, careerServicesClick, experiential
                     <ThreeQuarterColumn>
                          <div className="headshotQuote__text">
                               <h2>Marie Jackson</h2>
-                              <p>Recreational Therapy '20 | Southfield, Mich.</p>
+                              <p className="collegeTestimonySubtitle">Recreational Therapy '20 | Southfield, Mich.</p>
                               <p>"When I first came to UToledo, I had my heart set on athletic training, but thanks to the support and mentorship of Professor Holly Eichner, I discovered that my true passion is in recreational therapy. I love being able to help individuals with illnesses and disabling conditions live healthier, more satisfying lives."</p>
                          </div>
                     </ThreeQuarterColumn>
