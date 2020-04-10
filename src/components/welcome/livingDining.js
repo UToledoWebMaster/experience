@@ -44,7 +44,7 @@ const LivingDiningContent = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Munira Taufik</h2>
-                                   <p>Geology '19; M.Ed. Higher Education '20 | Kuala Lumpur, Malaysia</p>
+                                   <p className="collegeTestimonySubtitle">Geology '19; M.Ed. Higher Education '20 | Kuala Lumpur, Malaysia</p>
                                    <p>"I would recommend every freshman stay on campus. I lived in the Honors Academic Village my freshman year. It changed my life. It's how I started to meet people, including my best friend. I'd also see flyers about events and know what was happening on campus."</p>
                               </div>
                          </ThreeQuarterColumn>

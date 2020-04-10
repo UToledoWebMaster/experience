@@ -63,7 +63,7 @@ const DiverseCommunityContent = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Meet Jannet</h2>
-                                   <p><strong>Jannet Frias</strong><br />Special Education '22 | Immokalee, Fla.</p>
+                                   <p className="collegeTestimonySubtitle"><strong>Jannet Frias</strong><br />Special Education '22 | Immokalee, Fla.</p>
                                    <p>"I was nervous when I came to Toledo. But now I feel completely at home. A summer program for multicultural students helped me make new friends. And there's so much to do, so many organizations and diversity, it's easy to meet people and connect."</p>
                               </div>
                          </ThreeQuarterColumn>
@@ -81,17 +81,17 @@ const DiverseCommunityContent = ({ state }) => {
                               {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + welcomingSrc + ")"}}></div>
+                                        <div className="fullBackgroundImage" style={{ backgroundImage: "url(" + welcomingSrc + ")" }}></div>
                                    </div>
                               </div>
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + multiculturalSrc + ")"}}></div>
+                                        <div className="fullBackgroundImage" style={{ backgroundImage: "url(" + multiculturalSrc + ")" }}></div>
                                    </div>
                               </div>
                               <div className="row">
                                    <div className="twelve columns">
-                                        <div className="fullBackgroundImage" style={{backgroundImage: "url(" + midwesternFriendlySrc + ")"}}></div>
+                                        <div className="fullBackgroundImage" style={{ backgroundImage: "url(" + midwesternFriendlySrc + ")" }}></div>
                                    </div>
                               </div>
                               {/* Alternatively, we could have the images be full sized (in which case we'd need to crop them uniformly)

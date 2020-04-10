@@ -14,7 +14,7 @@ const ExploreMoreContent = ({ state }) => {
          id
          name
          childImageSharp{
-          fixed(width:1000, quality: 100){
+          fixed(width:960, quality: 100){
              ...GatsbyImageSharpFixed
           }
          }
@@ -32,7 +32,7 @@ const ExploreMoreContent = ({ state }) => {
                               <h1>Explore More</h1>
                               <p>Interested in more of what UToledo has to offer? Explore other colleges and check out our new virtual tour below.</p>
                               <h2>Virtual Tour</h2>
-                              <a target="_blank" href="https://www.youvisit.com/#/vte/?data-platform=v&data-link-type=immersive&data-inst=63741&data-image-width=100%"><Img className="anim" fadeIn={true} fixed={youVisit2.childImageSharp.fixed} /></a>
+                              <a target="_blank" href="https://www.youvisit.com/#/vte/?data-platform=v&data-link-type=immersive&data-inst=63741&data-image-width=100%"><Img className="anim youVisitImg" fadeIn={true} fixed={youVisit2.childImageSharp.fixed} /></a>
                          </FullWidth>
                     </Row>
                </>

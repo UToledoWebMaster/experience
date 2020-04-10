@@ -86,7 +86,9 @@ ul li {
 }
 
 @media (max-width: 550px) {
-  .welcomeTo, .experienceDay {
+
+  .welcomeTo,
+  .experienceDay {
     font-size: 4em;
   }
 }
@@ -276,6 +278,11 @@ a.forBtn {
 
 .yellowCheck {
   top: 7px;
+}
+
+.youVisitImg {
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 1200px) {

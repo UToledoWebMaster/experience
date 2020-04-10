@@ -32,7 +32,7 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <p>High-tech education. Engaged faculty experts. Impressive job-placement rates. We'll prepare you for a rewarding career in business no matter what your passion.</p>
                     </FullWidth>
                </Row>
-               <Row className="text-center">
+               <Row className="text-center stats">
                     <HalfColumn>
                          <h2>13 majors & 17 minors</h2>
                          <p>in the most in-demand areas of business</p>
