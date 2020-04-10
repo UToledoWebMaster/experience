@@ -21,6 +21,9 @@ const DiverseCommunityContent = ({ state }) => {
            fluid{
              ...GatsbyImageSharpFluid
            }
+           fixed(width: 1000, quality: 100){
+             ...GatsbyImageSharpFixed
+           }
          }
      }
        }
@@ -30,11 +33,11 @@ const DiverseCommunityContent = ({ state }) => {
      const jannetFrias = data.images.nodes.filter(node => node.name === 'jannetFrias')[0];
      const jannetFriasSrc = jannetFrias.childImageSharp.fluid.src;
      const welcoming = data.images.nodes.filter(node => node.name === 'welcoming')[0];
-     const welcomingSrc = welcoming.childImageSharp.fluid.src;
+     const welcomingSrc = welcoming.childImageSharp.fixed.src;
      const multicultural = data.images.nodes.filter(node => node.name === 'multicultural')[0];
-     const multiculturalSrc = multicultural.childImageSharp.fluid.src;
+     const multiculturalSrc = multicultural.childImageSharp.fixed.src;
      const midwesternFriendly = data.images.nodes.filter(node => node.name === 'midwesternFriendly')[0];
-     const midwesternFriendlySrc = midwesternFriendly.childImageSharp.fluid.src;
+     const midwesternFriendlySrc = midwesternFriendly.childImageSharp.fixed.src;
      if (state) {
           return (
                <>
