@@ -195,6 +195,49 @@ a.forBtn {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   text-align: center;
+  grid-row-gap: 0;
+}
+
+@media (max-width: 1000px) {
+  .grid.collegeNav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    grid-column-gap: 2vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid.collegeNav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+  }
+}
+
+.grid.collegeNav .flipCard {
+  height: 180px !important;
+}
+
+@media (max-width: 767px) {
+  .grid.collegeNav .flipCard {
+      height: 120px !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS */
+  .grid.collegeNav {
+    display: block;
+    text-align: center;
+  }
+  .grid.collegeNav .flipCard {
+    display: inline-block;
+    width: 160px;
+    height: 150px !important;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
 }
 
 .floatRight {
@@ -232,23 +275,16 @@ a.forBtn {
   }
 }
 
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 .fullBackgroundImage {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px !important; /* This value can be tweaked */
+  height: 450px !important; /* This value can be tweaked */
 }
 
 @media (max-width: 550px) {
   .fullBackgroundImage {
-    height: 400px !important; /* This value can be tweaked */
+    height: 250px !important; /* This value can be tweaked */
   }
 }

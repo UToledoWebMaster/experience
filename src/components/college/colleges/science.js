@@ -35,27 +35,27 @@ const Science = ({ state, academicSuccessClick, careerServicesClick, experientia
                          {/* Each div child of Slider is one slide in the slider */}
                          {/* Keep the old "className="row" usage here, I tried using Row but it gave me an error */}
                          <div className="row skyBack">
-                              <div className="nine columns">
-                                   <div className="headshotQuote__text">
-                                        <h2>Raghad Elhag</h2>
-                                        <p>Biology with a concentration in neuroscience '20 | Toledo, Ohio</p>
-                                        <p>"My proudest accomplishment is organizing a brain outreach program for Toledo Public elementary schools. I worked with medical, psychology, biology and pharmacy students to host an event involving fun neuroscience activities. Whether it be an outreach program or a research project, my experiences volunteering in the community and presenting my own research will set me up for the future I want."</p>
-                                   </div>
-                              </div>
                               <div className="three columns">
                                    <div className="headshotQuote__image" style={{ backgroundImage: "url(" + raghadElhagSrc + ")" }}></div>
                               </div>
+                              <div className="nine columns">
+                                   <div className="headshotQuote__text">
+                                        <h2>Raghad Elhag</h2>
+                                        <p className="collegeTestimonySubtitle">Biology with a concentration in neuroscience '20 | Toledo, Ohio</p>
+                                        <p>"My proudest accomplishment is organizing a brain outreach program for Toledo Public elementary schools. I worked with medical, psychology, biology and pharmacy students to host an event involving fun neuroscience activities. Whether it be an outreach program or a research project, my experiences volunteering in the community and presenting my own research will set me up for the future I want."</p>
+                                   </div>
+                              </div>
                          </div>
                          <div className="row skyBack">
+                              <div className="three columns">
+                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + rohanRahatgaonkarSrc + ")" }}></div>
+                              </div>
                               <div className="nine columns">
                                    <div className="headshotQuote__text">
                                         <h2>Rohan Rahatgaonkar</h2>
-                                        <p>Math and Physics '21 | Aurangabad, Maharashtra, India</p>
+                                        <p className="collegeTestimonySubtitle">Math and Physics '21 | Aurangabad, Maharashtra, India</p>
                                         <p>"The physics department has a lot of professors in diverse, research-intensive fields and also has telescopes and a planetarium, which is uncommon. I wanted a university that was big, so I could make a lot of friends and participate in many organizations, but also not too big, so I could have one-to-one interaction with my professors and the ability to make an impact. A good scholarship was my third criterion. UToledo met all my criteria! And it's close to Cedar Point amusement park, another plus!"</p>
                                    </div>
-                              </div>
-                              <div className="three columns">
-                                   <div className="headshotQuote__image" style={{ backgroundImage: "url(" + rohanRahatgaonkarSrc + ")" }}></div>
                               </div>
                          </div>
                     </Slider>

@@ -42,17 +42,18 @@ const HonorsContentScience = ({ state }) => {
                     <Row>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={communityEngagement.childImageSharp.fluid} />
-                              <h2>Community Engagement</h2>
+                              <h2>Community <br />Engagement</h2>
                          </ThirdColumn>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={creativeApproaches.childImageSharp.fluid} />
-                              <h2>Creative Approaches</h2>
+                              <h2>Creative <br />Approaches</h2>
                          </ThirdColumn>
                          <ThirdColumn>
                               <Img className="anim" fadeIn={true} fluid={enrichingExperiences.childImageSharp.fluid} />
-                              <h2>Enriching Experiences</h2>
+                              <h2>Enriching <br />Experiences</h2>
                          </ThirdColumn>
                     </Row>
+                    <br />
                     <Row>
                          <FullWidth>
                               <ul>
@@ -66,6 +67,7 @@ const HonorsContentScience = ({ state }) => {
                               </ul>
                          </FullWidth>
                     </Row>
+                    <br />
                     <SingleTestimony>
                          <QuarterColumn>
                               <div className="headshotQuote__image" style={{ backgroundImage: "url(" + laurenBahonsuaSrc + ")" }}></div>
@@ -73,7 +75,7 @@ const HonorsContentScience = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Lauren Bahonsua '19</h2>
-                                   <p>Chicago, Ill.</p>
+                                   <p className="collegeTestimonySubtitle">Chicago, Ill.</p>
                                    <p>"A part of me wanted to get away from home. But I was also scared being on my own for the first time. The Honors College was a nice way for me to form a community. After joining the Honors College, I was able to step out of my comfort zone. I became more active with organizations around campus, volunteered at events and took on leadership positions that allowed me to grow."</p>
                               </div>
                          </ThreeQuarterColumn>

@@ -23,18 +23,32 @@
 	background-size: cover;
 }
 
+@media only screen and (max-width: 550px) {
+	.headshotQuote__image {
+		background-position-y: -30px;
+	}
+}
+
+/* In a slider, text on the left*/
 .headshotQuote__text {
 	margin-top: 2.5rem;
+	padding-left: 70px;
+}
+
+/* In a slider, text on the right*/
+.columns + .columns .headshotQuote__text {
+	margin-top: 2.5rem;
+	padding-left: 0;
 	padding-right: 70px;
 }
 
-/* Default is text on the left */
+/* Not in a slider, text on the left */
 .singleTestimony .headshotQuote__text {
 	padding-left: 5%;
 	padding-right: 0;
 }
 
-/* This selector targets the text when it's on the right */
+/* Not in a slider, text on the right */
 .singleTestimony .columns + .columns .headshotQuote__text {
 	padding-left: 0;
 	padding-right: 5%;
@@ -42,7 +56,7 @@
 
 @media only screen and (max-width: 550px) {
 	.headshotQuote__text {
-		padding: 0 4%;
+		padding: 0 4% !important;
 	}
 }
 
@@ -52,4 +66,8 @@
 	font-family: Source Sans Pro, sans-serif;
 	font-weight: 300;
 	color: #2E2E2D;
+}
+
+.collegeTestimonySubtitle {
+	margin-top: -2rem;
 }
