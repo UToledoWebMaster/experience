@@ -19,6 +19,8 @@ class Form extends React.Component {
           const formName = document.getElementById("formName");
           const formCollege = document.getElementById("formCollege");
           if (formName.value && formCollege.value !== "admitted college") {
+               gsap.to(formName, .2, { "border": "1px solid #D1D1D1" });
+               gsap.to(formCollege, .2, { "border": "1px solid #D1D1D1" });
                gsap.fromTo(".anim:not(.mainIcon)", .5, { "opacity": 1, "bottom": "0px" }, { "opacity": 0, "bottom": "20px" });
                this.setState({
                     name: formName.value,
@@ -36,6 +38,17 @@ class Form extends React.Component {
                          }
                     )
                });
+          } else {
+               if (!formName.value) {
+                    gsap.to(formName, .2, { "border": "1px solid red" });
+               } else {
+                    gsap.to(formName, .2, { "border": "1px solid #D1D1D1" });
+               }
+               if (formCollege.value === "admitted college") {
+                    gsap.to(formCollege, .2, { "border": "1px solid red" });
+               } else {
+                    gsap.to(formCollege, .2, { "border": "1px solid #D1D1D1" });
+               }
           }
      }
      componentDidMount() {

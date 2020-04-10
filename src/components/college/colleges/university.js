@@ -12,7 +12,7 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                          <p>Undecided? That's OK.</p>
                     </FullWidth>
                </Row>
-               <Row className="text-center">
+               <Row className="text-center stats">
                     <HalfColumn>
                          <h2>1 in 5</h2>
                          <p>college students start undecided</p>
@@ -22,6 +22,7 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                          <p>of students who are "decided" change their major</p>
                     </HalfColumn>
                </Row>
+               <br />
                <Row>
                     <FullWidth>
                          <p>Undecided students are admitted to our Department of Exploratory Studies in University College. We will be your temporary home for 3 semesters while you explore.</p>
