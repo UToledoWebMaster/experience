@@ -70,7 +70,7 @@ const ResearchContentBusiness = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Nathan Szymanski</h2>
-                                   <p>Class of 2019 | Oak Harbor, Ohio</p>
+                                   <p className="collegeTestimonySubtitle">Class of 2019 | Oak Harbor, Ohio</p>
                                    <p>"I conducted research starting my freshman year at UToledo. Both in and out of my major, the professors really cared about their students. They wanted us to learn, they promoted our involvement with research, and they were collaborative. In my research, I plugged into Ohio's largest supercomputer and ended up with one of the nation’s most prestigious scholarships."</p>
                               </div>
                          </ThreeQuarterColumn>

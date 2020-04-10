@@ -55,7 +55,7 @@ const CareerServicesContentBusiness = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Paola Aguilar</h2>
-                                   <p>Operations and Supply Chain Management '18; works at Owens Illinois, a Fortune 500 company near Toledo</p>
+                                   <p className="collegeTestimonySubtitle">Operations and Supply Chain Management '18; works at Owens Illinois, a Fortune 500 company near Toledo</p>
                                    <p>"My business professors helped me a lot, especially with career development. Not all students have business cards. But I did because my professor recommended we make them for job fairs and interviews. I had opportunities to network. UToledo gave me the tools. I got two internships and received job offers from both companies."</p>
                               </div>
                          </ThreeQuarterColumn>

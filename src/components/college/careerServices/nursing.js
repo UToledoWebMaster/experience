@@ -49,7 +49,7 @@ const CareerServicesContentNursing = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Navindi Weerasinghe</h2>
-                                   <p>Class of 2018, Navindi plans to become an optometrist and may pursue an M.B.A.</p>
+                                   <p className="collegeTestimonySubtitle">Class of 2018, Navindi plans to become an optometrist and may pursue an M.B.A.</p>
                                    <p>"I received more than my money's worth at UToledo — a lot of things that money can’t buy. The best skill I mastered was to prioritize my time. My degree was rigorous, and I learned how to do many things at once. Now I apply it in my job. I've progressed quickly through the training, and now they want to cross-train me in different departments. I work with a diverse population and have no trouble connecting to anyone because we had students of all backgrounds at UToledo. The seeds of diversity and inclusion were planted in me there."</p>
                               </div>
                          </ThreeQuarterColumn>

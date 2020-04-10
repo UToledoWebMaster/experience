@@ -56,7 +56,7 @@ const ExperientialLearningContentPharmacy = ({ state }) => {
                          <ThreeQuarterColumn>
                               <div className="headshotQuote__text">
                                    <h2>Emmanuel Ayanjoke</h2>
-                                   <p>PharmD '20 | Ogun, Nigeria</p>
+                                   <p className="collegeTestimonySubtitle">PharmD '20 | Ogun, Nigeria</p>
                                    <p>"I had my first internship ― with an independent pharmacist — in spring semester of my first professional year (year 3 at UToledo). I didn't really understand the value of this experience until I met non-UToledo students, who don't start internships until later. UToledo has a huge network of hospitals and rotation sites, and they prefer UToledo students. I had a rotation at Cleveland Clinic, one of the top hospitals in the world."</p>
                               </div>
                          </ThreeQuarterColumn>
