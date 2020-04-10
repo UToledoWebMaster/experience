@@ -4,6 +4,8 @@ import { Row, FullWidth, HalfColumn, QuarterColumn, ThreeQuarterColumn } from ".
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Slider from "../../slider"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGraduationCap, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const CareerServicesContentEngineering = ({ state }) => {
      const data = useStaticQuery(graphql`
@@ -81,10 +83,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <div className="one column">
-                              <Img className="anim" fadeIn={true} fluid={gradCap.childImageSharp.fluid} />
-                         </div>
-                         <div className="eleven columns"><p>Average 2019 starting salary of UToledo engineering graduates: $62,819</p></div>
+                         <div className="twelve columns"><p><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "4rem" }} icon={faGraduationCap} />&nbsp;&nbsp;&nbsp;&nbsp;Average 2019 starting salary of UToledo engineering graduates: $62,819</p></div>
                     </Row>
                     <Row>
                          <FullWidth>
@@ -92,10 +91,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                          </FullWidth>
                     </Row>
                     <Row>
-                         <div className="one column">
-                              <Img className="anim" fadeIn={true} fluid={dollarSign.childImageSharp.fluid} />
-                         </div>
-                         <div className="eleven columns"><p>Average 2019 co-op wage: $18.04/hour</p></div>
+                         <div className="twelve columns"><p><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faDollarSign} />&nbsp;&nbsp;&nbsp;&nbsp;Average 2019 co-op wage: $18.04/hour</p></div>
                     </Row>
                     <Row>
                          <FullWidth>

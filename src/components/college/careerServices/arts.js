@@ -58,7 +58,7 @@ const CareerServicesContentArts = ({ state }) => {
                          </ThreeQuarterColumn>
                          <QuarterColumn>
                               <Img className="anim" fadeIn={true} fluid={artsCareerServices.childImageSharp.fluid} />
-                              <p>Andrew Makadsi, art director for Beyoncé</p>
+                              <p><em>Andrew Makadsi, art director for Beyoncé</em></p>
                          </QuarterColumn>
                     </Row>
                </>
