@@ -44,11 +44,11 @@ const WhatsNextContent = ({ state }) => {
                     <Row>
                          <HalfColumn className="yellowBack">
                               <h2>Already set up your myUT account?</h2>
-                              <p style={{ marginBottom: "0px" }}>Great! <a href="http://myut.utoledo.edu/" target="_blank">Log in</a> and you'll find everything you need on the New Student tab to submit your deposit.</p>
+                              <p style={{ marginBottom: "0px" }}>Great! <a id="myUTLogInClick" href="http://myut.utoledo.edu/" target="_blank">Log in</a> and you'll find everything you need on the New Student tab to submit your deposit.</p>
                          </HalfColumn>
                          <HalfColumn className="yellowBack">
                               <h2>Need to set up your myUT account?</h2>
-                              <p style={{ marginBottom: "0px" }}>No worries. Visit <a href="https://myutaccount.utoledo.edu/" target="_blank">myutaccount.utoledo.edu</a> and we'll lead you through the setup.</p>
+                              <p style={{ marginBottom: "0px" }}>No worries. Visit <a id="myUTAccountClick" href="https://myutaccount.utoledo.edu/" target="_blank">myutaccount.utoledo.edu</a> and we'll lead you through the setup.</p>
                          </HalfColumn>
                     </Row>
                     <br /><br />
