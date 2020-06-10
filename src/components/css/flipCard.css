@@ -72,7 +72,7 @@ body.accessible .flipCard:focus .flipCard__back {
 .flipCard__front p {
     color: white;
     font-size: 22.5px;
-    font-weight: 600;
+    font-weight: 500; /* 500 instead of 600 because light on dark renders thicker than dark on light */
     font-family: jubilat;
     line-height: normal;
 }
