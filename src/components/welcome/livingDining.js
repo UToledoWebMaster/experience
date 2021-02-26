@@ -69,8 +69,8 @@ const LivingDiningContent = ({ state }) => {
                               <p>Fresh-made pizza. Smoothies. Rice bowls. Vegetarian, halal and gluten-free meals.</p>
                               <p>Use your meal plan at:</p>
                               <ul>
-                                   <li>3 dining hall locations</li>
-                                   <li>11 retail locations on campus, including Starbucks, Chick-fil-A, Subway</li>
+                                   <li>2 dining hall locations</li>
+                                   <li>9 retail locations on campus, including Starbucks, Chick-fil-A, Subway</li>
                                    <li>2 convenience stores</li>
                               </ul>
                          </HalfColumn>

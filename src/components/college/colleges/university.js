@@ -18,7 +18,7 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                          <p>college students start undecided</p>
                     </HalfColumn>
                     <HalfColumn>
-                         <h2>50%</h2>
+                         <h2>52%</h2>
                          <p>of students who are "decided" change their major</p>
                     </HalfColumn>
                </Row>

@@ -17,7 +17,7 @@ const WhatsNextContent = ({ state }) => {
           fixed(width:30){
              ...GatsbyImageSharpFixed
           }
-          fluid{
+          fluid(maxWidth: 1280, srcSetBreakpoints: [ 400, 600, 960, 1280 ]){ #parameters are to fix bad auto sizing on image
              ...GatsbyImageSharpFluid
           }
          }
@@ -28,7 +28,7 @@ const WhatsNextContent = ({ state }) => {
      `)
      const checkChecked = data.images.nodes.filter(node => node.name === 'checkChecked')[0];
      const checkEmpty = data.images.nodes.filter(node => node.name === 'checkEmpty')[0];
-     const welcomeToTheFamily = data.images.nodes.filter(node => node.name === 'welcomeToTheFamily')[0];
+     const welcomeToTheFamily = data.images.nodes.filter(node => node.name === '08142018-8751')[0];
      if (state) {
           return (
                <>

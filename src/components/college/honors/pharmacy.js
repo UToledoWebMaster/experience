@@ -55,6 +55,7 @@ const HonorsContentPharmacy = ({ state }) => {
                     <br />
                     <Row>
                          <FullWidth>
+                              <p>Enjoy the benefits of the UToledo Honors experience without adding time to graduation!</p>
                               <ul>
                                    <li>Priority registration</li>
                                    <li>Honors-only housing and scholarships</li>

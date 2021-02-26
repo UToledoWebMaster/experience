@@ -28,17 +28,17 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
           <>
                <Row>
                     <FullWidth>
-                         <h1>College of {state.collegeOfInterest}</h1>
+                         <h1>John B. and Lillian E. Neff College of {state.collegeOfInterest}</h1>
                          <p>High-tech education. Engaged faculty experts. Impressive job-placement rates. We'll prepare you for a rewarding career in business no matter what your passion.</p>
                     </FullWidth>
                </Row>
                <Row className="text-center stats">
                     <HalfColumn>
-                         <h2>13 majors & 17 minors</h2>
+                         <h2>12 majors & 18 minors</h2>
                          <p>in the most in-demand areas of business</p>
                     </HalfColumn>
                     <HalfColumn>
-                         <h2>#224</h2>
+                         <h2>#235</h2>
                          <p>in ranking of business colleges by U.S. News & World Report</p>
                     </HalfColumn>
                </Row>
@@ -47,7 +47,7 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <div className="headshotQuote__text">
                               <h2>Jaret Yost</h2>
                               <p className="collegeTestimonySubtitle">International Business and Professional Sales '20</p>
-                              <p>"Through the COBI Job Fair I got an internship with Otis Elevator, the biggest elevator company in the world. I feel ready for this due to all the training and professional development offered by the University."</p>
+                              <p>"Through the Neff COBI Job Fair I got an internship with Otis Elevator, the biggest elevator company in the world. I feel ready for this due to all the training and professional development offered by the University."</p>
 
                          </div>
                     </ThreeQuarterColumn>
@@ -66,7 +66,7 @@ const Business = ({ state, academicSuccessClick, careerServicesClick, experienti
                               <li>Flipped classrooms</li>
                          </ul>
                          <p><strong>Work with award-winning faculty.</strong> 90% of classes are taught by Ph.D.s and professionally qualified faculty, NOT graduate or teaching assistants.</p>
-                         <p><strong>Build your resume.</strong> 16 student organizations = a professional network + lifelong friends + leadership skills.</p>
+                         <p><strong>Build your resume.</strong> 14 student organizations = a professional network + lifelong friends + leadership skills.</p>
                          <p><strong>Stand out.</strong> Apply for our Klar Leadership Academy.</p>
                          <p><strong>Be a leader</strong> in your job and your community.</p>
                     </FullWidth>

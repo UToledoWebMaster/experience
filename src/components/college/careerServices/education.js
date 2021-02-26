@@ -43,7 +43,7 @@ const CareerServicesContentEducation = ({ state }) => {
                     <br />
                     <Row className="text-center">
                          <FullWidth>
-                              <h2 style={{ display: "inline" }}>90.4%</h2><p style={{ display: "inline" }}> of graduates found jobs in education</p>
+                              <h2 style={{ display: "inline" }}>91.4%</h2><p style={{ display: "inline" }}> of graduates found jobs in education</p>
                          </FullWidth>
                     </Row>
                     <br /><br />

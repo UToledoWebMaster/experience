@@ -32,13 +32,13 @@ const CareerServicesContentBusiness = ({ state }) => {
                     <Row>
                          <FullWidth>
                               <h1>Graduate Career-Ready</h1>
-                              <p>COBI has a 90% job placement rate for graduates. Our students find jobs or graduate school opportunities BEFORE they graduate.</p>
+                              <p>Neff COBI has averaged more than 90% job placement for the last 5 years. Our students find jobs or graduate school opportunities BEFORE they graduate.</p>
                               <p>We focus on career development.</p>
                               <ul>
                                    <li>Partnerships with industry leaders ensure you develop the right job skills</li>
                                    <li>Required Career Development classes</li>
                                    <li>Fully-staffed Business Career Programs Office (resume critiques, practice interviews, etiquette dinners)</li>
-                                   <li>Fall and Spring Job Fairs attended by 100+ national firms</li>
+                                   <li>Fall and Spring Job Fairs attended by 260 recruiters from 76 national and regional firms</li>
                               </ul>
                               <p>UToledo's Career Services also offers resources and strategies.</p>
                               <ul>
@@ -63,7 +63,7 @@ const CareerServicesContentBusiness = ({ state }) => {
                     <br /><br />
                     <Row>
                          <FullWidth>
-                              <h2>Where Do COBI Graduates start Their Careers?</h2>
+                              <h2>Where have Neff COBI graduates started their careers?</h2>
                          </FullWidth>
                     </Row>
                     <Row>

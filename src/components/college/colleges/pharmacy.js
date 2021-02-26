@@ -65,7 +65,7 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <p><strong>Gain a competitive edge in the job market.</strong> Earn 2 degrees. Two of our majors offer a B.S./M.S. option in just 5 years. You also can combine PharmD with a Ph.D. or M.B.A.</p>
                          <p><strong>Set yourself apart.</strong> Fewer than 20 universities in the U.S. offer a B.S. in pharmaceutical sciences. And UToledo offers the country's only undergraduate program in cosmetic science and formulation design.</p>
                          <p><strong>Make your med school app stand out.</strong> Med schools love students with unique majors and course work.</p>
-                         <p><strong>Network and grow</strong> in 20 professional pharmacy student organizations.</p>
+                         <p><strong>Network and grow</strong> in 18 professional pharmacy student organizations.</p>
                     </FullWidth>
                </Row>
           </>

@@ -51,7 +51,7 @@ const CareerServicesContentArts = ({ state }) => {
                                    <li>An on-air reporter for ABC</li>
                                    <li>A President's National Security Council member</li>
                                    <li>A director of one of the largest housing nonprofits in Chicago</li>
-                                   <li>A director of legislative affairs for the largest steel producer in D.C.</li>
+                                   <li>A director of legislative affairs in Washington, D.C., for the nation’s largest steel producer</li>
                                    <li>A high-budget VFX supervisor</li>
                                    <li>Ohio's 2019 Teacher of the Year</li>
                               </ul>

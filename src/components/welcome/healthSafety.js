@@ -62,7 +62,7 @@ const HealthSafetyContent = ({ state }) => {
                                         <div class="overlappingBoxes__text">
                                              <ul>
                                                   <li>Student Rec Center with a climbing wall, classes, a pool, waterslide and more</li>
-                                                  <li>16 club and 20+ intramural sports</li>
+                                                  <li>25 club and 20+ intramural sports</li>
                                                   <li>On-campus medical centers</li>
                                                   <li>Free mental health and counseling services</li>
                                                   <li>Outdoor adventures — Toledo is one of the top 2 places in Ohio for outdoor fun (US News & World Report). Take advantage of a 6-mile bike and walking path from Main Campus to the city’s most popular metropark; kayaking on the river through campus; ice skating, golf and disc golf in nearby Ottawa Park.</li>

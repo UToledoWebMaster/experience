@@ -80,7 +80,7 @@ const Engineering = ({ state, academicSuccessClick, careerServicesClick, experie
                          <h2>Get ready to...</h2>
                          <p><strong>Dive right in.</strong> No pre-engineering. No weeding out.</p>
                          <p><strong>Develop an entrepreneurial mindset.</strong></p>
-                         <p><strong>Get involved.</strong> 20+ engineering student organizations, including a ranked SAE formula team that builds a car every year.</p>
+                         <p><strong>Get involved.</strong> 25 engineering student organizations, including a ranked SAE formula team that builds a car every year.</p>
                          <p><strong>Graduate with a job and minimal debt!</strong></p>
                     </FullWidth>
                </Row>

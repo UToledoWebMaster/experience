@@ -36,7 +36,7 @@ const DiverseCommunityContent = ({ state }) => {
      const welcomingSrc = welcoming.childImageSharp.fixed.src;
      const multicultural = data.images.nodes.filter(node => node.name === 'multicultural')[0];
      const multiculturalSrc = multicultural.childImageSharp.fixed.src;
-     const midwesternFriendly = data.images.nodes.filter(node => node.name === 'midwesternFriendly')[0];
+     const midwesternFriendly = data.images.nodes.filter(node => node.name === '08292017-9617')[0];
      const midwesternFriendlySrc = midwesternFriendly.childImageSharp.fixed.src;
      if (state) {
           return (
@@ -49,10 +49,10 @@ const DiverseCommunityContent = ({ state }) => {
                     </Row>
                     <Row>
                          <HalfColumn>
-                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faGlobeAmericas} /><br />84 countries</h2>
+                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faGlobeAmericas} /><br />92 countries</h2>
                          </HalfColumn>
                          <HalfColumn>
-                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faMapMarkerAlt} /><br />42 states</h2>
+                              <h2 style={{ textAlign: 'center' }}><FontAwesomeIcon style={{ color: "#FFD200", fontSize: "5rem" }} icon={faMapMarkerAlt} /><br />44 states</h2>
                          </HalfColumn>
                     </Row>
                     <br />

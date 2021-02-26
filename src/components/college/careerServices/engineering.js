@@ -84,7 +84,7 @@ const CareerServicesContentEngineering = ({ state }) => {
                          <div className="one column iconColumn">
                               <Img className="anim" fadeIn={true} fluid={gradCap.childImageSharp.fluid} />
                          </div>
-                         <div className="eleven columns"><p>Average 2019 starting salary of UToledo engineering graduates: $62,819</p></div>
+                         <div className="eleven columns"><p>Average 2020 starting salary of UToledo engineering graduates: $60,617</p></div>
                     </Row>
                     <Row>
                          <FullWidth>
@@ -95,11 +95,11 @@ const CareerServicesContentEngineering = ({ state }) => {
                          <div className="one column iconColumn">
                               <Img className="anim" fadeIn={true} fluid={dollarSign.childImageSharp.fluid} />
                          </div>
-                         <div className="eleven columns"><p>Average 2019 co-op wage: $18.04/hour</p></div>
+                         <div className="eleven columns"><p>Average 2020 co-op wage: $19.47/hour</p></div>
                     </Row>
                     <Row>
                          <FullWidth>
-                              <p>Many students find permanent jobs with their co-op employers – even before they graduate. We hold 2 career expos every year with 170+ companies that recruit for permanent and co-op positions.</p>
+                              <p>Many students find permanent jobs with their co-op employers – even before they graduate. Over the course of the 3 career expos we held this year, 672 of our students met with 281 recruiters who conducted nearly 2700 separate interviews for permanent and co-op positions.</p>
                               <p>UToledo's Career Services also offers resources and strategies.</p>
                               <ul>
                                    <li>Choose a major</li>

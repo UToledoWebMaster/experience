@@ -40,7 +40,7 @@ const AcademicSuccessContentBusiness = ({ state }) => {
                               <p>We don't forget you once you pay your deposit. We want you to succeed. </p>
                               <ul>
                                    <li>Faculty who know your name and your strengths</li>
-                                   <li>Dedicated COBI academic advisors</li>
+                                   <li>Dedicated Neff COBI academic advisors</li>
                                    <li>Free tutoring for classes such as calculus, statistics, accounting, writing</li>
                                    <li>Professional success coaches ― Our holistic approach helps you with everything from dealing with deadlines and study strategies to financial literacy</li>
                                    <li>Pre-Health Advising Center for pre-med students</li>
