@@ -31,16 +31,17 @@ const Pharmacy = ({ state, academicSuccessClick, careerServicesClick, experienti
                          <h1>College of {state.collegeOfInterest}</h1>
                          <p>Nationally accredited. Nationally ranked.</p>
                          <p>We offer two pathways: one for aspiring pharmacists and one for students interested in pharmacy science or other careers in pharmacy (this is a great pre-med track). Course work for each is identical in the first two years.</p>
+                         <p>Our passage rates on standard pharmacy exams are above the national average.</p>
                     </FullWidth>
                </Row>
                <Row className="text-center stats">
                     <HalfColumn>
-                         <h2>96%</h2>
-                         <p>Best passage rate in Ohio on licensing exam</p>
+                         <h2>90%</h2>
+                         <p>Pass rate on national licensing exam</p>
                     </HalfColumn>
                     <HalfColumn>
-                         <h2>100%</h2>
-                         <p>Highest passage rate in U.S. on in-state pharmacy law exam and the only university with a perfect pass rate</p>
+                         <h2>91%</h2>
+                         <p>Pass rate on in-state pharmacy law exam</p>
                     </HalfColumn>
                </Row>
                <br />

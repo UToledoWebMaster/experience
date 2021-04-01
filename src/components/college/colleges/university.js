@@ -32,8 +32,8 @@ const University = ({ state, academicSuccessClick, careerServicesClick, experien
                          <p><strong>Develop transferable skills:</strong> critical thinking, decision making and adaptability.</p>
                          <p><strong>Receive support</strong> from advisors.</p>
                          <p><strong>Declare a major at any time</strong> once you meet the requirements.</p>
-                         <h2>New for Fall 2020!</h2>
-                         <p><strong>Learning Communities</strong><br />All undecided students will join a learning community around the major they're most interested in.</p>
+                         <h2>Learning Communities</h2>
+                         <p>All undecided students will join a learning community around the major they're most interested in.</p>
                          <ul>
                               <li>Build a community of support with other undecided students. </li>
                               <li>Complete courses to build academic success skills and explore majors and careers.</li>

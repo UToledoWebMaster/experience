@@ -38,7 +38,7 @@ const WhatsNextContent = ({ state }) => {
                               <p><Img className="anim yellowCheck" fadeIn={true} fixed={checkChecked.childImageSharp.fixed} />&nbsp;&nbsp;&nbsp; Acceptance Letter</p>
                               <p><Img className="anim yellowCheck" fadeIn={true} fixed={checkChecked.childImageSharp.fixed} />&nbsp;&nbsp;&nbsp; Take one more look at all that UToledo offers</p>
                               <p><Img className="anim yellowCheck" fadeIn={true} fixed={checkEmpty.childImageSharp.fixed} />&nbsp;&nbsp;&nbsp; Submit enrollment deposit</p>
-                              <p>Isn't it time to check off that last box and save your place in the UToledo Class of 2024?</p>
+                              <p>Isn't it time to check off that last box and save your place in UToledo's next class?</p>
                          </FullWidth>
                     </Row>
                     <Row>
